@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bstn322asnra0"]
+
+[ext_resource type="Texture2D" uid="uid://dfnjdb14g0v54" path="res://preface/1.png" id="1_mvf8m"]
+[ext_resource type="Script" path="res://preface/next1.gd" id="2_8kku8"]
+
+[node name="Preface" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.963211, 0.975904)
+texture = ExtResource("1_mvf8m")
+
+[node name="next1" type="Button" parent="."]
+offset_left = 992.0
+offset_top = 509.0
+offset_right = 1120.0
+offset_bottom = 633.0
+theme_override_font_sizes/font_size = 85
+text = ">"
+script = ExtResource("2_8kku8")
+
+[connection signal="pressed" from="next1" to="next1" method="_on_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcdbntu4qruv6"]
+
+[ext_resource type="Texture2D" uid="uid://x22c1xtilxsq" path="res://preface/3.png" id="1_kqxpa"]
+[ext_resource type="Script" path="res://preface/next3.gd" id="2_eifms"]
+[ext_resource type="Script" path="res://preface/previous2.gd" id="2_u0e4m"]
+
+[node name="Preface3_tscn" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.963211, 0.975904)
+texture = ExtResource("1_kqxpa")
+
+[node name="previous2" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 512.0
+offset_right = 160.0
+offset_bottom = 636.0
+theme_override_font_sizes/font_size = 85
+text = "<"
+script = ExtResource("2_u0e4m")
+
+[node name="next3" type="Button" parent="."]
+offset_left = 992.0
+offset_top = 509.0
+offset_right = 1120.0
+offset_bottom = 633.0
+theme_override_font_sizes/font_size = 85
+text = ">"
+script = ExtResource("2_eifms")
+
+[connection signal="pressed" from="previous2" to="previous2" method="_on_pressed"]
+[connection signal="pressed" from="next3" to="next3" method="_on_pressed"]
