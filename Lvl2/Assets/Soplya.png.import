@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c82wxi365cggq"
-path="res://.godot/imported/Cave.png-003f86df26ecf52b87df13b75000e38f.ctex"
+uid="uid://bb3e3otfngmrg"
+path="res://.godot/imported/Soplya.png-fb5608bc7ca1befe9f350202909f5a83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lvl3/Assets/Cave.png"
-dest_files=["res://.godot/imported/Cave.png-003f86df26ecf52b87df13b75000e38f.ctex"]
+source_file="res://Lvl2/Assets/Soplya.png"
+dest_files=["res://.godot/imported/Soplya.png-fb5608bc7ca1befe9f350202909f5a83.ctex"]
 
 [params]
 

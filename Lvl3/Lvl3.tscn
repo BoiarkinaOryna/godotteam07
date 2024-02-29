@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c2bxywrm6ivnb"]
 
-[ext_resource type="Texture2D" uid="uid://c82wxi365cggq" path="res://Lvl3/Assets/Cave.png" id="1_hkq86"]
+[ext_resource type="Texture2D" uid="uid://c82wxi365cggq" path="res://Lvl5/Assets/Cave.png" id="1_hkq86"]
 [ext_resource type="Texture2D" uid="uid://cs2ug00tsb3q5" path="res://Lvl3/Assets/Cave_entrance.png" id="2_lrmns"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="3_xmyla"]
 [ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="4_yws2y"]

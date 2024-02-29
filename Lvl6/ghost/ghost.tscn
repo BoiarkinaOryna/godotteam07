@@ -1,10 +1,10 @@
 [gd_scene load_steps=17 format=3 uid="uid://brailqkufbado"]
 
-[ext_resource type="Script" path="res://1Lvl/ghost/ghost.gd" id="1_mum46"]
-[ext_resource type="Texture2D" uid="uid://dgr8fuewglvmh" path="res://1Lvl/ghost/Animations.png" id="2_kupcp"]
+[ext_resource type="Script" path="res://Lvl6/ghost/ghost.gd" id="1_mum46"]
+[ext_resource type="Texture2D" uid="uid://dgr8fuewglvmh" path="res://Lvl6/ghost/Animations.png" id="2_kupcp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7pyyv"]
-radius = 299.74
+radius = 382.606
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_axtkw"]
 atlas = ExtResource("2_kupcp")
