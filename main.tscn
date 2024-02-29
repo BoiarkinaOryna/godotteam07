@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://clxlbbt5uagij" path="res://Lvl2/Assets/Field.png" id="1_jg7tb"]
 [ext_resource type="Texture2D" uid="uid://bvl17mbbwqdb2" path="res://img/tileset-removebg-preview.png" id="2_a2bfs"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://Lvl7/player.tscn" id="3_y358n"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="3_y358n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p08a6"]
 texture = ExtResource("2_a2bfs")

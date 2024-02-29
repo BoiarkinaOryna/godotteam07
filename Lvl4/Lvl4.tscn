@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://smjuq6relebf" path="res://Lvl4/Acsests/fire2.png" id="3_kwvpy"]
 [ext_resource type="Texture2D" uid="uid://bh7ylns5naeuj" path="res://Lvl4/Acsests/fire3.png" id="4_rh7o1"]
 [ext_resource type="Texture2D" uid="uid://d1pga3po1w5n5" path="res://Lvl4/Acsests/fire4.png" id="6_onqst"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://Lvl7/player.tscn" id="6_u72w3"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="6_u72w3"]
 [ext_resource type="Texture2D" uid="uid://bulgw45p37cru" path="res://Lvl4/Acsests/Burning_tree1.png" id="7_2aj8b"]
 [ext_resource type="Texture2D" uid="uid://d15e7lr7rypqw" path="res://Lvl4/Acsests/Burning_tree1.2.png" id="8_3344a"]
 [ext_resource type="Texture2D" uid="uid://ddti0n0c4g681" path="res://Lvl4/Acsests/Burning_tree2.2.png" id="8_intrc"]

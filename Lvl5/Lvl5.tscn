@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ursv1pvl2cxl" path="res://Lvl5/Assets/hedgehog2.png" id="4_3vxdh"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="4_nrf11"]
 [ext_resource type="Texture2D" uid="uid://cgmvsexanocd6" path="res://Lvl5/Assets/hedgehog3.png" id="5_1aact"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://Lvl7/player.tscn" id="5_04vmf"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="5_04vmf"]
 [ext_resource type="Texture2D" uid="uid://weyqy7jjnaiv" path="res://Lvl5/Assets/princess.png" id="6_cium3"]
 [ext_resource type="Texture2D" uid="uid://dxqrufmotovxt" path="res://Lvl5/Assets/hedgehog1.png" id="6_idiqx"]
 [ext_resource type="Texture2D" uid="uid://coualeny38wrt" path="res://Lvl5/Assets/apple.png" id="7_llhxe"]

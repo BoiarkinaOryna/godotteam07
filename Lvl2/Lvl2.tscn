@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://c7ca8uiutrk2c" path="res://Lvl2/Assets/Forest_grass3.png" id="10_1dnx6"]
 [ext_resource type="Texture2D" uid="uid://c3dvmt0fonvj1" path="res://Lvl2/Assets/cloud1.png" id="10_34wju"]
 [ext_resource type="Texture2D" uid="uid://bkppjk6po83p7" path="res://Lvl2/Assets/cloud2.png" id="11_2hqna"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://Lvl7/player.tscn" id="12_fdcci"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="12_fdcci"]
 
 [sub_resource type="Animation" id="Animation_0qja4"]
 resource_name = "idle"

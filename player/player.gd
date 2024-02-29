@@ -27,25 +27,25 @@ func _physics_process(delta):
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		print("direction == true")
+		#print("direction == true")
 		if direction == 1:
 			animated_sprite.flip_h = false
 		elif direction == -1:
 			animated_sprite.flip_h = true
 		if is_on_floor():
-			print("direction, is on floor")
+			#print("direction, is on floor")
 			animation.play("run")
 		else:
-			print("direction, not is on flor")
+			#print("direction, not is on flor")
 			animation.play("jump")
 		
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if is_on_floor():
-			print("direction != true")
+			#print("direction != true")
 			animation.play("idle")
 		else:
-			print("not is on flor")
+			#print("not is on flor")
 			animation.play("jump")
 
 	move_and_slide()
