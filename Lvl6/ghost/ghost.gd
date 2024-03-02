@@ -4,6 +4,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
 var speed = 125
 var stop = 0
+var JUMP_VELOCITY = -350.0
 #var speed2 = 200
 
 func _on_detector_body_entered(body):
@@ -13,6 +14,12 @@ func _on_detector_body_entered(body):
 func _on_detector_body_exited(body):
 	if body.name == 'Player':
 		chase = false
+		
+func _on_body_coll_body_entered(body):
+	if body.name == 'Player':
+		chase = true
+	else:
+		velocity.y = JUMP_VELOCITY
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -25,9 +32,6 @@ func _physics_process(delta):
 	#1251
 	if chase == true:
 		if direction.x >= 0:
-			if self.position.x >= 1245:
-				chase = false
-				
 			if not is_on_wall():
 				#print(self.position.x)
 				#velocity.x = direction.x * speed2

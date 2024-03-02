@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dvneryu0vgvsl" path="res://1Lvl/Acsests/spikes.png" id="6_uwb4u"]
 [ext_resource type="Texture2D" uid="uid://dyxp2hk42782t" path="res://1Lvl/Acsests/spikes2.png" id="7_7xo8q"]
 [ext_resource type="Texture2D" uid="uid://cl8a81ykndi43" path="res://1Lvl/Acsests/spikes3.png" id="8_4snjx"]
-[ext_resource type="Texture2D" uid="uid://0ofp5yn6yhda" path="res://1Lvl/Acsests/Dark_dark_sky.png" id="8_do8nd"]
+[ext_resource type="Texture2D" uid="uid://bf0obhaqscoct" path="res://1Lvl/Acsests/Dark_dark_sky.png" id="8_do8nd"]
 [ext_resource type="Texture2D" uid="uid://c5y64i40sjl05" path="res://1Lvl/Acsests/spikes4.png" id="9_kay7x"]
 [ext_resource type="Texture2D" uid="uid://vg6nouw5438i" path="res://1Lvl/Acsests/spikes5.png" id="10_8t8v4"]
 [ext_resource type="Texture2D" uid="uid://yhi04v42ecdl" path="res://1Lvl/Acsests/dark_grass1.png" id="14_uksdw"]
