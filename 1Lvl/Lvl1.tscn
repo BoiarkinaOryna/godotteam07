@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cat2nyx5jplcb"]
+[gd_scene load_steps=44 format=3 uid="uid://cat2nyx5jplcb"]
 
 [ext_resource type="Texture2D" uid="uid://cv3g77sugj6ib" path="res://1Lvl/Acsests/photo_2024-02-04_20-42-47.jpg" id="1_2eegi"]
 [ext_resource type="Texture2D" uid="uid://dikb0t3ohp1r5" path="res://1Lvl/Acsests/sky.png" id="2_l7rsc"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dvneryu0vgvsl" path="res://1Lvl/Acsests/spikes.png" id="6_uwb4u"]
 [ext_resource type="Texture2D" uid="uid://dyxp2hk42782t" path="res://1Lvl/Acsests/spikes2.png" id="7_7xo8q"]
 [ext_resource type="Texture2D" uid="uid://cl8a81ykndi43" path="res://1Lvl/Acsests/spikes3.png" id="8_4snjx"]
-[ext_resource type="Texture2D" uid="uid://bf0obhaqscoct" path="res://1Lvl/Acsests/Dark_dark_sky.png" id="8_do8nd"]
 [ext_resource type="Texture2D" uid="uid://c5y64i40sjl05" path="res://1Lvl/Acsests/spikes4.png" id="9_kay7x"]
 [ext_resource type="Texture2D" uid="uid://vg6nouw5438i" path="res://1Lvl/Acsests/spikes5.png" id="10_8t8v4"]
 [ext_resource type="Texture2D" uid="uid://yhi04v42ecdl" path="res://1Lvl/Acsests/dark_grass1.png" id="14_uksdw"]
@@ -519,7 +518,6 @@ texture = ExtResource("6_ntbfm")
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/LeftDaerSky"]
 position = Vector2(3437.5, 227.5)
 scale = Vector2(0.375129, 0.582304)
-texture = ExtResource("8_do8nd")
 flip_h = true
 
 [node name="RightDarkSky" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -527,7 +525,6 @@ flip_h = true
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/RightDarkSky"]
 position = Vector2(9234, 186)
 scale = Vector2(0.485681, 0.626886)
-texture = ExtResource("8_do8nd")
 
 [node name="Village" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2(1130, 0)
