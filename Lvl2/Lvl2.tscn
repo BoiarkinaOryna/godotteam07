@@ -688,6 +688,8 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="StaticBody2D10" type="StaticBody2D" parent="."]
+position = Vector2(-134, 2)
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D10"]
 position = Vector2(804, 548)
@@ -970,7 +972,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="StaticBody2D28" type="StaticBody2D" parent="."]
-position = Vector2(1024, 0)
+position = Vector2(1024, 166)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D28"]
@@ -985,7 +987,7 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="StaticBody2D29" type="StaticBody2D" parent="."]
-position = Vector2(1089, 0)
+position = Vector2(1148, 157)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D29"]
@@ -1000,7 +1002,8 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="StaticBody2D30" type="StaticBody2D" parent="."]
-position = Vector2(1472, 0)
+position = Vector2(1519, 247)
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D30"]
 position = Vector2(804, 548)
@@ -1009,12 +1012,13 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D30"]
-position = Vector2(804, 556)
+position = Vector2(808, 555)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="StaticBody2D31" type="StaticBody2D" parent="."]
-position = Vector2(2240, 0)
+position = Vector2(2276, 261)
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D31"]
 position = Vector2(804, 548)
@@ -1023,12 +1027,13 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D31"]
-position = Vector2(804, 556)
+position = Vector2(804, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="StaticBody2D32" type="StaticBody2D" parent="."]
-position = Vector2(2816, 0)
+position = Vector2(2831, 231)
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D32"]
 position = Vector2(804, 548)
@@ -1131,4 +1136,4 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
-position = Vector2(941, 513)
+position = Vector2(1245, 526)
