@@ -26,7 +26,7 @@ func _physics_process(delta):
 	var player = $"../Player"
 	var direction = (player.position - self.position).normalized()
 	#var base_direction = (self.position - player.position).normalized()
-	print(self.position)
+	#print(player.position)
 
 	if not is_on_floor():
 		velocity.y += gravity * delta
