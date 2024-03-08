@@ -19,160 +19,6 @@
 [ext_resource type="PackedScene" uid="uid://bgn4yk2job4n3" path="res://Lvl2/fox/fox.tscn" id="17_wpxjh"]
 [ext_resource type="PackedScene" uid="uid://reddlsia24is" path="res://Lvl2/flower/flower.tscn" id="18_3bw1y"]
 
-[sub_resource type="Animation" id="Animation_0qja4"]
-resource_name = "idle"
-length = 100.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 30.4, 70.2, 99.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(2760, -56), Vector2(3448, 224), Vector2(5000, 296), Vector2(5960, -64)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_t15xs"]
-_data = {
-"idle": SubResource("Animation_0qja4")
-}
-
-[sub_resource type="Animation" id="Animation_a8few"]
-resource_name = "idle"
-length = 70.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 29.7, 69.9),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(3672, -104), Vector2(4856, 184), Vector2(6776, 272)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ecsyj"]
-_data = {
-"idle": SubResource("Animation_a8few")
-}
-
-[sub_resource type="Animation" id="Animation_80xa5"]
-resource_name = "idle"
-length = 120.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 30.1, 90.3, 120),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1168, -96), Vector2(1456, 128), Vector2(2310, 250), Vector2(2800, -200)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_vex6f"]
-_data = {
-"idle": SubResource("Animation_80xa5")
-}
-
-[sub_resource type="Animation" id="Animation_4020x"]
-resource_name = "idle"
-length = 40.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.3, 40),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-181, 136), Vector2(6592, 136)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_r2ghu"]
-_data = {
-"idle": SubResource("Animation_4020x")
-}
-
-[sub_resource type="Animation" id="Animation_ythrl"]
-resource_name = "idle"
-length = 50.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 49.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-148, 252), Vector2(6588, 252)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_jq8re"]
-_data = {
-"idle": SubResource("Animation_ythrl")
-}
-
-[sub_resource type="Animation" id="Animation_mdlpx"]
-resource_name = "idle"
-length = 100.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 99.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-200, 207.173), Vector2(6716, 204)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_7js4f"]
-_data = {
-"idle": SubResource("Animation_mdlpx")
-}
-
-[sub_resource type="Animation" id="Animation_yehoo"]
-resource_name = "idle"
-length = 50.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 10.3, 29.8, 49.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1688, -264), Vector2(2424, 160), Vector2(4191, 162.5), Vector2(5064, -184)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_kynrk"]
-_data = {
-"idle": SubResource("Animation_yehoo")
-}
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
 texture_region_size = Vector2i(64, 64)
@@ -438,6 +284,244 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5tp52")
 
+[sub_resource type="Animation" id="Animation_0qja4"]
+resource_name = "idle"
+length = 100.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 30.4, 70.2, 99.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2760, -56), Vector2(3448, 224), Vector2(5000, 296), Vector2(5960, -64)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 99.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t15xs"]
+_data = {
+"idle": SubResource("Animation_0qja4")
+}
+
+[sub_resource type="Animation" id="Animation_a8few"]
+resource_name = "idle"
+length = 100.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 29.7, 69.9, 99.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3672, -104), Vector2(4856, 184), Vector2(6776, 272), Vector2(8000, -250)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 99.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ecsyj"]
+_data = {
+"idle": SubResource("Animation_a8few")
+}
+
+[sub_resource type="Animation" id="Animation_80xa5"]
+resource_name = "idle"
+length = 120.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30.1, 90.3, 120),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1168, -96), Vector2(1456, 128), Vector2(2310, 250), Vector2(2800, -200)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 120),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vex6f"]
+_data = {
+"idle": SubResource("Animation_80xa5")
+}
+
+[sub_resource type="Animation" id="Animation_4020x"]
+resource_name = "idle"
+length = 50.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.3, 50),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-181, 136), Vector2(9000, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.3, 49.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r2ghu"]
+_data = {
+"idle": SubResource("Animation_4020x")
+}
+
+[sub_resource type="Animation" id="Animation_ythrl"]
+resource_name = "idle"
+length = 70.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 69.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-148, 252), Vector2(8750, 252)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 69.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jq8re"]
+_data = {
+"idle": SubResource("Animation_ythrl")
+}
+
+[sub_resource type="Animation" id="Animation_mdlpx"]
+resource_name = "idle"
+length = 140.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 139.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-200, 207.173), Vector2(6716, 204)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 139.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7js4f"]
+_data = {
+"idle": SubResource("Animation_mdlpx")
+}
+
+[sub_resource type="Animation" id="Animation_yehoo"]
+resource_name = "idle"
+length = 50.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10.3, 29.8, 49.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1688, -264), Vector2(2424, 160), Vector2(4191, 162.5), Vector2(5064, -184)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 49.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kynrk"]
+_data = {
+"idle": SubResource("Animation_yehoo")
+}
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_t58oq"]
 animations = [{
 "frames": [{
@@ -489,655 +573,721 @@ radius = 24.0
 height = 64.0
 
 [node name="Lvl2" type="Node2D"]
+texture_filter = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+position = Vector2(1, 0)
+tile_set = SubResource("TileSet_iwx3l")
+format = 2
+layer_0/tile_data = PackedInt32Array(589824, 65536, 0, 589825, 65536, 0, 589826, 65536, 0, 589827, 65536, 0, 589828, 65536, 0, 589829, 65536, 0, 589830, 65536, 0, 589831, 65536, 0, 589832, 65536, 0, 589833, 65536, 0, 589834, 65536, 0, 589835, 65536, 0, 589836, 65536, 0, 589837, 65536, 0, 589838, 65536, 0, 589839, 65536, 0, 589840, 65536, 0, 589841, 65536, 0, 589842, 65536, 0, 589843, 65536, 0, 589844, 65536, 0, 589845, 65536, 0, 589846, 65536, 0, 589847, 65536, 0, 589848, 65536, 0, 589849, 65536, 0, 589850, 65536, 0, 589851, 65536, 0, 589852, 65536, 0, 589853, 65536, 0, 589854, 65536, 0, 589855, 65536, 0, 589856, 65536, 0, 589857, 65536, 0, 589858, 65536, 0, 589859, 65536, 0, 589860, 65536, 0, 589861, 65536, 0, 589862, 65536, 0, 589863, 65536, 0, 589864, 65536, 0, 589865, 65536, 0, 589866, 65536, 0, 589867, 65536, 0, 589868, 65536, 0, 589869, 65536, 0, 589870, 65536, 0, 589871, 65536, 0, 589872, 65536, 0, 589873, 65536, 0, 589874, 65536, 0, 589875, 65536, 0, 589876, 65536, 0, 589877, 65536, 0, 589878, 65536, 0, 589879, 65536, 0, 589880, 65536, 0, 589881, 65536, 0, 589882, 65536, 0, 589883, 65536, 0, 589884, 65536, 0, 589885, 65536, 0, 589886, 65536, 0, 589887, 65536, 0, 589888, 65536, 0, 589889, 65536, 0, 589890, 65536, 0, 589891, 65536, 0, 589892, 65536, 0, 589893, 65536, 0, 589894, 65536, 0, 589895, 65536, 0, 589896, 65536, 0, 589897, 65536, 0, 589898, 65536, 0, 589899, 65536, 0, 589900, 65536, 0, 589901, 65536, 0, 589902, 65536, 0, 589903, 65536, 0, 589904, 65536, 0, 589905, 65536, 0, 589906, 65536, 0, 589907, 65536, 0, 589908, 65536, 0, 589909, 65536, 0, 589910, 65536, 0, 589911, 65536, 0, 589912, 65536, 0, 589913, 65536, 0, 589914, 65536, 0, 589915, 65536, 0, 589916, 65536, 0, 589917, 65536, 0, 589918, 65536, 0, 589919, 65536, 0, 589920, 65536, 0, 589921, 65536, 0, 589922, 65536, 0, 589923, 65536, 0, 589924, 65536, 0, 589925, 65536, 0, -196609, 131072, 1, -131073, 131072, 1, -65537, 131072, 1, -1, 131072, 1, 65535, 131072, 1, 131071, 131072, 1, 196607, 131072, 1, 262143, 131072, 1, 327679, 131072, 1, 393215, 131072, 1, 458751, 131072, 1, 524287, 131072, 1, 589823, 131072, 1, 655359, 65536, 1, 589926, 65536, 0, 589927, 65536, 0, 589928, 65536, 0, 589929, 65536, 0, 589930, 65536, 0, 589931, 65536, 0, 589932, 65536, 0, 589933, 65536, 0, 589934, 65536, 0, 589935, 65536, 0, 589936, 65536, 0, 589937, 65536, 0, 589938, 65536, 0, 589939, 65536, 0, 589940, 65536, 0, 589941, 65536, 0, 589942, 65536, 0, 589943, 65536, 0, 589944, 65536, 0, 589945, 65536, 0, 589946, 65536, 0, 589947, 65536, 0, 589948, 65536, 0, 589949, 65536, 0, 589950, 65536, 0, 589951, 65536, 0, 589952, 65536, 0, 589953, 65536, 0, 589954, 65536, 0, 589955, 65536, 0, 589956, 65536, 0, 589957, 65536, 0, 589958, 65536, 0, 589959, 65536, 0, 524424, 0, 1, 458888, 0, 1, 393352, 0, 1, 327816, 0, 1, 262280, 0, 1, 196744, 0, 1, 131208, 0, 1, 65672, 0, 1, 136, 0, 1, -262008, 0, 1, -196472, 0, 1, -130936, 0, 1, -65400, 0, 1, 589960, 65536, 1)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-172.502, -212.066)
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(2067, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture_filter = 1
 position = Vector2(1032, 216)
 scale = Vector2(0.985714, 1.39)
 texture = ExtResource("1_08kii")
 
-[node name="cloud6" type="StaticBody2D" parent="."]
+[node name="bg_animations" type="Node2D" parent="."]
+texture_filter = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud6"]
+[node name="cloud6" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud6"]
 libraries = {
 "": SubResource("AnimationLibrary_t15xs")
 }
 autoplay = "idle"
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud6"]
-position = Vector2(4654.44, 279.969)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud6"]
+visible = false
+texture_filter = 1
+position = Vector2(3826.68, -58.6667)
 scale = Vector2(1.24735, 1)
 texture = ExtResource("2_6q2um")
 
-[node name="cloud5" type="StaticBody2D" parent="."]
+[node name="cloud5" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud5"]
-position = Vector2(3990.92, -26.4242)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud5"]
+visible = false
+texture_filter = 1
+position = Vector2(3672, -104)
 texture = ExtResource("2_478p4")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud5"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud5"]
 libraries = {
 "": SubResource("AnimationLibrary_ecsyj")
 }
 autoplay = "idle"
 
-[node name="cloud4" type="StaticBody2D" parent="."]
+[node name="cloud4" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud4"]
-position = Vector2(2808, 232)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud4"]
+visible = false
+texture_filter = 1
+position = Vector2(2800, -200)
 scale = Vector2(2.20833, 2)
 texture = ExtResource("3_i7uwr")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud4"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud4"]
 libraries = {
 "": SubResource("AnimationLibrary_vex6f")
 }
 autoplay = "idle"
 
-[node name="cloud1" type="StaticBody2D" parent="."]
+[node name="cloud1" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud1"]
-position = Vector2(716.458, 136)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud1"]
+visible = false
+texture_filter = 1
+position = Vector2(9000, 4.53341e-08)
 scale = Vector2(2.04023, 1.76562)
 texture = ExtResource("10_34wju")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud1"]
 libraries = {
 "": SubResource("AnimationLibrary_r2ghu")
 }
 autoplay = "idle"
 
-[node name="cloud2" type="StaticBody2D" parent="."]
+[node name="cloud2" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud2"]
-position = Vector2(1096.72, 252)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud2"]
+visible = false
+texture_filter = 1
+position = Vector2(-148, 252)
 scale = Vector2(1.27083, 1.41667)
 texture = ExtResource("11_2hqna")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud2"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud2"]
 libraries = {
 "": SubResource("AnimationLibrary_jq8re")
 }
 autoplay = "idle"
 
-[node name="cloud3" type="StaticBody2D" parent="."]
+[node name="cloud3" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud3"]
-position = Vector2(3563.18, 205.446)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud3"]
+visible = false
+texture_filter = 1
+position = Vector2(-200, 207.173)
 scale = Vector2(1.6875, 1.83333)
 texture = ExtResource("4_6vtp8")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud3"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud3"]
 libraries = {
 "": SubResource("AnimationLibrary_7js4f")
 }
 autoplay = "idle"
 
-[node name="cloud1_2" type="StaticBody2D" parent="."]
+[node name="cloud1_2" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="cloud1_2"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bg_animations/cloud1_2"]
 libraries = {
 "": SubResource("AnimationLibrary_kynrk")
 }
 autoplay = "idle"
 
-[node name="Sprite2D" type="Sprite2D" parent="cloud1_2"]
-position = Vector2(1923.13, -128.547)
+[node name="Sprite2D" type="Sprite2D" parent="bg_animations/cloud1_2"]
+texture_filter = 1
+position = Vector2(1688, -264)
 scale = Vector2(2.51042, 2.61458)
 texture = ExtResource("10_34wju")
 
-[node name="TileMap" type="TileMap" parent="."]
-position = Vector2(1, 0)
-tile_set = SubResource("TileSet_iwx3l")
-format = 2
-layer_0/tile_data = PackedInt32Array(589824, 65536, 0, 589825, 65536, 0, 589826, 65536, 0, 589827, 65536, 0, 589828, 65536, 0, 589829, 65536, 0, 589830, 65536, 0, 589831, 65536, 0, 589832, 65536, 0, 589833, 65536, 0, 589834, 65536, 0, 589835, 65536, 0, 589836, 65536, 0, 589837, 65536, 0, 589838, 65536, 0, 589839, 65536, 0, 589840, 65536, 0, 589841, 65536, 0, 589842, 65536, 0, 589843, 65536, 0, 589844, 65536, 0, 589845, 65536, 0, 589846, 65536, 0, 589847, 65536, 0, 589848, 65536, 0, 589849, 65536, 0, 589850, 65536, 0, 589851, 65536, 0, 589852, 65536, 0, 589853, 65536, 0, 589854, 65536, 0, 589855, 65536, 0, 589856, 65536, 0, 589857, 65536, 0, 589858, 65536, 0, 589859, 65536, 0, 589860, 65536, 0, 589861, 65536, 0, 589862, 65536, 0, 589863, 65536, 0, 589864, 65536, 0, 589865, 65536, 0, 589866, 65536, 0, 589867, 65536, 0, 589868, 65536, 0, 589869, 65536, 0, 589870, 65536, 0, 589871, 65536, 0, 589872, 65536, 0, 589873, 65536, 0, 589874, 65536, 0, 589875, 65536, 0, 589876, 65536, 0, 589877, 65536, 0, 589878, 65536, 0, 589879, 65536, 0, 589880, 65536, 0, 589881, 65536, 0, 589882, 65536, 0, 589883, 65536, 0, 589884, 65536, 0, 589885, 65536, 0, 589886, 65536, 0, 589887, 65536, 0, 589888, 65536, 0, 589889, 65536, 0, 589890, 65536, 0, 589891, 65536, 0, 589892, 65536, 0, 589893, 65536, 0, 589894, 65536, 0, 589895, 65536, 0, 589896, 65536, 0, 589897, 65536, 0, 589898, 65536, 0, 589899, 65536, 0, 589900, 65536, 0, 589901, 65536, 0, 589902, 65536, 0, 589903, 65536, 0, 589904, 65536, 0, 589905, 65536, 0, 589906, 65536, 0, 589907, 65536, 0, 589908, 65536, 0, 589909, 65536, 0, 589910, 65536, 0, 589911, 65536, 0, 589912, 65536, 0, 589913, 65536, 0, 589914, 65536, 0, 589915, 65536, 0, 589916, 65536, 0, 589917, 65536, 0, 589918, 65536, 0, 589919, 65536, 0, 589920, 65536, 0, 589921, 65536, 0, 589922, 65536, 0, 589923, 65536, 0, 589924, 65536, 0, 589925, 65536, 0, 589926, 65536, 1, -196609, 131072, 1, -131073, 131072, 1, -65537, 131072, 1, -1, 131072, 1, 65535, 131072, 1, 131071, 131072, 1, 196607, 131072, 1, 262143, 131072, 1, 327679, 131072, 1, 393215, 131072, 1, 458751, 131072, 1, 524287, 131072, 1, 589823, 131072, 1, 655359, 65536, 1, -262042, 0, 1, -196506, 0, 1, -130970, 0, 1, -65434, 0, 1, 102, 0, 1, 65638, 0, 1, 131174, 0, 1, 196710, 0, 1, 262246, 0, 1, 327782, 0, 1, 393318, 0, 1, 458854, 0, 1, 524390, 0, 1)
+[node name="grass0" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="Player" parent="." instance=ExtResource("12_fdcci")]
-position = Vector2(2911, 453)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass0"]
+texture_filter = 1
 position = Vector2(292, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(64, 0)
+[node name="grass5" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D2"]
-position = Vector2(292, 572)
-scale = Vector2(2, 2.5)
-sprite_frames = SubResource("SpriteFrames_t58oq")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2(128, 0)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D3"]
-position = Vector2(292, 572)
-scale = Vector2(2, 2.5)
-sprite_frames = SubResource("SpriteFrames_t58oq")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2(192, 0)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D4"]
-position = Vector2(292, 572)
-scale = Vector2(2, 2.5)
-sprite_frames = SubResource("SpriteFrames_t58oq")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D5"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass5"]
+texture_filter = 1
 position = Vector2(548, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+[node name="grass2" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
+position = Vector2(64, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass2"]
+texture_filter = 1
+position = Vector2(292, 572)
+scale = Vector2(2, 2.5)
+sprite_frames = SubResource("SpriteFrames_t58oq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="grass3" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
+position = Vector2(128, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass3"]
+texture_filter = 1
+position = Vector2(292, 572)
+scale = Vector2(2, 2.5)
+sprite_frames = SubResource("SpriteFrames_t58oq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="grass4" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
+position = Vector2(192, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass4"]
+texture_filter = 1
+position = Vector2(292, 572)
+scale = Vector2(2, 2.5)
+sprite_frames = SubResource("SpriteFrames_t58oq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="grass6" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(640, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D6"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass6"]
+texture_filter = 1
 position = Vector2(292, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+[node name="grass7" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(704, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D7"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass7"]
+texture_filter = 1
 position = Vector2(292, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+[node name="grass8" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(768, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D8"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass8"]
+texture_filter = 1
 position = Vector2(292, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D9" type="StaticBody2D" parent="."]
+[node name="grass9" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(960, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D9"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass9"]
+texture_filter = 1
 position = Vector2(292, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D10" type="StaticBody2D" parent="."]
-position = Vector2(-134, 2)
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D10"]
-position = Vector2(804, 548)
-sprite_frames = SubResource("SpriteFrames_w3iel")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
-position = Vector2(804, 556)
-rotation = 1.57079
-shape = SubResource("CapsuleShape2D_2tix4")
-
-[node name="grass1" type="StaticBody2D" parent="."]
+[node name="grass1" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1264, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="grass1"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass1"]
+texture_filter = 1
 position = Vector2(308, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D12" type="StaticBody2D" parent="."]
-position = Vector2(1328, 0)
-
-[node name="StaticBody2D39" type="StaticBody2D" parent="StaticBody2D12"]
-position = Vector2(-1328, 0)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D12"]
-position = Vector2(308, 572)
-scale = Vector2(2, 2.5)
-sprite_frames = SubResource("SpriteFrames_t58oq")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="StaticBody2D13" type="StaticBody2D" parent="."]
+[node name="grass" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1392, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D13"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass"]
+texture_filter = 1
 position = Vector2(308, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D14" type="StaticBody2D" parent="."]
+[node name="grass10" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1584, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D14"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass10"]
+texture_filter = 1
 position = Vector2(180, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D15" type="StaticBody2D" parent="."]
+[node name="grass11" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1792, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D15"]
-position = Vector2(420, 572)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass11"]
+texture_filter = 1
+position = Vector2(420, 567)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D16" type="StaticBody2D" parent="."]
+[node name="grass12" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1856, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D16"]
-position = Vector2(292, 572)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass12"]
+texture_filter = 1
+position = Vector2(292, 567)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D17" type="StaticBody2D" parent="."]
+[node name="grass13" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(1920, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D17"]
-position = Vector2(548, 572)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass13"]
+texture_filter = 1
+position = Vector2(482, 567)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D18" type="StaticBody2D" parent="."]
+[node name="grass14" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(2112, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D18"]
-position = Vector2(292, 572)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass14"]
+texture_filter = 1
+position = Vector2(226, 567)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D19" type="StaticBody2D" parent="."]
+[node name="grass15" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(640, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D19"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass15"]
+texture_filter = 1
 position = Vector2(2468, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D20" type="StaticBody2D" parent="."]
+[node name="grass16" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(704, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D20"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass16"]
+texture_filter = 1
 position = Vector2(2468, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D21" type="StaticBody2D" parent="."]
+[node name="grass17" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(768, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D21"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass17"]
+texture_filter = 1
 position = Vector2(2468, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D22" type="StaticBody2D" parent="."]
+[node name="grass18" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(960, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D22"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass18"]
+texture_filter = 1
 position = Vector2(2020, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D23" type="StaticBody2D" parent="."]
+[node name="grass19" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D23"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass19"]
+texture_filter = 1
 position = Vector2(4004, 574)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D24" type="StaticBody2D" parent="."]
+[node name="StaticBody2D24" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(64, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D24"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/StaticBody2D24"]
+texture_filter = 1
 position = Vector2(4004, 574)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D25" type="StaticBody2D" parent="."]
+[node name="grass20" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(128, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D25"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass20"]
+texture_filter = 1
 position = Vector2(4004, 574)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D26" type="StaticBody2D" parent="."]
+[node name="grass21" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 position = Vector2(192, 0)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D26"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass21"]
+texture_filter = 1
 position = Vector2(4004, 574)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D27" type="StaticBody2D" parent="."]
+[node name="grass22" type="StaticBody2D" parent="bg_animations"]
+texture_filter = 1
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(4260, 574)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(4836, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5988, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5156, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(6116, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(6500, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(6564, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(6052, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(4900, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5092, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(4772, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5604, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5540, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(4964, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="StaticBody2D27"]
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="bg_animations/grass22"]
+texture_filter = 1
 position = Vector2(5028, 572)
 scale = Vector2(2, 2.5)
 sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="StaticBody2D28" type="StaticBody2D" parent="."]
-position = Vector2(1024, 166)
+[node name="Player" parent="." instance=ExtResource("12_fdcci")]
+texture_filter = 1
+position = Vector2(3290, 480)
+
+[node name="enimies" type="Node2D" parent="."]
+texture_filter = 1
+
+[node name="live_grass0" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(-131, -4)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D28"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass0"]
 position = Vector2(804, 548)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D28"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass0"]
+position = Vector2(804, 556)
+rotation = 1.57079
+shape = SubResource("CapsuleShape2D_2tix4")
+
+[node name="live_grass" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(1328, 0)
+
+[node name="StaticBody2D39" type="StaticBody2D" parent="enimies/live_grass"]
+texture_filter = 1
+position = Vector2(-1328, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass"]
+texture_filter = 1
+position = Vector2(308.75, 571.75)
+scale = Vector2(2.07813, 2.4375)
+sprite_frames = SubResource("SpriteFrames_t58oq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="live_grass2" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(-3, -7)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass2"]
+position = Vector2(804, 548)
+sprite_frames = SubResource("SpriteFrames_w3iel")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass2"]
 position = Vector2(803, 557)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D29" type="StaticBody2D" parent="."]
-position = Vector2(1148, 157)
+[node name="live_grass4" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(1662, -3)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D29"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass4"]
 position = Vector2(804, 548)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D29"]
-position = Vector2(804, 556)
-rotation = 1.57079
-shape = SubResource("CapsuleShape2D_2tix4")
-
-[node name="StaticBody2D30" type="StaticBody2D" parent="."]
-position = Vector2(1519, 247)
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D30"]
-position = Vector2(804, 548)
-sprite_frames = SubResource("SpriteFrames_w3iel")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D30"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass4"]
 position = Vector2(808, 555)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D31" type="StaticBody2D" parent="."]
-position = Vector2(2276, 261)
+[node name="live_grass5" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(2240, 1)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D31"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass5"]
 position = Vector2(804, 548)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D31"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass5"]
 position = Vector2(804, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D32" type="StaticBody2D" parent="."]
-position = Vector2(2831, 231)
+[node name="live_grass6" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(2881, -3)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D32"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass6"]
 position = Vector2(804, 548)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D32"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass6"]
 position = Vector2(804, 556)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D33" type="StaticBody2D" parent="."]
-position = Vector2(3180, 255)
+[node name="live_grass7" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(3520, -2)
+metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D33"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass7"]
 position = Vector2(804, 548)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D33"]
-position = Vector2(804, 556)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass7"]
+position = Vector2(805, 559)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D34" type="StaticBody2D" parent="."]
-position = Vector2(3712, 0)
+[node name="live_grass8" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
+position = Vector2(3643, 1)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D34"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass8"]
 position = Vector2(800, 544)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D34"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass8"]
 position = Vector2(800, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D35" type="StaticBody2D" parent="."]
+[node name="live_grass9" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
 position = Vector2(4416, 0)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D35"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass9"]
 position = Vector2(800, 544)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D35"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass9"]
 position = Vector2(800, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="StaticBody2D36" type="StaticBody2D" parent="."]
+[node name="live_grass10" type="StaticBody2D" parent="enimies"]
+texture_filter = 1
 position = Vector2(5120, 0)
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D36"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass10"]
 position = Vector2(800, 544)
 sprite_frames = SubResource("SpriteFrames_w3iel")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D36"]
-position = Vector2(800, 552)
-rotation = 1.57079
-shape = SubResource("CapsuleShape2D_2tix4")
-
-[node name="StaticBody2D37" type="StaticBody2D" parent="."]
-position = Vector2(5568, 0)
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D37"]
-position = Vector2(800, 544)
-sprite_frames = SubResource("SpriteFrames_w3iel")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D37"]
-position = Vector2(800, 552)
-rotation = 1.57079
-shape = SubResource("CapsuleShape2D_2tix4")
-
-[node name="StaticBody2D38" type="StaticBody2D" parent="."]
-position = Vector2(5632, 0)
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D38"]
-position = Vector2(800, 544)
-sprite_frames = SubResource("SpriteFrames_w3iel")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D38"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enimies/live_grass10"]
 position = Vector2(800, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
-position = Vector2(1245, 526)
+texture_filter = 1
+position = Vector2(1237, 534)
 
 [node name="flower" parent="." instance=ExtResource("18_3bw1y")]
+texture_filter = 1
 position = Vector2(3931, 481)

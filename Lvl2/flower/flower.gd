@@ -44,7 +44,7 @@ func _on_timer_2_timeout():
 				
 	
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	var player = $"../Player"
 	var direction = (player.position - self.position).normalized()
 	$AnimatedSprite2D.flip_h = false

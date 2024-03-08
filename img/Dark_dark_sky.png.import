@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1yobpj7ypfmh"
-path="res://.godot/imported/stone1.png-6e095dfc439782d8ef181914cfebb9b7.ctex"
+uid="uid://dmc8c1e64325c"
+path="res://.godot/imported/Dark_dark_sky.png-6568c749b78c2b26fb1f8c54b60c75b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lvl3/Assets/stone1.png"
-dest_files=["res://.godot/imported/stone1.png-6e095dfc439782d8ef181914cfebb9b7.ctex"]
+source_file="res://img/Dark_dark_sky.png"
+dest_files=["res://.godot/imported/Dark_dark_sky.png-6568c749b78c2b26fb1f8c54b60c75b0.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed = 350
+var speed = 500
 var tsx = 1
 
 func _physics_process(delta):
