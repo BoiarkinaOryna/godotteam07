@@ -1,3 +1,6 @@
+res://Lvl2/fox/spike/spike.tscn
+res://Lvl2/fox/fox.tscn
+res://Lvl2/fox/fox.gd
 res://1Lvl/Lvl1.tscn
 res://player/player.tscn
 res://Lvl7/Lvl7.tscn
@@ -6,5 +9,9 @@ res://Lvl5/Lvl5.tscn
 res://Lvl2/Lvl2.tscn
 res://Lvl2/flower/flower.tscn
 res://Lvl2/flower/bullets/bullet.tscn
-res://Lvl2/flower/flower.gd
-res://Lvl2/fox/fox.gd
+res://Lvl2/fox/spike/spike.gd
+res://Lvl2/fox/spike/spike_left.tscn
+res://Lvl2/fox/spike/spike_right.tscn
+res://Lvl2/fox/spike/spike_right.gd
+res://Lvl2/fox/spike/spike_left.gd
+res://player/player.gd

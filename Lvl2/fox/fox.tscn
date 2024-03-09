@@ -1,7 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://bgn4yk2job4n3"]
+[gd_scene load_steps=28 format=3 uid="uid://bgn4yk2job4n3"]
 
 [ext_resource type="Texture2D" uid="uid://corel8ko8vm48" path="res://Lvl2/fox/Assets/Fox.png" id="1_fwhe3"]
 [ext_resource type="Script" path="res://Lvl2/fox/fox.gd" id="1_yh4na"]
+[ext_resource type="PackedScene" uid="uid://bs5wcqafcca4v" path="res://Lvl2/fox/spike/spike_left.tscn" id="2_7tmxf"]
+[ext_resource type="PackedScene" uid="uid://b3c8mcy6n8qnf" path="res://Lvl2/fox/spike/spike_right.tscn" id="3_onlnn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5h6jg"]
 atlas = ExtResource("1_fwhe3")
@@ -154,24 +156,26 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5jk8g"]
 radius = 28.0
-height = 132.0
+height = 142.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sa0oo"]
-radius = 315.006
+radius = 427.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vo6h2"]
 radius = 36.0001
-height = 512.0
+height = 572.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8xsxn"]
 size = Vector2(150, 47)
 
 [node name="foxBody" type="CharacterBody2D"]
 script = ExtResource("1_yh4na")
+spike_left = ExtResource("2_7tmxf")
+spike_right = ExtResource("3_onlnn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_a2ybe")
-animation = &"sit"
+animation = &"hit"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 8)
@@ -197,12 +201,18 @@ shape = SubResource("RectangleShape2D_8xsxn")
 
 [node name="Node" type="Node" parent="."]
 
-[node name="Marker2D" type="Marker2D" parent="Node"]
+[node name="Marker2DL" type="Marker2D" parent="Node"]
+position = Vector2(-213, 4)
 
-[node name="Marker2D2" type="Marker2D" parent="Node"]
+[node name="Marker2DR" type="Marker2D" parent="Node"]
+position = Vector2(211, 4)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
 
 [connection signal="body_entered" from="detector" to="." method="_on_detector_body_entered"]
 [connection signal="body_exited" from="detector" to="." method="_on_detector_body_exited"]
 [connection signal="body_entered" from="hit_distance" to="." method="_on_hit_distance_body_entered"]
 [connection signal="body_exited" from="hit_distance" to="." method="_on_hit_distance_body_exited"]
 [connection signal="body_entered" from="blocks_collision" to="." method="_on_blocks_collision_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

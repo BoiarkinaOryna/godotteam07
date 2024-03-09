@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+var speed = 300.0
 const JUMP_VELOCITY = -500.0
 var animation
 var animated_sprite
@@ -26,7 +26,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * speed
 		#print("direction == true")
 		if direction == 1:
 			animated_sprite.flip_h = false
@@ -40,7 +40,7 @@ func _physics_process(delta):
 			animation.play("jump")
 		
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, speed)
 		if is_on_floor():
 			#print("direction != true")
 			animation.play("idle")
