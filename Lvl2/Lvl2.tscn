@@ -587,12 +587,12 @@ scroll_offset = Vector2(-172.502, -212.066)
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
-motion_scale = Vector2(0.5, 0.5)
+motion_scale = Vector2(0.5, 1)
 motion_mirroring = Vector2(2067, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 texture_filter = 1
-position = Vector2(1032, 216)
+position = Vector2(1030, 236)
 scale = Vector2(0.985714, 1.39)
 texture = ExtResource("1_08kii")
 

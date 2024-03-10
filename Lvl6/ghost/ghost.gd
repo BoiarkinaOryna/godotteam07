@@ -5,6 +5,7 @@ var chase = false
 var speed = 125
 var stop = 0
 var JUMP_VELOCITY = -350.0
+var colldown = false
 #var speed2 = 200
 
 func _on_detector_body_entered(body):
@@ -27,8 +28,8 @@ func _physics_process(delta):
 	
 	var player = $"../Player"
 	var direction = (player.position - self.position).normalized()
-	print(player.position)
-	print(self.position)
+	#print(player.position)
+	#print(self.position)
 	#1251
 	if chase == true:
 		if direction.x >= 0:
@@ -41,7 +42,12 @@ func _physics_process(delta):
 				#$AnimatedSprite2D.flip_h = velocity.x < 0
 				velocity.x = direction.x * speed
 			else:
-				$AnimatedSprite2D.play('attack')
+				$Timer.start()
+				if colldown:
+					$AnimatedSprite2D.play('attack')
+					player.heart_points -= 1
+					print(123)
+					colldown = false
 		elif direction.x < 0:
 			#if self.position.x >= 1245:
 				#velocity.x = direction.x * stop
@@ -53,9 +59,18 @@ func _physics_process(delta):
 				$AnimatedSprite2D.play('walk')
 				velocity.x = direction.x * speed
 			else:
-				#$AnimatedSprite2D.flip_h = velocity.x > 0
-				$AnimatedSprite2D.play('attack')
+				$Timer.start()
+				if colldown:
+					#$AnimatedSprite2D.flip_h = velocity.x > 0
+					$AnimatedSprite2D.play('attack')
+					player.heart_points -= 1
+					print(123)
+					colldown = false
 	else:
 		velocity.x = 0
 		$AnimatedSprite2D.play('idle')
 	move_and_slide()
+
+
+func _on_timer_timeout():
+	colldown = true

@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 var sit_flag = false
 var body_entered = false
 var hit_distance_entered = false
@@ -12,8 +11,8 @@ const JUMP_VELOCITY = -500.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-func _on_timer_timeout():
-	player_ret_speed = true
+#func _on_timer_timeout():
+	#player_ret_speed = true
 	
 
 func _on_detector_body_entered(body):
@@ -65,9 +64,12 @@ func _physics_process(delta):
 					add_child(spkr)
 					spkl.transform = $Node/Marker2DL.global_transform
 					spkr.transform = $Node/Marker2DR.global_transform
-					player.speed = 170
+					player.speed = 50
+					player.jump_velocity = 0
 				else:
-					$Timer.start()
+					#$Timer.start()
+					player.speed = 300
+					player.jump_velocity = -500
 
 					velocity.x = direction.x * fox_speed
 					$AnimatedSprite2D.flip_h = false
@@ -83,9 +85,12 @@ func _physics_process(delta):
 					add_child(spkr)
 					spkl.transform = $Node/Marker2DL.global_transform
 					spkr.transform = $Node/Marker2DR.global_transform
-					player.speed = 170
+					player.speed = 50
+					player.jump_velocity = 0
 				else:
-					$Timer.start()
+					#$Timer.start()
+					player.speed = 300
+					player.jump_velocity = -500
 					
 					velocity.x = direction.x * fox_speed
 					$AnimatedSprite2D.flip_h = true
@@ -112,47 +117,3 @@ func _physics_process(delta):
 				$AnimatedSprite2D.flip_h = false
 
 	move_and_slide()
-	
-
-
-
-
-
-
-	#if body_entered == true:
-		#if direction.x < 0:
-			#if not is_on_wall():
-				#if hit_distance_entered == true:
-					#velocity.x = 0
-					#$AnimatedSprite2D.play('hit')
-					#$Timer.start()
-				#else:
-					#velocity.x = direction.x * SPEED
-					#$AnimatedSprite2D.flip_h = false
-					#$AnimatedSprite2D.play('run')
-		#elif direction.x >= 0:
-			#if not is_on_wall():
-				#if hit_distance_entered == true:
-					#velocity.x = 0
-					#$AnimatedSprite2D.play('hit')
-					#$Timer.start()
-				#else:
-					#velocity.x = direction.x * SPEED
-					#$AnimatedSprite2D.flip_h = true
-					#$AnimatedSprite2D.play('run')
-	#else:
-		#if self.position.x >= 1396 and self.position.x <= 1496:
-			#velocity.x = 0
-			#if not sit_flag:
-				#$AnimatedSprite2D.play('sit')
-				#sit_flag = true
-			#else:
-				#$AnimatedSprite2D.play('idle')
-			#
-		#else:
-			#if self.position.x <= 1396:
-				#velocity.x = 1 * SPEED
-				#$AnimatedSprite2D.flip_h = true
-			#elif self.position.x >= 1496:
-				#velocity.x = -1 * SPEED
-				#$AnimatedSprite2D.flip_h = false
