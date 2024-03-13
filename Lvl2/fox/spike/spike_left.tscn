@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=3 uid="uid://bs5wcqafcca4v"]
 
 [ext_resource type="Script" path="res://Lvl2/fox/spike/spike_left.gd" id="1_8n3fx"]
-[ext_resource type="Texture2D" uid="uid://begse8ryrn387" path="res://Lvl2/Assets/Forest_grass1.png" id="1_v0p7i"]
-[ext_resource type="Texture2D" uid="uid://c7ca8uiutrk2c" path="res://Lvl2/Assets/Forest_grass3.png" id="2_ixgf1"]
-[ext_resource type="Texture2D" uid="uid://crb8qnhojnc3r" path="res://Lvl2/Assets/Forest_grass2.png" id="3_cqsgr"]
+[ext_resource type="Texture2D" uid="uid://dbqdnsxl86ch0" path="res://Lvl2/Assets/Fox_grass1.png" id="2_yk7l3"]
+[ext_resource type="Texture2D" uid="uid://c2nj8ev31y3bv" path="res://Lvl2/Assets/Fox_grass2.png" id="3_4mlme"]
+[ext_resource type="Texture2D" uid="uid://d3toj2oqqu1cg" path="res://Lvl2/Assets/Fox_grass3.png" id="4_a35x3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6daqi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_v0p7i")
+"texture": ExtResource("2_yk7l3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_ixgf1")
+"texture": ExtResource("3_4mlme")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_cqsgr")
+"texture": ExtResource("4_a35x3")
 }],
 "loop": true,
 "name": &"idle",
@@ -24,7 +24,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ixat0"]
 radius = 23.0
-height = 258.0
+height = 196.0
 
 [node name="Spike_left" type="Area2D"]
 position = Vector2(-2, 92)
@@ -32,12 +32,14 @@ script = ExtResource("1_8n3fx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1, 0)
-scale = Vector2(4, 1)
+position = Vector2(1.99999, 3.5)
+scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_6daqi")
 animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.832537
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 9)
+position = Vector2(2, 13)
 rotation = -1.5708
 shape = SubResource("CapsuleShape2D_ixat0")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dctrhnncxv5td" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (5).png" id="2_hm5r1"]
 [ext_resource type="Texture2D" uid="uid://53d3os8bhpv6" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (4).png" id="3_7xkes"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="3_qxy7c"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="4_6xwsc"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6.tscn" id="4_6xwsc"]
 [ext_resource type="Texture2D" uid="uid://dnmt5cbqeqpd" path="res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png" id="6_ttv3n"]
 [ext_resource type="PackedScene" uid="uid://brailqkufbado" path="res://Lvl6/ghost/ghost.tscn" id="7_1ednh"]
 
@@ -326,32 +326,131 @@ position = Vector2(0, -288)
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-59.1085, -238.605)
 
+[node name="floor" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -576)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/floor"]
+position = Vector2(560, 464)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("3_7xkes")
+
+[node name="floor2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -576)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/floor2"]
+position = Vector2(560, 464)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("3_7xkes")
+
 [node name="buttom" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -576)
-motion_mirroring = Vector2(998, 700)
+motion_mirroring = Vector2(1996, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom"]
 position = Vector2(560, -168)
-scale = Vector2(2.079, 2.5)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -576)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom2"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -891)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom3"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -891)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom4"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -259)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom5"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom6" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -259)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom6"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom7" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -1208)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom7"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom8" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -1208)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom8"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom9" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, -1449)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom9"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("1_14kt2")
+
+[node name="buttom10" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -1449)
+motion_mirroring = Vector2(1996, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom10"]
+position = Vector2(560, -168)
+scale = Vector2(2.08, 2.5)
 texture = ExtResource("1_14kt2")
 
 [node name="top" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -576)
-motion_mirroring = Vector2(998, 0)
+motion_mirroring = Vector2(1996, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/top"]
 position = Vector2(560, -905)
-scale = Vector2(2.079, 2.5)
+scale = Vector2(2.08, 2.501)
 texture = ExtResource("2_hm5r1")
 
-[node name="floor" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(0, -576)
-motion_mirroring = Vector2(998, 0)
+[node name="top2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(998, -576)
+motion_mirroring = Vector2(1996, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/floor"]
-position = Vector2(560, 464)
-scale = Vector2(2.079, 2.5)
-texture = ExtResource("3_7xkes")
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/top2"]
+position = Vector2(560, -905)
+scale = Vector2(2.08, 2.5)
+texture = ExtResource("2_hm5r1")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="ParallaxBackground"]
 color = Color(0.27451, 0.27451, 0.27451, 1)
@@ -364,12 +463,12 @@ layer_0/tile_data = PackedInt32Array(851979, 0, 6, 851980, 0, 6, 851981, 0, 6, 8
 
 [node name="Player" parent="." instance=ExtResource("4_6xwsc")]
 visibility_layer = 1023
-position = Vector2(1020, -1414)
+position = Vector2(1859, -1389)
 platform_floor_layers = 4294967041
 platform_wall_layers = 1
 
 [node name="ghost" parent="." instance=ExtResource("7_1ednh")]
-position = Vector2(1591, -1411)
+position = Vector2(1160, -1451)
 
 [node name="platforms" type="Node2D" parent="."]
 position = Vector2(0, -288)
@@ -466,15 +565,15 @@ libraries = {
 autoplay = "idle"
 
 [node name="platform6" type="StaticBody2D" parent="platforms"]
-position = Vector2(2714, 204)
+position = Vector2(2711, 220)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platforms/platform6"]
-position = Vector2(800, -500)
+position = Vector2(800, -587.819)
 shape = SubResource("RectangleShape2D_dy5gr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="platforms/platform6"]
-position = Vector2(800, -500)
+position = Vector2(800, -587.819)
 scale = Vector2(0.716418, 0.6)
 sprite_frames = SubResource("SpriteFrames_lh831")
 animation = &"idle"

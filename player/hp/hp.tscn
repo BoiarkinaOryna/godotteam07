@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bwhamk06a6n3g"]
+[gd_scene load_steps=14 format=3 uid="uid://bwhamk06a6n3g"]
 
 [ext_resource type="Texture2D" uid="uid://b7e4aecxaw5ee" path="res://player/hp/img/minus9hearts.png" id="1_3yosr"]
 [ext_resource type="Texture2D" uid="uid://c2fdvhfb38xek" path="res://player/hp/img/minus8hearts.png" id="2_3mfi1"]
@@ -6,7 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cnfheahdj04c7" path="res://player/hp/img/minus0hearts.png" id="4_jahwa"]
 [ext_resource type="Texture2D" uid="uid://bub4bfliicasb" path="res://player/hp/img/minus6hearts.png" id="4_mk8fy"]
 [ext_resource type="Script" path="res://player/hp/hp.gd" id="5_pbudi"]
+[ext_resource type="Texture2D" uid="uid://5n7q6crcxpl7" path="res://player/hp/img/minus5hearts.png" id="5_s3gpy"]
 [ext_resource type="Texture2D" uid="uid://bve0ljddwjsbt" path="res://player/hp/img/minus1hearts.png" id="5_w86ly"]
+[ext_resource type="Texture2D" uid="uid://bepthp2jrkn7" path="res://player/hp/img/minus4hearts.png" id="6_7be5c"]
+[ext_resource type="Texture2D" uid="uid://b54hu01nehgej" path="res://player/hp/img/minus3hearts.png" id="7_7acax"]
+[ext_resource type="Texture2D" uid="uid://cdabhuh3lf4v1" path="res://player/hp/img/minus2hearts.png" id="8_oae8j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5555w"]
 animations = [{
@@ -44,6 +48,38 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("5_s3gpy")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_7be5c")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7acax")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_oae8j")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("5_w86ly")
 }],
 "loop": true,
@@ -65,7 +101,7 @@ animations = [{
 
 [node name="Hp" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5555w")
-animation = &"9"
+animation = &"4"
 autoplay = "9"
 script = ExtResource("5_pbudi")
 

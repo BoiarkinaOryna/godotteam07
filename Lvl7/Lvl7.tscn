@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dkclhcyd6i8aw" path="res://Lvl7/Assets/BgLvl7 (2).png" id="1_rt43u"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_i252u"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="3_twilj"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6.tscn" id="3_twilj"]
 [ext_resource type="Texture2D" uid="uid://bqreeej42wonk" path="res://Lvl7/Assets/Wizzards.png" id="4_v3udp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7b3y"]

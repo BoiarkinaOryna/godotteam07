@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bdtv3qgr4w0hs" path="res://1Lvl/Acsests/Untitled 02-02-2024 04-34-28 (4).png" id="4_h8p35"]
 [ext_resource type="Texture2D" uid="uid://d3uje80kqvubj" path="res://1Lvl/Acsests/Untitled 02-04-2024 12-23-34 (1) (2).png" id="4_m0rav"]
 [ext_resource type="Texture2D" uid="uid://dfye5ynexlbxe" path="res://1Lvl/Acsests/Untitled 02-02-2024 08-41-43 (7).png" id="5_0wj4q"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player.tscn" id="5_cpj80"]
+[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6.tscn" id="5_cpj80"]
 [ext_resource type="Texture2D" uid="uid://pcfcrvkf8ggu" path="res://1Lvl/Acsests/Dark_dark_sky.png" id="6_1gfgn"]
 [ext_resource type="Texture2D" uid="uid://dj2jp1du6d775" path="res://1Lvl/Acsests/Untitled 02-05-2024 05-27-39 (4).png" id="6_ntbfm"]
 [ext_resource type="Texture2D" uid="uid://dvneryu0vgvsl" path="res://1Lvl/Acsests/spikes.png" id="6_uwb4u"]
@@ -496,12 +496,21 @@ scroll_offset = Vector2(0, -189.078)
 [node name="DarkForest" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
 position = Vector2(3201, -83)
-motion_mirroring = Vector2(2003, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DarkForest"]
 texture_filter = 1
-position = Vector2(1741, 403)
-scale = Vector2(1.06147, 1.8623)
+position = Vector2(1741, 450.5)
+scale = Vector2(1.06147, 1.41309)
+texture = ExtResource("4_h8p35")
+
+[node name="DarkForest2" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(3201, -83)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/DarkForest2"]
+texture_filter = 1
+position = Vector2(3742, 442.5)
+scale = Vector2(1.06147, 1.42871)
 texture = ExtResource("4_h8p35")
 
 [node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
