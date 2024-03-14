@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://53lbiewiddkr"]
+
+[ext_resource type="Texture2D" uid="uid://daqmo34c87a20" path="res://Lvl2/tulip/tulip7.png" id="1_yu4w7"]
+[ext_resource type="Texture2D" uid="uid://0xgwvjxxc5xd" path="res://Lvl2/tulip/tulip4.png" id="2_23x7j"]
+[ext_resource type="Texture2D" uid="uid://cwv4q12eyd007" path="res://Lvl2/tulip/tulip5.png" id="3_us4dw"]
+[ext_resource type="Texture2D" uid="uid://drdpupgf03pyk" path="res://Lvl2/tulip/tulip6.png" id="4_w3n6v"]
+[ext_resource type="Texture2D" uid="uid://cvhcsqhsqhpdx" path="res://Lvl2/tulip/tulip1.png" id="5_rvoq0"]
+[ext_resource type="Texture2D" uid="uid://cirth65iconq8" path="res://Lvl2/tulip/tulip2.png" id="6_ydab4"]
+[ext_resource type="Texture2D" uid="uid://k5enjsgpxp6x" path="res://Lvl2/tulip/tulip3.png" id="7_tbtej"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_64h5o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yu4w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_23x7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_us4dw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w3n6v")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_rvoq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ydab4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tbtej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ydab4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}]
+
+[node name="Tulip" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.0625, 3.125)
+sprite_frames = SubResource("SpriteFrames_64h5o")
+animation = &"hit"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.393507

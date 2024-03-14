@@ -15,9 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://cej8eanjcws40" path="res://Lvl2/Assets/Forest_grass3.png" id="10_1dnx6"]
 [ext_resource type="Texture2D" uid="uid://c3dvmt0fonvj1" path="res://Lvl2/Assets/cloud1.png" id="10_34wju"]
 [ext_resource type="Texture2D" uid="uid://bkppjk6po83p7" path="res://Lvl2/Assets/cloud2.png" id="11_2hqna"]
-[ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6.tscn" id="12_fdcci"]
 [ext_resource type="PackedScene" uid="uid://bgn4yk2job4n3" path="res://Lvl2/fox/fox.tscn" id="17_wpxjh"]
 [ext_resource type="PackedScene" uid="uid://reddlsia24is" path="res://Lvl2/flower/flower.tscn" id="18_3bw1y"]
+[ext_resource type="PackedScene" uid="uid://dmc82hfrd3b0q" path="res://player/player2/player2.tscn" id="18_m1pjo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
@@ -1117,10 +1117,6 @@ sprite_frames = SubResource("SpriteFrames_t58oq")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Player" parent="." instance=ExtResource("12_fdcci")]
-texture_filter = 1
-position = Vector2(3290, 480)
-
 [node name="enimies" type="Node2D" parent="."]
 texture_filter = 1
 
@@ -1291,3 +1287,6 @@ position = Vector2(1237, 534)
 [node name="flower" parent="." instance=ExtResource("18_3bw1y")]
 texture_filter = 1
 position = Vector2(3931, 481)
+
+[node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
+position = Vector2(4746, 215)

@@ -10,11 +10,11 @@ func _ready():
 	$Timer1.start()
 
 func _on_detector_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		body_entered = true
 
 func _on_detector_body_exited(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		body_entered = false
 
 func _on_timer_1_timeout():
@@ -32,7 +32,7 @@ func _on_timer_2_timeout():
 		bul.transform = $Node/Marker2D.global_transform
 	
 func _physics_process(_delta):
-	var player = $"../Player"
+	var player = $"../Player2"
 	var direction = (player.position - self.position).normalized()
 	$AnimatedSprite2D.flip_h = false
 	#print(player.position)

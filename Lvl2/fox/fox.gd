@@ -15,7 +15,7 @@ const JUMP_VELOCITY = -500.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _on_detector_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		body_entered = true
 
 func _on_detector_body_exited(body):
@@ -23,15 +23,15 @@ func _on_detector_body_exited(body):
 		body_entered = false
 
 func _on_hit_distance_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		hit_distance_entered = true
 
 func _on_hit_distance_body_exited(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		hit_distance_entered = false
 
 func _on_blocks_collision_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		body_entered = true
 	else:
 		velocity.y = JUMP_VELOCITY
@@ -41,7 +41,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	var player = $"../Player"
+	var player = $"../Player2"
 	#print(player.speed)
 	var direction = (player.position - self.position).normalized()
 	#print(player.position)
