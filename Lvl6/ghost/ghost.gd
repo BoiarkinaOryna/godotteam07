@@ -5,9 +5,9 @@ var chase = false
 var speed = 125
 var stop = 0
 var JUMP_VELOCITY = -350.0
-var colldown = false
+var hp_counter = 0
+
 @onready var player = $"../Player"
-#var speed2 = 200
 
 func _on_detector_body_entered(body):
 	if body.name == 'Player':
@@ -22,65 +22,122 @@ func _on_body_coll_body_entered(body):
 		chase = true
 	else:
 		velocity.y = JUMP_VELOCITY
-
-
-func _timer():
-	$Timer.start()
+	
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	
-	
 	var direction = (player.position - self.position).normalized()
 	#print(player.position)
 	#print(self.position)
-	#1251
-
-	
 
 	if chase == true:
 		if direction.x >= 0:
 			if not is_on_wall():
-				#print(self.position.x)
-				#velocity.x = direction.x * speed2
-				$AnimatedSprite2D.flip_h = velocity.x < 0
+				$AnimatedSprite2D.flip_h = false
 				$AnimatedSprite2D.play('walk')
-				
-				#$AnimatedSprite2D.flip_h = velocity.x < 0
 				velocity.x = direction.x * speed
 			else:
-				print(colldown)
-				_timer()
-				#if colldown:
-					#$AnimatedSprite2D.play('attack')
-					#player.heart_points -= 1
-					#print(123)
-					#colldown = false
+				$AnimatedSprite2D.play('attack')
+				
+				hp_counter += 1
+				if hp_counter == 50:
+					if player.heart_points == 9:
+						player.heart_points = 8
+					else:
+						hp_counter = 100
+				if hp_counter == 100:
+					if player.heart_points == 8:
+						player.heart_points = 7
+					else:
+						hp_counter = 150
+				if hp_counter == 150:
+					if player.heart_points == 7:
+						player.heart_points = 6
+					else:
+						hp_counter = 200
+				if hp_counter == 200:
+					if player.heart_points == 6:
+						player.heart_points = 5
+					else:
+						hp_counter = 250
+				if hp_counter == 250:
+					if player.heart_points == 5:
+						player.heart_points = 4
+					else:
+						hp_counter = 300
+				if hp_counter == 300:
+					if player.heart_points == 4:
+						player.heart_points = 3
+					else:
+						hp_counter = 350
+				if hp_counter == 350:
+					if player.heart_points == 3:
+						player.heart_points = 2
+					else:
+						hp_counter = 400
+				if hp_counter == 400:
+					if player.heart_points == 2:
+						player.heart_points = 1
+					else:
+						hp_counter = 450
+				if hp_counter == 450:
+					if player.heart_points == 1:
+						player.heart_points = 0
 		elif direction.x < 0:
 
 			if not is_on_wall():
-				#print('two')
-				$AnimatedSprite2D.flip_h = velocity.x < 0
+				$AnimatedSprite2D.flip_h = true
 				$AnimatedSprite2D.play('walk')
 				velocity.x = direction.x * speed
 			else:
-				print("ghost colldown =", colldown)
-				_timer()
+				$AnimatedSprite2D.play('attack')
 				
+				hp_counter += 1
+				if hp_counter == 50:
+					if player.heart_points == 9:
+						player.heart_points = 8
+					else:
+						hp_counter = 100
+				if hp_counter == 100:
+					if player.heart_points == 8:
+						player.heart_points = 7
+					else:
+						hp_counter = 150
+				if hp_counter == 150:
+					if player.heart_points == 7:
+						player.heart_points = 6
+					else:
+						hp_counter = 200
+				if hp_counter == 200:
+					if player.heart_points == 6:
+						player.heart_points = 5
+					else:
+						hp_counter = 250
+				if hp_counter == 250:
+					if player.heart_points == 5:
+						player.heart_points = 4
+					else:
+						hp_counter = 300
+				if hp_counter == 300:
+					if player.heart_points == 4:
+						player.heart_points = 3
+					else:
+						hp_counter = 350
+				if hp_counter == 350:
+					if player.heart_points == 3:
+						player.heart_points = 2
+					else:
+						hp_counter = 400
+				if hp_counter == 400:
+					if player.heart_points == 2:
+						player.heart_points = 1
+					else:
+						hp_counter = 450
+				if hp_counter == 450:
+					if player.heart_points == 1:
+						player.heart_points = 0
 	else:
 		velocity.x = 0
 		$AnimatedSprite2D.play('idle')
 	move_and_slide()
-
-
-func _on_timer_timeout():
-	colldown = true
-	#print(colldown)
-
-
-func _on_area_2d_body_entered(body):
-	if body.name == 'Player':
-		if colldown:
-			$AnimatedSprite2D.play('attack')
-			player.heart_points -= 1
-			colldown = false

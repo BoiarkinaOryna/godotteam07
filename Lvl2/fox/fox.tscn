@@ -207,12 +207,8 @@ position = Vector2(-213, 4)
 [node name="Marker2DR" type="Marker2D" parent="Node"]
 position = Vector2(211, 4)
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
-
 [connection signal="body_entered" from="detector" to="." method="_on_detector_body_entered"]
 [connection signal="body_exited" from="detector" to="." method="_on_detector_body_exited"]
 [connection signal="body_entered" from="hit_distance" to="." method="_on_hit_distance_body_entered"]
 [connection signal="body_exited" from="hit_distance" to="." method="_on_hit_distance_body_exited"]
 [connection signal="body_entered" from="blocks_collision" to="." method="_on_blocks_collision_body_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

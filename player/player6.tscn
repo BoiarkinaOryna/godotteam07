@@ -158,7 +158,7 @@ position = Vector2(10, -30)
 scale = Vector2(2.25805e+12, -7.41933e+11)
 
 [node name="hp" parent="." instance=ExtResource("4_yygqs")]
-position = Vector2(44, -77)
+position = Vector2(33, -51)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2

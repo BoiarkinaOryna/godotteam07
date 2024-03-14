@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bs5wcqafcca4v"]
 
-[ext_resource type="Script" path="res://Lvl2/fox/spike/spike_left.gd" id="1_8n3fx"]
+[ext_resource type="Script" path="res://spike_left.gd" id="1_aii5h"]
 [ext_resource type="Texture2D" uid="uid://dbqdnsxl86ch0" path="res://Lvl2/Assets/Fox_grass1.png" id="2_yk7l3"]
 [ext_resource type="Texture2D" uid="uid://c2nj8ev31y3bv" path="res://Lvl2/Assets/Fox_grass2.png" id="3_4mlme"]
 [ext_resource type="Texture2D" uid="uid://d3toj2oqqu1cg" path="res://Lvl2/Assets/Fox_grass3.png" id="4_a35x3"]
@@ -28,7 +28,7 @@ height = 196.0
 
 [node name="Spike_left" type="Area2D"]
 position = Vector2(-2, 92)
-script = ExtResource("1_8n3fx")
+script = ExtResource("1_aii5h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

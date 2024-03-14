@@ -2,7 +2,9 @@ extends Area2D
 
 var speed = 500
 var tsx = 1
-
+#player = load("res://player/player6.tscn").instantiate()
+#player.global_points = 8
+	
 func _physics_process(delta):
 	transform.x.x = tsx
 	$AnimatedSprite2D.flip_h = true
@@ -13,4 +15,5 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.name == 'Player':
+		body.heart_points -= 1
 		queue_free()
