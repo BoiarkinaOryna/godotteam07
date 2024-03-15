@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2bxywrm6ivnb"]
+[gd_scene load_steps=17 format=3 uid="uid://c2bxywrm6ivnb"]
 
 [ext_resource type="Texture2D" uid="uid://c82wxi365cggq" path="res://Lvl5/Assets/Cave.png" id="1_hkq86"]
 [ext_resource type="Texture2D" uid="uid://cs2ug00tsb3q5" path="res://Lvl3/Assets/Cave_entrance.png" id="2_lrmns"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://ce6m0ct3r0a8c" path="res://player/player3/player3.tscn" id="9_n4gim"]
 [ext_resource type="Texture2D" uid="uid://b5gv5iphiv4ib" path="res://Lvl3/Assets/stone6.png" id="9_qdqih"]
 [ext_resource type="Texture2D" uid="uid://dwygsg30bshxu" path="res://Lvl3/Assets/stone7.png" id="10_kaq2e"]
+[ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="10_n0adv"]
+[ext_resource type="PackedScene" uid="uid://be2mu2jfbynxp" path="res://Lvl3/bat/bat.tscn" id="11_xy6ul"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6nk7"]
 texture = ExtResource("3_xmyla")
@@ -229,6 +231,28 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_f6nk7")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4lru"]
+atlas = ExtResource("10_n0adv")
+region = Rect2(256, 768, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meo2u"]
+atlas = ExtResource("10_n0adv")
+region = Rect2(512, 768, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfu1d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4lru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meo2u")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.5
+}]
+
 [node name="Lvl3" type="Node2D"]
 texture_filter = 1
 
@@ -401,4 +425,16 @@ position = Vector2(1, -2)
 polygon = PackedVector2Array(26, -29, 44, -1, 60, 32, 117, 99, 135, 112, 144, 130, 136, 198, 78, 219, 11, 220, -10, 119, -19, 87, -11, 43, -2, 21)
 
 [node name="Player3" parent="." instance=ExtResource("9_n4gim")]
-position = Vector2(4274, -597)
+position = Vector2(2854, -314)
+
+[node name="npc" type="Node2D" parent="."]
+
+[node name="GoblinPrincipal" type="AnimatedSprite2D" parent="npc"]
+position = Vector2(1104, 388)
+sprite_frames = SubResource("SpriteFrames_vfu1d")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.771185
+
+[node name="Bat" parent="." instance=ExtResource("11_xy6ul")]
+position = Vector2(2638, -447)

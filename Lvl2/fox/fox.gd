@@ -19,7 +19,7 @@ func _on_detector_body_entered(body):
 		body_entered = true
 
 func _on_detector_body_exited(body):
-	if body.name == "Player":
+	if body.name == "Player2":
 		body_entered = false
 
 func _on_hit_distance_body_entered(body):

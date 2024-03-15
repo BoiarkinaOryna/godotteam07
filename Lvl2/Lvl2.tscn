@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bftpcwqoygeb3"]
+[gd_scene load_steps=47 format=3 uid="uid://bftpcwqoygeb3"]
 
 [ext_resource type="Texture2D" uid="uid://clxlbbt5uagij" path="res://Lvl2/Assets/Field.png" id="1_08kii"]
 [ext_resource type="Texture2D" uid="uid://f8u2233uftu7" path="res://Lvl2/Assets/cloud6.png" id="2_6q2um"]
@@ -18,6 +18,8 @@
 [ext_resource type="PackedScene" uid="uid://bgn4yk2job4n3" path="res://Lvl2/fox/fox.tscn" id="17_wpxjh"]
 [ext_resource type="PackedScene" uid="uid://reddlsia24is" path="res://Lvl2/flower/flower.tscn" id="18_3bw1y"]
 [ext_resource type="PackedScene" uid="uid://dmc82hfrd3b0q" path="res://player/player2/player2.tscn" id="18_m1pjo"]
+[ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="19_15eic"]
+[ext_resource type="PackedScene" uid="uid://53lbiewiddkr" path="res://Lvl2/tulip/tulip.tscn" id="20_voapi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
@@ -571,6 +573,56 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tix4"]
 radius = 24.0
 height = 64.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhnr0"]
+atlas = ExtResource("19_15eic")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cybf4"]
+atlas = ExtResource("19_15eic")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbt5v"]
+atlas = ExtResource("19_15eic")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ymgb"]
+atlas = ExtResource("19_15eic")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3xh4"]
+atlas = ExtResource("19_15eic")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v33qr"]
+atlas = ExtResource("19_15eic")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o04pu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhnr0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cybf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbt5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ymgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3xh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v33qr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
 
 [node name="Lvl2" type="Node2D"]
 texture_filter = 1
@@ -1280,13 +1332,26 @@ position = Vector2(800, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
+[node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
+position = Vector2(260, 481)
+
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1
-position = Vector2(1237, 534)
+position = Vector2(1873, 519)
 
 [node name="flower" parent="." instance=ExtResource("18_3bw1y")]
 texture_filter = 1
 position = Vector2(3931, 481)
 
-[node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(4746, 215)
+[node name="npc" type="Node2D" parent="."]
+
+[node name="FairyPrincipal" type="AnimatedSprite2D" parent="npc"]
+position = Vector2(115, 465)
+scale = Vector2(0.453125, 0.410156)
+sprite_frames = SubResource("SpriteFrames_o04pu")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.785133
+
+[node name="Tulip" parent="." instance=ExtResource("20_voapi")]
+position = Vector2(5537, 513)

@@ -13,6 +13,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _ready():
 	animation = get_node("AnimatedSprite2D")
 	animated_sprite = get_node("AnimatedSprite2D")
+	Dialogic.start("prefaceTimeline")
 
 func _on_timer_timeout():
 	jump_animation = true
