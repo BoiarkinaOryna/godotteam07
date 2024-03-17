@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://bftpcwqoygeb3"]
+[gd_scene load_steps=50 format=3 uid="uid://bftpcwqoygeb3"]
 
 [ext_resource type="Texture2D" uid="uid://clxlbbt5uagij" path="res://Lvl2/Assets/Field.png" id="1_08kii"]
 [ext_resource type="Texture2D" uid="uid://f8u2233uftu7" path="res://Lvl2/Assets/cloud6.png" id="2_6q2um"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dmc82hfrd3b0q" path="res://player/player2/player2.tscn" id="18_m1pjo"]
 [ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="19_15eic"]
 [ext_resource type="PackedScene" uid="uid://53lbiewiddkr" path="res://Lvl2/tulip/tulip.tscn" id="20_voapi"]
+[ext_resource type="PackedScene" uid="uid://bt7jmviwew57s" path="res://door.tscn" id="21_wijeq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
@@ -574,50 +575,64 @@ animations = [{
 radius = 24.0
 height = 64.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hhnr0"]
-atlas = ExtResource("19_15eic")
-region = Rect2(0, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cybf4"]
-atlas = ExtResource("19_15eic")
-region = Rect2(256, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wbt5v"]
-atlas = ExtResource("19_15eic")
-region = Rect2(512, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3ymgb"]
-atlas = ExtResource("19_15eic")
-region = Rect2(768, 0, 256, 256)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_p3xh4"]
 atlas = ExtResource("19_15eic")
 region = Rect2(0, 256, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_v33qr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r3ud"]
+atlas = ExtResource("19_15eic")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_brm8b"]
+atlas = ExtResource("19_15eic")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82kjh"]
+atlas = ExtResource("19_15eic")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkies"]
+atlas = ExtResource("19_15eic")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqhsk"]
+atlas = ExtResource("19_15eic")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwmw1"]
 atlas = ExtResource("19_15eic")
 region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0moc"]
+atlas = ExtResource("19_15eic")
+region = Rect2(512, 256, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o04pu"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hhnr0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cybf4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wbt5v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3ymgb")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_p3xh4")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_v33qr")
+"texture": SubResource("AtlasTexture_4r3ud")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_brm8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82kjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkies")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqhsk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwmw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0moc")
 }],
 "loop": true,
 "name": &"idle",
@@ -1188,22 +1203,6 @@ position = Vector2(804, 556)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="live_grass" type="StaticBody2D" parent="enimies"]
-texture_filter = 1
-position = Vector2(1328, 0)
-
-[node name="StaticBody2D39" type="StaticBody2D" parent="enimies/live_grass"]
-texture_filter = 1
-position = Vector2(-1328, 0)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass"]
-texture_filter = 1
-position = Vector2(308.75, 571.75)
-scale = Vector2(2.07813, 2.4375)
-sprite_frames = SubResource("SpriteFrames_t58oq")
-animation = &"idle"
-autoplay = "idle"
-
 [node name="live_grass2" type="StaticBody2D" parent="enimies"]
 texture_filter = 1
 position = Vector2(-3, -7)
@@ -1351,7 +1350,10 @@ scale = Vector2(0.453125, 0.410156)
 sprite_frames = SubResource("SpriteFrames_o04pu")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.785133
+frame_progress = 0.784173
 
 [node name="Tulip" parent="." instance=ExtResource("20_voapi")]
 position = Vector2(5537, 513)
+
+[node name="Door" parent="." instance=ExtResource("21_wijeq")]
+position = Vector2(537, 356)

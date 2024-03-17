@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://cat2nyx5jplcb"]
+[gd_scene load_steps=70 format=3 uid="uid://cat2nyx5jplcb"]
 
 [ext_resource type="Texture2D" uid="uid://dikb0t3ohp1r5" path="res://1Lvl/Acsests/sky.png" id="2_l7rsc"]
 [ext_resource type="Texture2D" uid="uid://dt77owu4ymtco" path="res://1Lvl/Acsests/sky2.png" id="3_eqmqh"]
@@ -29,7 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://bt7jmviwew57s" path="res://door.tscn" id="26_u11c6"]
 [ext_resource type="PackedScene" uid="uid://cmqxlr0w7e7y2" path="res://player/player1/player1.tscn" id="30_ed1lo"]
 [ext_resource type="Texture2D" uid="uid://cnkdqi6pwrgmq" path="res://1Lvl/Acsests/MicroChely.png" id="30_kdyge"]
-[ext_resource type="Texture2D" uid="uid://t2mfqkhoualf" path="res://img/photo_2024-02-03_19-59-28.jpg" id="31_0e4eu"]
+[ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="30_ojj35"]
 [ext_resource type="Texture2D" uid="uid://bk2p3vgulg20k" path="res://1Lvl/Acsests/Untitled 02-25-2024 06-26-36.png" id="31_xkwt8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hvn0"]
@@ -594,22 +594,15 @@ animations = [{
 radius = 32.0
 height = 80.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_keq4n"]
-atlas = ExtResource("31_0e4eu")
-region = Rect2(512, 512, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7dllh"]
-atlas = ExtResource("31_0e4eu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj682"]
+atlas = ExtResource("30_ojj35")
 region = Rect2(0, 512, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1enmp"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_keq4n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7dllh")
+"texture": SubResource("AtlasTexture_bj682")
 }],
 "loop": true,
 "name": &"idle",
@@ -628,9 +621,6 @@ layer_0/tile_data = PackedInt32Array(65535, 131072, 3, 131071, 131072, 3, 196607
 [node name="wolf" parent="." instance=ExtResource("25_u5ua7")]
 texture_filter = 1
 position = Vector2(7762, 397)
-
-[node name="Door" parent="." instance=ExtResource("26_u11c6")]
-position = Vector2(124, 502)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-3537.47, -58.2214)
@@ -682,8 +672,8 @@ position = Vector2(65, -75)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Village2"]
 texture_filter = 1
-position = Vector2(1924, 301.5)
-scale = Vector2(2.19531, 3.20703)
+position = Vector2(1924, 297)
+scale = Vector2(2.19531, 3.24219)
 texture = ExtResource("4_m0rav")
 
 [node name="Palace" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -693,8 +683,8 @@ position = Vector2(186, -101)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Palace"]
 z_as_relative = false
 texture_filter = 1
-position = Vector2(522.5, 315)
-scale = Vector2(2.80273, 3.125)
+position = Vector2(522.5, 311.5)
+scale = Vector2(2.80273, 3.15234)
 texture = ExtResource("6_ntbfm")
 
 [node name="LeftDaerSky" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -730,23 +720,23 @@ texture = ExtResource("4_m0rav")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Dima" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(10917.5, 182.5)
-scale = Vector2(0.466797, 0.588867)
+position = Vector2(10917.5, 158)
+scale = Vector2(0.466797, 0.636719)
 texture = ExtResource("10_2q6ku")
 
 [node name="Katya" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(11343, 191.5)
-scale = Vector2(0.480469, 0.584961)
+position = Vector2(11343, 161)
+scale = Vector2(0.480469, 0.644531)
 texture = ExtResource("11_640qm")
 
 [node name="Mykola" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(11766, 188.75)
-scale = Vector2(0.56836, 0.590332)
+position = Vector2(11766, 165)
+scale = Vector2(0.56836, 0.636719)
 texture = ExtResource("12_1wec8")
 
 [node name="WIt" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(12235, 222.5)
-scale = Vector2(0.96875, 1.18409)
+position = Vector2(12235, 194)
+scale = Vector2(0.96875, 1.31364)
 texture = ExtResource("13_yo6xu")
 
 [node name="Principal`sHall" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -755,8 +745,8 @@ position = Vector2(65, -76)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Principal`sHall"]
 texture_filter = 1
-position = Vector2(11508, 307)
-scale = Vector2(3.114, 3.03906)
+position = Vector2(11508, 285.5)
+scale = Vector2(3.114, 3.20703)
 texture = ExtResource("5_0wj4q")
 
 [node name="fair" type="Node2D" parent="."]
@@ -1358,4 +1348,7 @@ scale = Vector2(0.421875, 0.480469)
 sprite_frames = SubResource("SpriteFrames_1enmp")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.836326
+frame_progress = 0.11456
+
+[node name="Door" parent="." instance=ExtResource("26_u11c6")]
+position = Vector2(2118, 367)

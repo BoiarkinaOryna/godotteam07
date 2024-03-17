@@ -96,10 +96,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mfu6j"]
+radius = 4.0
+height = 8.0
 
-[node name="Area2D" type="Area2D"]
+[node name="HP" type="CanvasLayer"]
 
 [node name="Hp" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(563.062, 68.5)
+scale = Vector2(4.95343, 5.30769)
 sprite_frames = SubResource("SpriteFrames_5555w")
 animation = &"4"
 autoplay = "9"
@@ -108,4 +113,5 @@ script = ExtResource("5_pbudi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
 visibility_layer = 2
+position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_mfu6j")

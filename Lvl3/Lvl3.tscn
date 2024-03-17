@@ -261,11 +261,19 @@ scroll_offset = Vector2(-1859.7, 234)
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
-motion_mirroring = Vector2(2150, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_filter = 1
 position = Vector2(1592, -112)
+scale = Vector2(0.705729, 0.677083)
+texture = ExtResource("1_hkq86")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_filter = 1
+position = Vector2(3758, -112)
 scale = Vector2(0.705729, 0.677083)
 texture = ExtResource("1_hkq86")
 

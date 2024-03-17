@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://5lab3p7jort"]
+
+[ext_resource type="Texture2D" uid="uid://cun1dqet22riw" path="res://img/photo_2024-01-27_22-19-17.jpg" id="1_01vrl"]
+[ext_resource type="Texture2D" uid="uid://otx4oj2gygls" path="res://img/spikes.png" id="2_28kdl"]
+[ext_resource type="Script" path="res://Menu/Button.gd" id="3_fle74"]
+[ext_resource type="Script" path="res://Menu/Exit.gd" id="4_2jfdh"]
+[ext_resource type="Texture2D" uid="uid://c4vjt61q86vvr" path="res://img/door1.png" id="4_y682a"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(900.5, 501)
+scale = Vector2(1.40547, 1.55937)
+texture = ExtResource("1_01vrl")
+
+[node name="Reset" type="Button" parent="."]
+offset_left = 491.0
+offset_top = 255.0
+offset_right = 1295.0
+offset_bottom = 385.0
+icon = ExtResource("2_28kdl")
+script = ExtResource("3_fle74")
+
+[node name="Exit" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("4_y682a")
+script = ExtResource("4_2jfdh")
+
+[connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
