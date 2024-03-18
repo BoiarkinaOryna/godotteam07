@@ -7,18 +7,18 @@ var stop = 0
 var JUMP_VELOCITY = -350.0
 var hp_counter = 0
 
-@onready var player = $"../Player"
+@onready var player = $"../Player6"
 
 func _on_detector_body_entered(body):
-	if body.name == 'Player':
+	if body.name == 'Player6':
 		chase = true
 
 func _on_detector_body_exited(body):
-	if body.name == 'Player':
+	if body.name == 'Player6':
 		chase = false
 		
 func _on_body_coll_body_entered(body):
-	if body.name == 'Player':
+	if body.name == 'Player6':
 		chase = true
 	else:
 		velocity.y = JUMP_VELOCITY

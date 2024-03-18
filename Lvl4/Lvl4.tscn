@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://ccp7e4xwf4kqx"]
+[gd_scene load_steps=24 format=3 uid="uid://ccp7e4xwf4kqx"]
 
 [ext_resource type="Texture2D" uid="uid://b2ibmrjxon6p7" path="res://Lvl4/Acsests/Burning_elf_forest1.png" id="1_enaj2"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_1oekc"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://ddti0n0c4g681" path="res://Lvl4/Acsests/Burning_tree2.2.png" id="8_intrc"]
 [ext_resource type="Texture2D" uid="uid://cjb42o325kp5r" path="res://Lvl4/Acsests/Burning_tree2.png" id="9_xbb7b"]
 [ext_resource type="PackedScene" uid="uid://cndqhnrgsjkhv" path="res://player/player4/player4.tscn" id="11_p0ycm"]
+[ext_resource type="PackedScene" uid="uid://lasq5qp3kd3a" path="res://Lvl4/door4.tscn" id="12_ou1cu"]
+[ext_resource type="Script" path="res://Lvl4/door4.gd" id="13_yiafu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_myrxg"]
 texture = ExtResource("2_1oekc")
@@ -1028,5 +1030,9 @@ animation = &"idel"
 autoplay = "idel"
 flip_h = true
 
-[node name="Player2" parent="." instance=ExtResource("11_p0ycm")]
+[node name="Player4" parent="." instance=ExtResource("11_p0ycm")]
 position = Vector2(241, 383)
+
+[node name="Door" parent="." instance=ExtResource("12_ou1cu")]
+position = Vector2(62, 483)
+script = ExtResource("13_yiafu")

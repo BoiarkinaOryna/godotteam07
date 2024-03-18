@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bs14xheqi6nab"]
+[gd_scene load_steps=15 format=3 uid="uid://bs14xheqi6nab"]
 
 [ext_resource type="Texture2D" uid="uid://dkclhcyd6i8aw" path="res://Lvl7/Assets/BgLvl7 (2).png" id="1_rt43u"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_i252u"]
 [ext_resource type="PackedScene" uid="uid://nofhd2fs0jo1" path="res://player/player7/player7.tscn" id="4_rbk0k"]
 [ext_resource type="Texture2D" uid="uid://bqreeej42wonk" path="res://Lvl7/Assets/Wizzards.png" id="4_v3udp"]
+[ext_resource type="PackedScene" uid="uid://1152l1lxc0oc" path="res://Lvl7/door7.tscn" id="5_bkpyn"]
+[ext_resource type="Script" path="res://Lvl7/door7.gd" id="6_utb7v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7b3y"]
 texture = ExtResource("2_i252u")
@@ -318,3 +320,8 @@ position = Vector2(-56, 56)
 shape = SubResource("CapsuleShape2D_71b05")
 
 [node name="Player7" parent="." instance=ExtResource("4_rbk0k")]
+position = Vector2(1674, 470)
+
+[node name="Door" parent="." instance=ExtResource("5_bkpyn")]
+position = Vector2(1914, 435)
+script = ExtResource("6_utb7v")

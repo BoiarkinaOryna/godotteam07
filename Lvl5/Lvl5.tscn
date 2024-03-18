@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dlawwem2syyhg"]
+[gd_scene load_steps=25 format=3 uid="uid://dlawwem2syyhg"]
 
 [ext_resource type="Texture2D" uid="uid://bifyqaa85afv4" path="res://Lvl5/Assets/Wall.png" id="1_rpiks"]
 [ext_resource type="Texture2D" uid="uid://deplh4jsbh0p3" path="res://Lvl5/Assets/Cave_ent.png" id="2_kbmlk"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://bc7b5livq8g7q" path="res://Lvl5/Assets/birds2.png" id="12_00tcd"]
 [ext_resource type="PackedScene" uid="uid://bqpwvwhirk7u7" path="res://player/player5/player5.tscn" id="13_si515"]
 [ext_resource type="PackedScene" uid="uid://djm1pbmpsqduy" path="res://Lvl5/bear/bear.tscn" id="14_l5sfp"]
+[ext_resource type="PackedScene" uid="uid://mrwvupgkx8q" path="res://Lvl5/door5.tscn" id="15_bagft"]
+[ext_resource type="Script" path="res://Lvl5/door5.gd" id="16_46ydt"]
 
 [sub_resource type="Animation" id="Animation_pi3yy"]
 resource_name = "idle"
@@ -462,3 +464,7 @@ position = Vector2(1747, 337)
 
 [node name="Player5" parent="." instance=ExtResource("13_si515")]
 position = Vector2(5606, 374)
+
+[node name="Door" parent="." instance=ExtResource("15_bagft")]
+position = Vector2(4760, 356)
+script = ExtResource("16_46ydt")

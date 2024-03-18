@@ -1,33 +1,56 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcdbntu4qruv6"]
+[gd_scene load_steps=7 format=3 uid="uid://bcdbntu4qruv6"]
 
-[ext_resource type="Texture2D" uid="uid://x22c1xtilxsq" path="res://preface/3.png" id="1_kqxpa"]
+[ext_resource type="Texture2D" uid="uid://dichx5jwaawc2" path="res://1Lvl/Acsests/village.jpg" id="1_83akj"]
 [ext_resource type="Script" path="res://preface/next3.gd" id="2_eifms"]
 [ext_resource type="Script" path="res://preface/previous2.gd" id="2_u0e4m"]
+[ext_resource type="Texture2D" uid="uid://cbpmvkgqmyohu" path="res://player/img/PlayerMoveAnim (3).png" id="4_rly5y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cromp"]
+atlas = ExtResource("4_rly5y")
+region = Rect2(0, 197, 135, 197)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3gxt5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cromp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Preface3_tscn" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(0.963211, 0.975904)
-texture = ExtResource("1_kqxpa")
+texture_filter = 1
+position = Vector2(908.209, 497.5)
+scale = Vector2(3.54215, 3.99609)
+texture = ExtResource("1_83akj")
 
 [node name="previous2" type="Button" parent="."]
-offset_left = 32.0
-offset_top = 512.0
-offset_right = 160.0
-offset_bottom = 636.0
+offset_left = 45.0
+offset_top = 846.0
+offset_right = 173.0
+offset_bottom = 970.0
 theme_override_font_sizes/font_size = 85
 text = "<"
 script = ExtResource("2_u0e4m")
 
 [node name="next3" type="Button" parent="."]
-offset_left = 992.0
-offset_top = 509.0
-offset_right = 1120.0
-offset_bottom = 633.0
+offset_left = 1634.0
+offset_top = 853.0
+offset_right = 1762.0
+offset_bottom = 977.0
 theme_override_font_sizes/font_size = 85
 text = ">"
 script = ExtResource("2_eifms")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(504, 662)
+scale = Vector2(2.88704, 2.76523)
+sprite_frames = SubResource("SpriteFrames_3gxt5")
 
 [connection signal="pressed" from="previous2" to="previous2" method="_on_pressed"]
 [connection signal="pressed" from="next3" to="next3" method="_on_pressed"]
