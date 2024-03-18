@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bqsmhkfapu7vs"]
+[gd_scene load_steps=19 format=3 uid="uid://bqsmhkfapu7vs"]
 
 [ext_resource type="Texture2D" uid="uid://bg83koknm0xj0" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (6).png" id="1_14kt2"]
 [ext_resource type="Texture2D" uid="uid://dctrhnncxv5td" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (5).png" id="2_hm5r1"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6/player6.tscn" id="4_6xwsc"]
 [ext_resource type="Texture2D" uid="uid://dnmt5cbqeqpd" path="res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png" id="6_ttv3n"]
 [ext_resource type="PackedScene" uid="uid://brailqkufbado" path="res://Lvl6/ghost/ghost.tscn" id="7_1ednh"]
+[ext_resource type="PackedScene" uid="uid://loanutynkyqw" path="res://Lvl6/door6.tscn" id="8_0pi5a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_afe7v"]
 texture = ExtResource("3_qxy7c")
@@ -651,3 +652,6 @@ position = Vector2(-14, 186)
 light_mask = 3
 position = Vector2(-922, -242)
 color = Color(0.305882, 0.305882, 0.305882, 1)
+
+[node name="Door" parent="." instance=ExtResource("8_0pi5a")]
+position = Vector2(2908, -1111)

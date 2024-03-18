@@ -26,10 +26,10 @@
 [ext_resource type="Texture2D" uid="uid://c00rpvy3tdktg" path="res://Lvl2/Assets/green_grass3.png" id="20_adnm8"]
 [ext_resource type="Texture2D" uid="uid://ixywk0ymam73" path="res://Lvl2/Assets/green_grass4.png" id="21_lrvva"]
 [ext_resource type="PackedScene" uid="uid://bl3mh6t2oflim" path="res://1Lvl/wolf/wolf.tscn" id="25_u5ua7"]
-[ext_resource type="PackedScene" uid="uid://bt7jmviwew57s" path="res://door.tscn" id="26_u11c6"]
 [ext_resource type="PackedScene" uid="uid://cmqxlr0w7e7y2" path="res://player/player1/player1.tscn" id="30_ed1lo"]
 [ext_resource type="Texture2D" uid="uid://cnkdqi6pwrgmq" path="res://1Lvl/Acsests/MicroChely.png" id="30_kdyge"]
 [ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="30_ojj35"]
+[ext_resource type="PackedScene" uid="uid://bpvxq3uoio450" path="res://1Lvl/door1.tscn" id="31_ouppo"]
 [ext_resource type="Texture2D" uid="uid://bk2p3vgulg20k" path="res://1Lvl/Acsests/Untitled 02-25-2024 06-26-36.png" id="31_xkwt8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hvn0"]
@@ -1350,5 +1350,5 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.11456
 
-[node name="Door" parent="." instance=ExtResource("26_u11c6")]
-position = Vector2(2118, 367)
+[node name="Door" parent="." instance=ExtResource("31_ouppo")]
+position = Vector2(2130, 372)

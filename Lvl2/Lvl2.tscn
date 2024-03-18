@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dmc82hfrd3b0q" path="res://player/player2/player2.tscn" id="18_m1pjo"]
 [ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="19_15eic"]
 [ext_resource type="PackedScene" uid="uid://53lbiewiddkr" path="res://Lvl2/tulip/tulip.tscn" id="20_voapi"]
-[ext_resource type="PackedScene" uid="uid://bt7jmviwew57s" path="res://door.tscn" id="21_wijeq"]
+[ext_resource type="PackedScene" uid="uid://cvj70piphbmsq" path="res://Lvl2/door2.tscn" id="21_a8vmo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
@@ -1355,5 +1355,5 @@ frame_progress = 0.784173
 [node name="Tulip" parent="." instance=ExtResource("20_voapi")]
 position = Vector2(5537, 513)
 
-[node name="Door" parent="." instance=ExtResource("21_wijeq")]
-position = Vector2(537, 356)
+[node name="Door" parent="." instance=ExtResource("21_a8vmo")]
+position = Vector2(529, 402)

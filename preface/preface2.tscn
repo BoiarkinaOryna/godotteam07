@@ -1,33 +1,75 @@
-[gd_scene load_steps=4 format=3 uid="uid://drr3eghhg2xwn"]
+[gd_scene load_steps=10 format=3 uid="uid://drr3eghhg2xwn"]
 
-[ext_resource type="Texture2D" uid="uid://cs8e4lwx08l07" path="res://preface/2.png" id="1_msnpn"]
+[ext_resource type="Texture2D" uid="uid://dvsdv3s6s2815" path="res://preface/characters/photo_2024-02-08_20-16-37.jpg" id="1_rrigr"]
 [ext_resource type="Script" path="res://preface/previous1.gd" id="2_va6dp"]
 [ext_resource type="Script" path="res://preface/next2.gd" id="2_wwre5"]
+[ext_resource type="Texture2D" uid="uid://bs2u4yqu3512h" path="res://preface/characters/NPCs (1).png" id="4_oilwc"]
+[ext_resource type="Texture2D" uid="uid://cbtadn66nyf25" path="res://preface/characters/Ratatuiy.png" id="5_dmq28"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fr8uk"]
+atlas = ExtResource("4_oilwc")
+region = Rect2(768, 512, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gn1to"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fr8uk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vgj1"]
+atlas = ExtResource("5_dmq28")
+region = Rect2(328, 472, 328, 472)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5lm5d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vgj1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Preface2" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(0.963211, 0.975904)
-texture = ExtResource("1_msnpn")
+position = Vector2(900, 500)
+scale = Vector2(3.6, 3.90625)
+texture = ExtResource("1_rrigr")
 
 [node name="previous1" type="Button" parent="."]
 offset_left = 32.0
-offset_top = 512.0
+offset_top = 851.0
 offset_right = 160.0
-offset_bottom = 636.0
+offset_bottom = 975.0
 theme_override_font_sizes/font_size = 85
 text = "<"
 script = ExtResource("2_va6dp")
 
 [node name="next2" type="Button" parent="."]
-offset_left = 992.0
-offset_top = 509.0
-offset_right = 1120.0
-offset_bottom = 633.0
+offset_left = 1639.0
+offset_top = 848.0
+offset_right = 1767.0
+offset_bottom = 972.0
 theme_override_font_sizes/font_size = 85
 text = ">"
 script = ExtResource("2_wwre5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1200, 756)
+scale = Vector2(1.816, 1.566)
+sprite_frames = SubResource("SpriteFrames_gn1to")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(816, 800)
+scale = Vector2(0.817, 0.856)
+sprite_frames = SubResource("SpriteFrames_5lm5d")
 
 [connection signal="pressed" from="previous1" to="previous1" method="_on_pressed"]
 [connection signal="pressed" from="next2" to="next2" method="_on_pressed"]

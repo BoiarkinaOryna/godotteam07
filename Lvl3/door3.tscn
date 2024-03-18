@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4g6oc3hml01l"]
+
+[ext_resource type="Script" path="res://Lvl3/door3.gd" id="1_fqhac"]
+[ext_resource type="Texture2D" uid="uid://t07q4y3mxh0v" path="res://img/Untitled 03-15-2024 06-05-05 (1).png" id="2_tawmy"]
+[ext_resource type="Texture2D" uid="uid://b15yywwga31cu" path="res://img/Untitled 03-15-2024 06-15-17.png" id="3_fbgv6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x1lvx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tawmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fbgv6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_530mn"]
+size = Vector2(90, 165)
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_fqhac")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.314, 0.34)
+sprite_frames = SubResource("SpriteFrames_x1lvx")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -0.5)
+shape = SubResource("RectangleShape2D_530mn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -4,7 +4,7 @@ extends Area2D
 var flag_portal_entered = false
 #
 func _on_body_entered(body):
-	if body.name == "Player1":
+	if body.name == "Player3":
 		flag_portal_entered = true
 		#
 		#
@@ -16,5 +16,4 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if flag_portal_entered == true:
-		get_tree().change_scene_to_file("res://Lvl2/Lvl2.tscn")
-
+		get_tree().change_scene_to_file("res://Lvl4/Lvl4.tscn")
