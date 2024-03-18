@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://be2mu2jfbynxp"]
+[gd_scene load_steps=12 format=3 uid="uid://be2mu2jfbynxp"]
 
 [ext_resource type="Texture2D" uid="uid://bmycweq7lbugy" path="res://Lvl3/bat/Assets/Bat (2).png" id="1_2yudu"]
 [ext_resource type="Script" path="res://Lvl3/bat/bat.gd" id="1_yl0v7"]
+[ext_resource type="PackedScene" uid="uid://daw3cc262u8by" path="res://Lvl3/bat/bat_bullets/bat_bullet.tscn" id="2_7rt71"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_12wf6"]
 atlas = ExtResource("1_2yudu")
@@ -43,22 +44,47 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 7.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_gdtk8"]
-radius = 31.0644
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bin1g"]
+radius = 34.0
+height = 160.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d0fmo"]
+radius = 305.105
 
 [node name="Bat" type="CharacterBody2D"]
 script = ExtResource("1_yl0v7")
+bat_bullet = ExtResource("2_7rt71")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-5.5, 6.5)
-scale = Vector2(0.621451, 0.620536)
+position = Vector2(-9.53674e-07, 2.98023e-08)
+scale = Vector2(0.59306, 0.566965)
 sprite_frames = SubResource("SpriteFrames_bih6t")
 animation = &"idle"
-frame_progress = 0.333577
+frame_progress = 0.315744
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-11, 4)
-shape = SubResource("CircleShape2D_gdtk8")
+position = Vector2(0, -2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_bin1g")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detector"]
+shape = SubResource("CircleShape2D_d0fmo")
+
+[node name="Timer2" type="Timer" parent="."]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="Node"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="detector" to="." method="_on_detector_body_exited"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

@@ -445,4 +445,4 @@ autoplay = "idle"
 frame_progress = 0.771185
 
 [node name="Bat" parent="." instance=ExtResource("11_xy6ul")]
-position = Vector2(2638, -447)
+position = Vector2(2494, -460)
