@@ -9,20 +9,20 @@
 [node name="Left" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
 position = Vector2(200, 713)
-scale = Vector2(1.89286, 1.89286)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("1_fubuq")
 action = "ui_left"
 
 [node name="Right" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(475, 711)
-scale = Vector2(1.86905, 1.88095)
+position = Vector2(568, 712)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("2_evyvp")
 action = "ui_right"
 
 [node name="Jump" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(1913, 618)
-scale = Vector2(1.84524, 1.67857)
+position = Vector2(1640, 544)
+scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("3_mjiud")
 action = "ui_accept"

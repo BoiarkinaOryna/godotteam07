@@ -13,6 +13,8 @@ func _physics_process(delta):
 	global_position += direction * min(speed * delta, distance)
 	if global_position == player_position:
 		queue_free()
+	await get_tree().create_timer(3).timeout
+	queue_free()
 func _on_body_entered(body):
 	if body.name == 'Player3':
 		body.heart_points -= 1

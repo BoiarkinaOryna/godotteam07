@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://dlawwem2syyhg"]
+[gd_scene load_steps=25 format=3 uid="uid://dlawwem2syyhg"]
 
 [ext_resource type="Texture2D" uid="uid://bifyqaa85afv4" path="res://Lvl5/Assets/Wall.png" id="1_rpiks"]
+[ext_resource type="Script" path="res://Lvl5/Manager.gd" id="1_yghtt"]
 [ext_resource type="Texture2D" uid="uid://deplh4jsbh0p3" path="res://Lvl5/Assets/Cave_ent.png" id="2_kbmlk"]
 [ext_resource type="Texture2D" uid="uid://2wgda84njenh" path="res://Lvl5/Assets/forest3.png" id="3_16dwj"]
 [ext_resource type="Texture2D" uid="uid://ursv1pvl2cxl" path="res://Lvl5/Assets/hedgehog2.png" id="4_3vxdh"]
@@ -358,6 +359,10 @@ sources/0 = SubResource("TileSetAtlasSource_7f8s0")
 
 [node name="Lvl5" type="Node2D"]
 
+[node name="Manager" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("1_yghtt")
+
 [node name="Wall" type="Sprite2D" parent="."]
 position = Vector2(5456, 224)
 texture = ExtResource("1_rpiks")
@@ -462,7 +467,59 @@ position = Vector2(3320, 456)
 position = Vector2(1747, 337)
 
 [node name="Player5" parent="." instance=ExtResource("13_si515")]
-position = Vector2(5606, 374)
+position = Vector2(3882, 445)
 
 [node name="Door" parent="." instance=ExtResource("15_04en4")]
 position = Vector2(4723, 410)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 2
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 120.0
+offset_right = 1665.0
+offset_bottom = 897.0
+
+[node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 191.0
+offset_right = 1144.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 80
+text = "Продовжити"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 921.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 80
+text = "Меню паузи"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

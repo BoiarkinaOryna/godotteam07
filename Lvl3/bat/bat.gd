@@ -18,8 +18,9 @@ func _on_detector_body_entered(body):
 		print(2)
 		$Timer2.start()
 		
-#func _on_detector_body_exited(body):
-	#$Timer2.stop()
+func _on_detector_body_exited(body):
+	if body.name == 'Player3':
+		$Timer2.stop()
 
 func _on_timer_2_timeout():
 	var bat_bul = bat_bullet.instantiate()

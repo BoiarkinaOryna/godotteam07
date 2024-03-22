@@ -1,10 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://nofhd2fs0jo1"]
+[gd_scene load_steps=22 format=3 uid="uid://nofhd2fs0jo1"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_c38qe"]
 [ext_resource type="Texture2D" uid="uid://b6f6q20bkpc61" path="res://player/img/hhjgcuc.png" id="2_emag6"]
 [ext_resource type="Texture2D" uid="uid://k8hcscpq7d1f" path="res://player/img/Jump (2).png" id="3_yvbry"]
 [ext_resource type="PackedScene" uid="uid://bwhamk06a6n3g" path="res://player/hp/hp.tscn" id="4_g3g7v"]
 [ext_resource type="PackedScene" uid="uid://dnbr3i7px23w" path="res://Buttons/Moving.tscn" id="5_ryhw1"]
+[ext_resource type="PackedScene" uid="uid://dby47y4spif0q" path="res://Buttons/Pause.tscn" id="6_i8wrk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ruaqi"]
 radius = 21.0001
@@ -155,5 +156,7 @@ scale = Vector2(2.25805e+12, -7.41933e+11)
 wait_time = 0.2
 
 [node name="Moving" parent="." instance=ExtResource("5_ryhw1")]
+
+[node name="Pause" parent="." instance=ExtResource("6_i8wrk")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

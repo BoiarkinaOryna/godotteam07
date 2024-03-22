@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://drr3eghhg2xwn"]
+[gd_scene load_steps=11 format=3 uid="uid://drr3eghhg2xwn"]
 
+[ext_resource type="Script" path="res://preface/preface2.gd" id="1_8temu"]
 [ext_resource type="Texture2D" uid="uid://dvsdv3s6s2815" path="res://preface/characters/photo_2024-02-08_20-16-37.jpg" id="1_rrigr"]
 [ext_resource type="Script" path="res://preface/previous1.gd" id="2_va6dp"]
 [ext_resource type="Script" path="res://preface/next2.gd" id="2_wwre5"]
@@ -37,13 +38,15 @@ animations = [{
 }]
 
 [node name="Preface2" type="Node2D"]
+script = ExtResource("1_8temu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(900, 500)
-scale = Vector2(3.6, 3.90625)
+position = Vector2(962.5, 541.5)
+scale = Vector2(3.85, 4.23047)
 texture = ExtResource("1_rrigr")
 
 [node name="previous1" type="Button" parent="."]
+visible = false
 offset_left = 32.0
 offset_top = 851.0
 offset_right = 160.0
@@ -53,6 +56,7 @@ text = "<"
 script = ExtResource("2_va6dp")
 
 [node name="next2" type="Button" parent="."]
+visible = false
 offset_left = 1639.0
 offset_top = 848.0
 offset_right = 1767.0
