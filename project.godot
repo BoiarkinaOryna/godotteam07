@@ -15,24 +15,60 @@ run/main_scene="res://1Lvl/Lvl1.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+
 [dialogic]
 
 directories/dch_directory={
+"Beastman": "res://preface/characters/Beastman.dch",
+"Fairy": "res://preface/characters/Fairy.dch",
+"Hoblin": "res://preface/characters/Hoblin.dch",
+"King": "res://preface/characters/King.dch",
+"Narrator": "res://preface/characters/Narrator.dch",
+"People": "res://preface/characters/People.dch",
+"People2": "res://preface/characters/People2.dch",
 "Player": "res://preface/characters/Player.dch",
-"unit_test_character": "res://dialogic-main/Tests/Resources/unit_test_character.dch"
+"Queen": "res://preface/characters/Queen.dch"
 }
 directories/dtl_directory={
-"prefaceTimeline": "res://preface/prefaceTimeline.dtl"
+"prefaceTimeline": "res://preface/prefaceTimeline.dtl",
+"prefaceTimeline2": "res://preface/prefaceTimeline2.dtl",
+"prefaceTimeline3": "res://preface/prefaceTimeline3.dtl"
 }
 glossary/default_case_sensitive=true
 glossary/default_color=Color(1, 0, 0, 1)
-layout/style_list=[]
-layout/default_style=""
+layout/style_list=["res://preface/Styles/main_style.tres"]
+layout/default_style="res://preface/Styles/main_style.tres"
+variables={}
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
 
 [display]
 
-window/size/viewport_width=1800
-window/size/viewport_height=1000
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 

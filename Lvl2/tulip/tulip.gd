@@ -47,6 +47,10 @@ func _on_attack_zone_body_entered(body):
 	if body.name == 'Player2':
 		attack = true
 		anim.play("hit")
+		await get_tree().create_timer(0.5).timeout
+		while attack:
+			body.heart_points -= 1
+			await get_tree().create_timer(0.5).timeout
 	else:
 		velocity.y = -400
 

@@ -33,24 +33,28 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_detector_body_entered(body):
-	if body.name == 'Player':
+	if body.name == 'Player1':
 		chase=true
 
 
 func _on_detector_body_exited(body):
-	if body.name == 'Player':
+	if body.name == 'Player1':
 		chase=false
 
 
 func _on_attack_zone_body_entered(body):
 	print(body.name)
-	if body.name == 'Player':
+	if body.name == 'Player1':
 		attack = true
 		anim.play("attack")
+		await get_tree().create_timer(0.5).timeout
+		while attack:
+			body.heart_points -= 1
+			await get_tree().create_timer(0.5).timeout
 	else:
 		velocity.y = -400
 
 
 func _on_attack_zone_body_exited(body):
-	if body.name == 'Player':
+	if body.name == 'Player1':
 		attack = false

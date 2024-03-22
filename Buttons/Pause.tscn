@@ -9,8 +9,9 @@
 self_modulate = Color(1, 1, 1, 0.784314)
 texture_filter = 1
 position = Vector2(-21, -24)
-scale = Vector2(3.29688, 3.3125)
+scale = Vector2(4.5, 4.5)
 texture_normal = ExtResource("1_41gbp")
+action = "ui_cancel"
 script = ExtResource("2_hbtxq")
 
 [connection signal="pressed" from="TouchScreenButton" to="TouchScreenButton" method="_on_pressed"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=50 format=3 uid="uid://bftpcwqoygeb3"]
+[gd_scene load_steps=51 format=3 uid="uid://bftpcwqoygeb3"]
 
 [ext_resource type="Texture2D" uid="uid://clxlbbt5uagij" path="res://Lvl2/Assets/Field.png" id="1_08kii"]
+[ext_resource type="Script" path="res://Lvl2/Manager.gd" id="1_qi6m3"]
 [ext_resource type="Texture2D" uid="uid://f8u2233uftu7" path="res://Lvl2/Assets/cloud6.png" id="2_6q2um"]
 [ext_resource type="Texture2D" uid="uid://cmvi0ppgqywq5" path="res://Lvl2/Assets/cloud5.png" id="2_478p4"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_ios64"]
@@ -641,6 +642,10 @@ animations = [{
 
 [node name="Lvl2" type="Node2D"]
 texture_filter = 1
+
+[node name="Manager" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("1_qi6m3")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -1332,7 +1337,7 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(260, 481)
+position = Vector2(232, 454)
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1
@@ -1357,3 +1362,55 @@ position = Vector2(5537, 513)
 
 [node name="Door" parent="." instance=ExtResource("21_a8vmo")]
 position = Vector2(529, 402)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 2
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 120.0
+offset_right = 1665.0
+offset_bottom = 897.0
+
+[node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 191.0
+offset_right = 1144.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 80
+text = "Продовжити"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 921.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 80
+text = "Меню паузи"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

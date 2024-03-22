@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://ccp7e4xwf4kqx"]
+[gd_scene load_steps=24 format=3 uid="uid://ccp7e4xwf4kqx"]
 
+[ext_resource type="Script" path="res://Lvl4/Manager.gd" id="1_a8x6t"]
 [ext_resource type="Texture2D" uid="uid://b2ibmrjxon6p7" path="res://Lvl4/Acsests/Burning_elf_forest1.png" id="1_enaj2"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_1oekc"]
 [ext_resource type="Texture2D" uid="uid://clnfqsp6npflw" path="res://Lvl4/Acsests/fire1.png" id="3_5j04h"]
@@ -342,6 +343,10 @@ animations = [{
 
 [node name="Lvl4" type="Node2D"]
 texture_filter = 1
+
+[node name="Manager" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("1_a8x6t")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-5341.43, 234)
@@ -1034,3 +1039,55 @@ position = Vector2(241, 383)
 
 [node name="Door" parent="." instance=ExtResource("12_bnl1n")]
 position = Vector2(898, 357)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 2
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 120.0
+offset_right = 1665.0
+offset_bottom = 897.0
+
+[node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 191.0
+offset_right = 1144.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 80
+text = "Продовжити"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 921.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 80
+text = "Меню паузи"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

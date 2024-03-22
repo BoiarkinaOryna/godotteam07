@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://bqsmhkfapu7vs"]
+[gd_scene load_steps=20 format=3 uid="uid://bqsmhkfapu7vs"]
 
-[ext_resource type="Texture2D" uid="uid://bg83koknm0xj0" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (6).png" id="1_14kt2"]
-[ext_resource type="Texture2D" uid="uid://dctrhnncxv5td" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (5).png" id="2_hm5r1"]
-[ext_resource type="Texture2D" uid="uid://53d3os8bhpv6" path="res://Lvl6/Assets/Untitled 02-18-2024 10-24-53 (4).png" id="3_7xkes"]
+[ext_resource type="Texture2D" uid="uid://bolhib5ags062" path="res://Lvl6/Assets/bottom.png" id="1_nrsnf"]
+[ext_resource type="Script" path="res://Lvl6/Manager.gd" id="1_yhcmo"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="3_qxy7c"]
+[ext_resource type="Texture2D" uid="uid://dujm580ay5mgi" path="res://Lvl6/Assets/mid.png" id="3_scxn7"]
 [ext_resource type="PackedScene" uid="uid://cncvedpa4kf2o" path="res://player/player6/player6.tscn" id="4_6xwsc"]
+[ext_resource type="Texture2D" uid="uid://cqi6b5qhmx840" path="res://Lvl6/Assets/top.png" id="5_flx48"]
 [ext_resource type="Texture2D" uid="uid://dnmt5cbqeqpd" path="res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png" id="6_ttv3n"]
 [ext_resource type="PackedScene" uid="uid://brailqkufbado" path="res://Lvl6/ghost/ghost.tscn" id="7_1ednh"]
 [ext_resource type="PackedScene" uid="uid://loanutynkyqw" path="res://Lvl6/door6.tscn" id="8_0pi5a"]
@@ -324,6 +325,10 @@ _data = {
 [node name="Lvl6" type="Node2D"]
 position = Vector2(0, -288)
 
+[node name="Manager" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("1_yhcmo")
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-59.1085, -238.605)
 
@@ -334,7 +339,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/floor"]
 position = Vector2(560, 464)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("3_7xkes")
+texture = ExtResource("1_nrsnf")
 
 [node name="floor2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -576)
@@ -343,7 +348,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/floor2"]
 position = Vector2(560, 464)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("3_7xkes")
+texture = ExtResource("1_nrsnf")
 
 [node name="buttom" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -576)
@@ -352,7 +357,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -576)
@@ -361,7 +366,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom2"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom3" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -891)
@@ -370,7 +375,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom3"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom4" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -891)
@@ -379,7 +384,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom4"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom5" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -259)
@@ -388,7 +393,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom5"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom6" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -259)
@@ -397,7 +402,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom6"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom7" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -1208)
@@ -406,7 +411,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom7"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom8" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -1208)
@@ -415,7 +420,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom8"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom9" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -1449)
@@ -424,7 +429,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom9"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="buttom10" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -1449)
@@ -433,7 +438,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/buttom10"]
 position = Vector2(560, -168)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("1_14kt2")
+texture = ExtResource("3_scxn7")
 
 [node name="top" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(0, -576)
@@ -442,7 +447,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/top"]
 position = Vector2(560, -905)
 scale = Vector2(2.08, 2.501)
-texture = ExtResource("2_hm5r1")
+texture = ExtResource("5_flx48")
 
 [node name="top2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(998, -576)
@@ -451,7 +456,7 @@ motion_mirroring = Vector2(1996, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/top2"]
 position = Vector2(560, -905)
 scale = Vector2(2.08, 2.5)
-texture = ExtResource("2_hm5r1")
+texture = ExtResource("5_flx48")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="ParallaxBackground"]
 color = Color(0.27451, 0.27451, 0.27451, 1)
@@ -464,7 +469,7 @@ layer_0/tile_data = PackedInt32Array(851979, 0, 6, 851980, 0, 6, 851981, 0, 6, 8
 
 [node name="Player" parent="." instance=ExtResource("4_6xwsc")]
 visibility_layer = 1023
-position = Vector2(1859, -1389)
+position = Vector2(1894, -1416)
 platform_floor_layers = 4294967041
 platform_wall_layers = 1
 
@@ -655,3 +660,55 @@ color = Color(0.305882, 0.305882, 0.305882, 1)
 
 [node name="Door" parent="." instance=ExtResource("8_0pi5a")]
 position = Vector2(2908, -1111)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 2
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 120.0
+offset_right = 1665.0
+offset_bottom = 897.0
+
+[node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 191.0
+offset_right = 1144.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 80
+text = "Продовжити"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 921.0
+offset_bottom = 165.0
+theme_override_font_sizes/font_size = 80
+text = "Меню паузи"
+
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
