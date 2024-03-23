@@ -33,6 +33,8 @@ directories/dch_directory={
 "Queen": "res://preface/characters/Queen.dch"
 }
 directories/dtl_directory={
+"King_dialog": "res://1Lvl/dialogic/King_dialog.dtl",
+"Principal_dialog": "res://1Lvl/dialogic/Principal_dialog.dtl",
 "prefaceTimeline": "res://preface/prefaceTimeline.dtl",
 "prefaceTimeline2": "res://preface/prefaceTimeline2.dtl",
 "prefaceTimeline3": "res://preface/prefaceTimeline3.dtl"

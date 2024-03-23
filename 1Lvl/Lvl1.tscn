@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://cat2nyx5jplcb"]
+[gd_scene load_steps=73 format=3 uid="uid://cat2nyx5jplcb"]
 
 [ext_resource type="Script" path="res://1Lvl/Manage.gd" id="1_tkt72"]
 [ext_resource type="Texture2D" uid="uid://dikb0t3ohp1r5" path="res://1Lvl/Acsests/sky.png" id="2_l7rsc"]
@@ -29,9 +29,10 @@
 [ext_resource type="PackedScene" uid="uid://bl3mh6t2oflim" path="res://1Lvl/wolf/wolf.tscn" id="25_u5ua7"]
 [ext_resource type="PackedScene" uid="uid://cmqxlr0w7e7y2" path="res://player/player1/player1.tscn" id="30_ed1lo"]
 [ext_resource type="Texture2D" uid="uid://cnkdqi6pwrgmq" path="res://1Lvl/Acsests/MicroChely.png" id="30_kdyge"]
-[ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="30_ojj35"]
 [ext_resource type="PackedScene" uid="uid://bpvxq3uoio450" path="res://1Lvl/door1.tscn" id="31_ouppo"]
 [ext_resource type="Texture2D" uid="uid://bk2p3vgulg20k" path="res://1Lvl/Acsests/Untitled 02-25-2024 06-26-36.png" id="31_xkwt8"]
+[ext_resource type="Texture2D" uid="uid://chs6jrtaq32kd" path="res://img/NPCs.png" id="32_ho24q"]
+[ext_resource type="Script" path="res://1Lvl/PrincipalDialog1lvl.gd" id="33_tykvw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hvn0"]
 texture = ExtResource("4_4si0t")
@@ -595,20 +596,23 @@ animations = [{
 radius = 32.0
 height = 80.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bj682"]
-atlas = ExtResource("30_ojj35")
+[sub_resource type="AtlasTexture" id="AtlasTexture_usr2m"]
+atlas = ExtResource("32_ho24q")
 region = Rect2(0, 512, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1enmp"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bj682")
+"texture": SubResource("AtlasTexture_usr2m")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7t3e"]
+size = Vector2(137, 641)
 
 [node name="Lvl1" type="Node2D"]
 texture_filter = 1
@@ -1342,19 +1346,6 @@ frame = 1
 position = Vector2(8, 8)
 shape = SubResource("CapsuleShape2D_yg8t2")
 
-[node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
-position = Vector2(7243, 495)
-
-[node name="npc" type="Node2D" parent="."]
-
-[node name="King" type="AnimatedSprite2D" parent="npc"]
-position = Vector2(350, 512.5)
-scale = Vector2(0.421875, 0.480469)
-sprite_frames = SubResource("SpriteFrames_1enmp")
-animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.11456
-
 [node name="Door" parent="." instance=ExtResource("31_ouppo")]
 position = Vector2(2130, 372)
 
@@ -1407,5 +1398,27 @@ offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
 
+[node name="npc" type="Node2D" parent="."]
+
+[node name="King" type="AnimatedSprite2D" parent="npc"]
+position = Vector2(171.5, 524.875)
+scale = Vector2(0.472656, 0.452149)
+sprite_frames = SubResource("SpriteFrames_1enmp")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.11456
+
+[node name="PrincipalDialog" type="Area2D" parent="."]
+position = Vector2(11484, -59)
+script = ExtResource("33_tykvw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PrincipalDialog"]
+position = Vector2(58.5, 310.5)
+shape = SubResource("RectangleShape2D_m7t3e")
+
+[node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
+position = Vector2(10044, 404)
+
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manage" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manage" method="_on_quit_pressed"]
+[connection signal="body_entered" from="PrincipalDialog" to="PrincipalDialog" method="_on_body_entered"]

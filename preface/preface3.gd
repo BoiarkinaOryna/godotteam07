@@ -9,6 +9,7 @@ func _ready():
 func _on_dialogic_signal(argument:String):
 	if argument == "endPrefaceThird":
 		get_tree().change_scene_to_file("res://1Lvl/Lvl1.tscn")
+		Dialogic.start("King_dialog")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
