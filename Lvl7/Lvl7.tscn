@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bs14xheqi6nab"]
+[gd_scene load_steps=12 format=3 uid="uid://bs14xheqi6nab"]
 
 [ext_resource type="Script" path="res://Lvl7/Manager.gd" id="1_lxkwr"]
 [ext_resource type="Texture2D" uid="uid://dkclhcyd6i8aw" path="res://Lvl7/Assets/BgLvl7 (2).png" id="1_rt43u"]
 [ext_resource type="Texture2D" uid="uid://mlplxrfvomor" path="res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg" id="2_i252u"]
 [ext_resource type="PackedScene" uid="uid://nofhd2fs0jo1" path="res://player/player7/player7.tscn" id="4_rbk0k"]
 [ext_resource type="Texture2D" uid="uid://bqreeej42wonk" path="res://Lvl7/Assets/Wizzards.png" id="4_v3udp"]
+[ext_resource type="PackedScene" uid="uid://biorrc606j8kw" path="res://Lvl7/white_principal/white_principal.tscn" id="6_ktaat"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7b3y"]
 texture = ExtResource("2_i252u")
@@ -225,25 +226,6 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_n7b3y")
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jy3fq"]
-radius = 24.0
-height = 112.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mrvqb"]
-atlas = ExtResource("4_v3udp")
-region = Rect2(256, 0, 256, 256)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mxypm"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mrvqb")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ligyb"]
 atlas = ExtResource("4_v3udp")
 region = Rect2(0, 0, 256, 256)
@@ -289,23 +271,6 @@ tile_set = SubResource("TileSet_hojed")
 format = 2
 layer_0/tile_data = PackedInt32Array(589824, 65536, 0, 589825, 65536, 0, 589826, 65536, 0, 589827, 65536, 0, 589828, 65536, 0, 589829, 65536, 0, 589830, 65536, 0, 589831, 65536, 0, 589832, 65536, 0, 589833, 65536, 0, 589834, 65536, 0, 589835, 65536, 0, 589836, 65536, 0, 589837, 65536, 0, 589838, 65536, 0, 589839, 65536, 0, 589840, 65536, 0, 589841, 65536, 0, 589842, 65536, 0, 589843, 65536, 0, 589844, 65536, 0, 589845, 65536, 0, 589846, 65536, 0, 589847, 65536, 0, 589848, 65536, 0, 589849, 65536, 0, 589850, 65536, 0, 589851, 65536, 0, 589852, 65536, 0, 589853, 65536, 0, 589854, 65536, 0, 589855, 65536, 0, 589856, 65536, 0, 589857, 65536, 0, 589858, 65536, 0, 589859, 65536, 0, 589860, 65536, 0, 589861, 65536, 0, 589862, 65536, 0, 589863, 65536, 0, 589864, 65536, 0, 589865, 65536, 0, 589866, 65536, 0, 589867, 65536, 0, 589868, 65536, 0, 589869, 65536, 1, -1, 458752, 6, 65535, 458752, 6, 131071, 458752, 6, 196607, 458752, 6, 262143, 458752, 6, 327679, 458752, 6, 393215, 458752, 6, 458751, 458752, 6, 524287, 458752, 6, 589823, 458752, 6, 655359, 65536, 1, -65491, 327680, 6, 45, 327680, 6, 65581, 327680, 6, 131117, 327680, 6, 196653, 327680, 6, 262189, 327680, 6, 327725, 327680, 6, 393261, 327680, 6, 458797, 327680, 6, 524333, 327680, 6, -196609, 458752, 6, -131073, 458752, 6, -65537, 458752, 6, -131027, 327680, 6, -196563, 327680, 6, -262099, 327680, 6)
 
-[node name="white_principal" type="CharacterBody2D" parent="."]
-texture_filter = 1
-position = Vector2(-8, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="white_principal"]
-texture_filter = 1
-position = Vector2(1248, 512)
-shape = SubResource("CapsuleShape2D_jy3fq")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="white_principal"]
-texture_filter = 1
-position = Vector2(1248, 512)
-scale = Vector2(0.53125, 0.59375)
-sprite_frames = SubResource("SpriteFrames_mxypm")
-animation = &"idle"
-autoplay = "idle"
-
 [node name="dark_principal" type="CharacterBody2D" parent="."]
 texture_filter = 1
 position = Vector2(464, 464)
@@ -323,7 +288,7 @@ position = Vector2(-56, 56)
 shape = SubResource("CapsuleShape2D_71b05")
 
 [node name="Player7" parent="." instance=ExtResource("4_rbk0k")]
-position = Vector2(2618, 353)
+position = Vector2(777, 482)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -373,6 +338,9 @@ offset_right = 921.0
 offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
+
+[node name="white_principal" parent="." instance=ExtResource("6_ktaat")]
+position = Vector2(1415, 495)
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

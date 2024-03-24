@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://be6ldvq0uxod7"]
+
+[ext_resource type="Script" path="res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.gd" id="1_jxj3y"]
+[ext_resource type="Texture2D" uid="uid://bs3vx8qubuli0" path="res://Lvl7/white_principal/wp_damage_wave/Zone.png" id="2_0rfnw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dycmm"]
+radius = 96.0052
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gs8sq"]
+atlas = ExtResource("2_0rfnw")
+region = Rect2(512, 512, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3kme7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gs8sq")
+}],
+"loop": false,
+"name": &"expand",
+"speed": 5.0
+}]
+
+[node name="wpDamageWave" type="Area2D"]
+script = ExtResource("1_jxj3y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dycmm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.39, 0.39)
+sprite_frames = SubResource("SpriteFrames_3kme7")
+animation = &"expand"

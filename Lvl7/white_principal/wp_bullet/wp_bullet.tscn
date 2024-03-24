@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj00wi4tdmmu7"]
+
+[ext_resource type="Script" path="res://Lvl7/white_principal/wp_bullet/wp_bullet.gd" id="1_30koo"]
+[ext_resource type="Texture2D" uid="uid://p5q8hwya2k20" path="res://Lvl7/white_principal/wp_bullet/Bullet.png" id="2_u5df5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r126k"]
+radius = 20.025
+
+[node name="WpBullet" type="Area2D"]
+script = ExtResource("1_30koo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r126k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_u5df5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

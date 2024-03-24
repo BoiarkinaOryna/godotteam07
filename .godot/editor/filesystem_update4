@@ -1,4 +1,5 @@
 res://preface/preface1.tscn
+res://preface/Styles/main_style.tres
 res://1Lvl/Lvl1.tscn
 res://Lvl7/Lvl7.tscn
 res://Lvl6/Lvl6.tscn
@@ -31,6 +32,9 @@ res://Menu/pause/pause.tscn
 res://player/player5/player5.tscn
 res://player/player6/player6.tscn
 res://player/player7/player7.tscn
-res://preface/Styles/main_style.tres
-res://preface/characters/Player.dch
-res://preface/Styles/Dialog_test.tres
+res://Lvl7/white_principal/white_principal.gd
+res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.tscn
+res://Lvl7/white_principal/white_principal.tscn
+res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.gd
+res://Lvl7/white_principal/wp_bullet/wp_bullet.gd
+res://Lvl7/white_principal/wp_bullet/wp_bullet.tscn
