@@ -6,6 +6,9 @@ var jump_velocity = -500.0
 var animation
 var animated_sprite
 var jump_animation = false
+
+@export var bullet : PackedScene
+
 @onready var hp = get_node("hp/Hp")
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -49,7 +52,14 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = jump_velocity
 		jump_animation = true
-
+	#if Input.is_action_just_pressed("ui_attack") and is_on_floor():
+		##$AnimatedSprite2D.play("attack")
+		#print("attack")
+		#var bul = bullet.instantiate()
+		##bul.tsx = -1
+		#add_child(bul)
+		#bul.transform = $Node/Marker2D.transform
+		
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * speed

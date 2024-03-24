@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://cat2nyx5jplcb"]
+[gd_scene load_steps=70 format=3 uid="uid://cat2nyx5jplcb"]
 
 [ext_resource type="Script" path="res://1Lvl/Manage.gd" id="1_tkt72"]
 [ext_resource type="Texture2D" uid="uid://dikb0t3ohp1r5" path="res://1Lvl/Acsests/sky.png" id="2_l7rsc"]
@@ -9,12 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dfye5ynexlbxe" path="res://1Lvl/Acsests/Untitled 02-02-2024 08-41-43 (7).png" id="5_0wj4q"]
 [ext_resource type="Texture2D" uid="uid://pcfcrvkf8ggu" path="res://1Lvl/Acsests/Dark_dark_sky.png" id="6_1gfgn"]
 [ext_resource type="Texture2D" uid="uid://dj2jp1du6d775" path="res://1Lvl/Acsests/Untitled 02-05-2024 05-27-39 (4).png" id="6_ntbfm"]
-[ext_resource type="Texture2D" uid="uid://dvneryu0vgvsl" path="res://1Lvl/Acsests/spikes.png" id="6_uwb4u"]
-[ext_resource type="Texture2D" uid="uid://dyxp2hk42782t" path="res://1Lvl/Acsests/spikes2.png" id="7_7xo8q"]
-[ext_resource type="Texture2D" uid="uid://cl8a81ykndi43" path="res://1Lvl/Acsests/spikes3.png" id="8_4snjx"]
-[ext_resource type="Texture2D" uid="uid://c5y64i40sjl05" path="res://1Lvl/Acsests/spikes4.png" id="9_kay7x"]
 [ext_resource type="Texture2D" uid="uid://bwn7j1x8v63yk" path="res://1Lvl/Acsests/photo_2024-02-04_21-26-00.jpg" id="10_2q6ku"]
-[ext_resource type="Texture2D" uid="uid://vg6nouw5438i" path="res://1Lvl/Acsests/spikes5.png" id="10_8t8v4"]
 [ext_resource type="Texture2D" uid="uid://o860d3sy5hwv" path="res://1Lvl/Acsests/photo_2024-02-03_22-23-13.jpg" id="11_640qm"]
 [ext_resource type="Texture2D" uid="uid://infjg7o2l4cd" path="res://1Lvl/Acsests/photo_2024-02-04_21-57-11.jpg" id="12_1wec8"]
 [ext_resource type="Texture2D" uid="uid://dwdwhalwqc16t" path="res://1Lvl/Acsests/WorldIT.png" id="13_yo6xu"]
@@ -27,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://c00rpvy3tdktg" path="res://Lvl2/Assets/green_grass3.png" id="20_adnm8"]
 [ext_resource type="Texture2D" uid="uid://ixywk0ymam73" path="res://Lvl2/Assets/green_grass4.png" id="21_lrvva"]
 [ext_resource type="PackedScene" uid="uid://bl3mh6t2oflim" path="res://1Lvl/wolf/wolf.tscn" id="25_u5ua7"]
+[ext_resource type="Texture2D" uid="uid://dc0fls8cp1khs" path="res://img/Ratatuiy (2).png" id="26_8xqb6"]
+[ext_resource type="PackedScene" uid="uid://cae0ik4qka5lq" path="res://Spikes/Spike.tscn" id="29_3ko15"]
 [ext_resource type="PackedScene" uid="uid://cmqxlr0w7e7y2" path="res://player/player1/player1.tscn" id="30_ed1lo"]
 [ext_resource type="Texture2D" uid="uid://cnkdqi6pwrgmq" path="res://1Lvl/Acsests/MicroChely.png" id="30_kdyge"]
 [ext_resource type="PackedScene" uid="uid://bpvxq3uoio450" path="res://1Lvl/door1.tscn" id="31_ouppo"]
@@ -519,83 +516,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_fercq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CollisionShape2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(8, 8)]
-}
-
-[sub_resource type="Animation" id="Animation_640ga"]
-resource_name = "spike_animation"
-length = 4.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CollisionShape2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6, 4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(8, 8), Vector2(8, 16), Vector2(8, 32), Vector2(8, 48), Vector2(8, 72), Vector2(8, 72), Vector2(8, 72), Vector2(8, 48), Vector2(8, 32), Vector2(8, 16), Vector2(8, 8)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6, 4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 4, 4, 3, 2, 1, 0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_366bh"]
-_data = {
-"RESET": SubResource("Animation_fercq"),
-"spike_animation": SubResource("Animation_640ga")
-}
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_i0u6q"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_uwb4u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_7xo8q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_4snjx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_kay7x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_8t8v4")
-}],
-"loop": true,
-"name": &"idel",
-"speed": 1.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yg8t2"]
-radius = 32.0
-height = 80.0
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_usr2m"]
 atlas = ExtResource("32_ho24q")
 region = Rect2(0, 512, 256, 256)
@@ -609,6 +529,42 @@ animations = [{
 "loop": false,
 "name": &"idle",
 "speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gptvy"]
+atlas = ExtResource("26_8xqb6")
+region = Rect2(0, 0, 328, 472)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2la0"]
+atlas = ExtResource("26_8xqb6")
+region = Rect2(328, 0, 328, 472)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thgg0"]
+atlas = ExtResource("26_8xqb6")
+region = Rect2(0, 472, 328, 472)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxva7"]
+atlas = ExtResource("26_8xqb6")
+region = Rect2(328, 472, 328, 472)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yr3jb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gptvy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2la0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thgg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxva7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7t3e"]
@@ -626,10 +582,6 @@ texture_filter = 1
 tile_set = SubResource("TileSet_hrmb0")
 format = 2
 layer_0/tile_data = PackedInt32Array(65535, 131072, 3, 131071, 131072, 3, 196607, 131072, 3, 262143, 131072, 3, 327679, 131072, 3, 393215, 131072, 3, 458751, 131072, 3, 524287, 131072, 3, 589823, 131072, 3, 655359, 393216, 6, 589851, 65536, 0, 589852, 65536, 0, 589853, 65536, 0, 589854, 65536, 0, 589855, 65536, 0, 589856, 65536, 0, 589857, 65536, 0, 589858, 65536, 0, 589859, 65536, 0, 589860, 65536, 0, 589861, 65536, 0, 589862, 65536, 0, 589863, 65536, 0, 589864, 65536, 0, 589865, 65536, 0, 589866, 65536, 0, 589867, 65536, 0, 589868, 65536, 0, 589869, 65536, 0, 589870, 65536, 0, 589871, 65536, 0, 589824, 196608, 4, 589825, 196608, 4, 589826, 196608, 4, 589827, 196608, 4, 589828, 196608, 4, 589829, 196608, 4, 589830, 196608, 4, 589831, 196608, 4, 589832, 196608, 4, 589833, 196608, 4, 589834, 196608, 4, 589835, 196608, 4, 589836, 196608, 4, 589837, 196608, 4, 589838, 196608, 4, 589839, 196608, 4, 589840, 196608, 4, 589841, 196608, 4, 589842, 0, 4, 589843, 0, 4, 589844, 65536, 0, 589845, 65536, 0, 589846, 65536, 0, 589847, 65536, 0, 589848, 65536, 0, 589849, 65536, 0, 589850, 65536, 0, 589902, 196608, 5, 589903, 196608, 5, 589904, 196608, 5, 589905, 196608, 5, 589906, 196608, 5, 589907, 196608, 5, 524372, 131072, 5, 589908, 196608, 6, 524373, 196608, 5, 589909, 196608, 6, 524374, 196608, 5, 589910, 196608, 6, 524375, 196608, 5, 589911, 196608, 6, 524376, 196608, 5, 589912, 196608, 6, 524377, 196608, 5, 589913, 196608, 6, 524378, 196608, 5, 589914, 196608, 6, 524379, 196608, 5, 589915, 196608, 6, 524380, 196608, 5, 589916, 196608, 6, 524381, 196608, 5, 589917, 196608, 6, 524382, 196608, 6, 589918, 196608, 6, 524383, 196608, 6, 589919, 196608, 6, 524384, 196608, 6, 589920, 196608, 6, 524385, 196608, 6, 589921, 196608, 6, 524386, 196608, 6, 589922, 196608, 6, 524387, 196608, 6, 589923, 196608, 6, 524388, 196608, 6, 589924, 196608, 6, 524389, 196608, 6, 589925, 196608, 6, 524390, 196608, 6, 589926, 196608, 6, 524391, 196608, 6, 589927, 196608, 6, 524392, 196608, 6, 589928, 196608, 6, 524393, 196608, 6, 589929, 196608, 6, 524394, 262144, 5, 589930, 196608, 6, 589931, 196608, 5, 589932, 196608, 5, 589933, 196608, 5, 589934, 196608, 5, 589935, 196608, 5, 589936, 196608, 5, 589937, 196608, 5, 589938, 196608, 5, 524403, 131072, 5, 589939, 196608, 6, 524404, 196608, 5, 589940, 196608, 6, 524405, 196608, 5, 589941, 196608, 6, 524406, 196608, 5, 589942, 196608, 6, 524407, 196608, 5, 589943, 196608, 6, 524408, 196608, 5, 589944, 196608, 6, 524409, 196608, 5, 589945, 196608, 6, 524410, 196608, 5, 589946, 196608, 6, 524411, 262144, 5, 589947, 196608, 6, 589948, 196608, 5, 589949, 196608, 5, 589950, 196608, 5, 589951, 196608, 5, 589952, 196608, 5, 589953, 196608, 5, 589872, 65536, 0, 589873, 65536, 0, 589874, 65536, 0, 589875, 65536, 0, 589876, 65536, 0, 589877, 65536, 0, 589878, 65536, 0, 589879, 65536, 0, 589880, 65536, 0, 589881, 65536, 0, 589882, 65536, 0, 589883, 65536, 0, 589884, 65536, 0, 589885, 65536, 0, 589886, 65536, 0, 589887, 196608, 5, 589888, 196608, 5, 589889, 196608, 5, 589890, 196608, 5, 589891, 196608, 5, 589892, 196608, 5, 589893, 196608, 5, 589894, 196608, 5, 589895, 196608, 5, 589896, 196608, 5, 589897, 196608, 5, 589898, 196608, 5, 589899, 196608, 5, 589900, 196608, 5, 589901, 196608, 5, 458846, 131072, 5, 458847, 196608, 5, 458848, 196608, 5, 458849, 196608, 5, 458850, 196608, 5, 458851, 196608, 5, 458852, 196608, 5, 458853, 196608, 5, 458854, 196608, 5, 458855, 196608, 5, 458856, 196608, 5, 458857, 262144, 5, -1, 131072, 3, -65537, 131072, 3, -131073, 131072, 3, 589954, 196608, 5, 589955, 196608, 5, 589956, 196608, 5, 589957, 196608, 5, 589958, 196608, 5, 589959, 65536, 0, 589960, 65536, 0, 589961, 65536, 0, 589962, 65536, 0, 589963, 65536, 0, 589964, 65536, 0, 589965, 65536, 0, 589966, 65536, 0, 589967, 65536, 0, 589968, 65536, 0, 589969, 65536, 0, 589970, 65536, 0, 589971, 65536, 0, 589972, 65536, 0, 589973, 65536, 0, 589974, 65536, 0, 589975, 65536, 0, 589976, 65536, 0, 589977, 65536, 0, 589978, 65536, 0, 589979, 65536, 0, 589980, 65536, 0, 589981, 65536, 0, 589982, 65536, 0, 589983, 65536, 0, 589984, 65536, 0, 589985, 65536, 0, 589986, 65536, 0, 589987, 65536, 0, 589988, 65536, 0, 589989, 65536, 0, 589990, 65536, 0, 589991, 0, 3, 589992, 0, 3, 589993, 0, 3, 589994, 0, 3, 590000, 0, 3, 590001, 0, 3, 590002, 0, 3, 590003, 0, 3, 590004, 0, 3, 590005, 0, 3, 590006, 0, 3, 590007, 0, 3, 590008, 0, 3, 590009, 0, 3, 590010, 0, 3, 590011, 0, 3, 590012, 65536, 3, 590013, 65536, 3, 590014, 65536, 3, 590015, 65536, 3, 590016, 65536, 3, 590017, 393216, 6, 589995, 0, 3, 589996, 0, 3, 589997, 0, 3, 589998, 0, 3, 589999, 0, 3, -393023, 327680, 3, -327487, 327680, 3, -261951, 327680, 3, -196415, 327680, 3, -130879, 327680, 3, -65343, 327680, 3, 193, 327680, 3, 65729, 327680, 3, 131265, 327680, 3, 196801, 327680, 3, 262337, 327680, 3, 327873, 327680, 3, 393409, 327680, 3, 458945, 327680, 3, 524481, 327680, 3)
-
-[node name="wolf" parent="." instance=ExtResource("25_u5ua7")]
-texture_filter = 1
-position = Vector2(7762, 397)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_offset = Vector2(-3537.47, -58.2214)
@@ -1190,164 +1142,8 @@ sprite_frames = SubResource("SpriteFrames_xdf2x")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="spikes" type="Node2D" parent="."]
-
-[node name="spike" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(3549, 544)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike2" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(4368, 544)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike2"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike2"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike2"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike3" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(3800, 544)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike3"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike3"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike3"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike4" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(9672, 545)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike4"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike4"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike4"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike5" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(6242, 417)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike5"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike5"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike5"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike6" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(6104, 416)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike6"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike6"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike6"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
-[node name="spike7" type="StaticBody2D" parent="spikes"]
-texture_filter = 1
-position = Vector2(8759, 546)
-metadata/_edit_group_ = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="spikes/spike7"]
-libraries = {
-"": SubResource("AnimationLibrary_366bh")
-}
-autoplay = "spike_animation"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="spikes/spike7"]
-position = Vector2(8, 1.7643e-05)
-scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_i0u6q")
-animation = &"idel"
-frame = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spikes/spike7"]
-position = Vector2(8, 8)
-shape = SubResource("CapsuleShape2D_yg8t2")
-
 [node name="Door" parent="." instance=ExtResource("31_ouppo")]
-position = Vector2(2130, 372)
+position = Vector2(2120, 418)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -1408,16 +1204,66 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.11456
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc"]
+texture_filter = 1
+position = Vector2(11668, 502)
+scale = Vector2(0.356707, 0.338983)
+sprite_frames = SubResource("SpriteFrames_yr3jb")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.754102
+flip_h = true
+
 [node name="PrincipalDialog" type="Area2D" parent="."]
 position = Vector2(11484, -59)
 script = ExtResource("33_tykvw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PrincipalDialog"]
-position = Vector2(58.5, 310.5)
+position = Vector2(49, 311)
 shape = SubResource("RectangleShape2D_m7t3e")
 
+[node name="Node" type="Node" parent="."]
+
+[node name="Spike" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(3346, 578)
+
+[node name="Spike2" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(3825, 577)
+
+[node name="Spike3" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(3977, 577)
+
+[node name="Spike4" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(4104, 576)
+
+[node name="Spike5" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(6696, 450)
+
+[node name="Spike6" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(4815, 577)
+
+[node name="Spike7" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(6785, 515)
+
+[node name="Spike8" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(7300, 576)
+
+[node name="Spike9" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(8726, 576)
+
+[node name="Spike10" parent="Node" instance=ExtResource("29_3ko15")]
+position = Vector2(8938, 576)
+
+[node name="wolf" parent="." instance=ExtResource("25_u5ua7")]
+texture_filter = 1
+position = Vector2(7762, 397)
+
+[node name="wolf2" parent="." instance=ExtResource("25_u5ua7")]
+texture_filter = 1
+position = Vector2(5827, 405)
+
 [node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
-position = Vector2(10044, 404)
+position = Vector2(393, 489)
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manage" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manage" method="_on_quit_pressed"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfyqgodcg5esx"]
+
+[ext_resource type="Texture2D" uid="uid://cujf2m8pijd3w" path="res://Shop/Assets/Shop.png" id="1_d6kxf"]
+[ext_resource type="Script" path="res://Shop/Shop.gd" id="1_i7bit"]
+[ext_resource type="Texture2D" uid="uid://cy8khycovaa7g" path="res://player/img/3.png" id="2_tj04o"]
+[ext_resource type="Texture2D" uid="uid://dhl8l5rymv63r" path="res://player/img/2.png" id="3_2qfsa"]
+
+[node name="Shop" type="CanvasLayer"]
+script = ExtResource("1_i7bit")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(320, 240)
+texture = ExtResource("1_d6kxf")
+
+[node name="goods" type="Node" parent="."]
+
+[node name="fire_bullet" type="Sprite2D" parent="goods"]
+texture_filter = 1
+position = Vector2(434, 128)
+scale = Vector2(5.375, 5)
+texture = ExtResource("2_tj04o")
+
+[node name="water_bullet" type="Sprite2D" parent="goods"]
+texture_filter = 1
+position = Vector2(429.125, 207)
+scale = Vector2(4.96875, 5.4375)
+texture = ExtResource("3_2qfsa")
+
+[node name="fire_b" type="Button" parent="goods"]
+offset_left = 406.0
+offset_top = 105.0
+offset_right = 420.0
+offset_bottom = 116.0
+scale = Vector2(3.68091, 4.28506)
+
+[node name="water_b" type="Button" parent="goods"]
+offset_left = 407.0
+offset_top = 181.0
+offset_right = 453.0
+offset_bottom = 229.0
+
+[node name="forms" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="forms"]
+
+[connection signal="pressed" from="goods/fire_b" to="." method="_on_fire_b_pressed"]
+[connection signal="pressed" from="goods/water_b" to="." method="_on_water_b_pressed"]

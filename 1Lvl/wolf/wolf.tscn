@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b7ustyyisklwg" path="res://1Lvl/wolf/wolf.png" id="8_2f4ta"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7pyyv"]
-radius = 299.74
+radius = 644.842
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kjfce"]
 animations = [{

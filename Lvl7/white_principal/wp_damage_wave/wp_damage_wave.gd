@@ -3,7 +3,7 @@ extends Area2D
 var narrow_counter = 0
 var narrow_flag = false
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	print(narrow_flag)
 	if not self.scale.x >= 5:
 		if not narrow_flag:

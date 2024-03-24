@@ -418,5 +418,6 @@ offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
 
+[connection signal="body_exited" from="fire/Fire" to="Manager" method="_on_fire_body_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

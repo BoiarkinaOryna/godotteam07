@@ -1,28 +1,36 @@
-[gd_scene load_steps=4 format=3 uid="uid://dnbr3i7px23w"]
+[gd_scene load_steps=5 format=3 uid="uid://dnbr3i7px23w"]
 
 [ext_resource type="Texture2D" uid="uid://b2a2xeoy2a8dx" path="res://Buttons/Assets/Move_left.png" id="1_fubuq"]
 [ext_resource type="Texture2D" uid="uid://b0l3yket43jqf" path="res://Buttons/Assets/Move_right.png" id="2_evyvp"]
 [ext_resource type="Texture2D" uid="uid://cv061meglc8cw" path="res://Buttons/Assets/Jump.png" id="3_mjiud"]
+[ext_resource type="Texture2D" uid="uid://dwn164pl6iuea" path="res://Buttons/Assets/Untitled 03-17-2024 08-45-25.png" id="4_cu2fy"]
 
 [node name="Moving" type="CanvasLayer"]
 
 [node name="Left" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(200, 713)
-scale = Vector2(2.5, 2.5)
+position = Vector2(200, 816)
+scale = Vector2(1.14286, 1.27381)
 texture_normal = ExtResource("1_fubuq")
 action = "ui_left"
 
 [node name="Right" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(568, 712)
-scale = Vector2(2.5, 2.5)
+position = Vector2(336, 816)
+scale = Vector2(1.2381, 1.33333)
 texture_normal = ExtResource("2_evyvp")
 action = "ui_right"
 
 [node name="Jump" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(1640, 544)
-scale = Vector2(2.5, 2.5)
+position = Vector2(1680, 608)
+scale = Vector2(1.71428, 1.7381)
 texture_normal = ExtResource("3_mjiud")
 action = "ui_accept"
+
+[node name="hit" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+position = Vector2(1448, 728)
+scale = Vector2(2.625, 2.625)
+texture_normal = ExtResource("4_cu2fy")
+action = "ui_attack"

@@ -3,8 +3,8 @@ extends Node
 var game_pause = false
 @onready var pause_menu = $"../CanvasLayer/Control"
 func _process(_delta):
-	if get_node("/root/Dialogic").pause == true:
-		game_pause = true
+	#if get_node("/root/Dialogic").pause == true:
+		#game_pause = true
 	if Input.is_action_just_pressed("ui_cancel"):
 		game_pause = !game_pause
 	if game_pause:
