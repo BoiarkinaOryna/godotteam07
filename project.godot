@@ -33,11 +33,14 @@ directories/dch_directory={
 "Queen": "res://preface/characters/Queen.dch"
 }
 directories/dtl_directory={
+"Fairy_Principal2Lvl": "res://Lvl2/dialogic/Fairy_Principal2Lvl.dtl",
+"Fairy_Principal2Lvl2": "res://Lvl2/dialogic/Fairy_Principal2Lvl2.dtl",
 "King_dialog": "res://1Lvl/dialogic/King_dialog.dtl",
 "Principal_dialog": "res://1Lvl/dialogic/Principal_dialog.dtl",
 "prefaceTimeline": "res://preface/prefaceTimeline.dtl",
 "prefaceTimeline2": "res://preface/prefaceTimeline2.dtl",
-"prefaceTimeline3": "res://preface/prefaceTimeline3.dtl"
+"prefaceTimeline3": "res://preface/prefaceTimeline3.dtl",
+"timeline": "res://1Lvl/dialogic/Gossipers.dtl"
 }
 glossary/default_case_sensitive=true
 glossary/default_color=Color(1, 0, 0, 1)

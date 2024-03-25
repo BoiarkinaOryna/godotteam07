@@ -105,7 +105,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 3.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -176,6 +176,8 @@ scale = Vector2(0.475806, 0.540323)
 sprite_frames = SubResource("SpriteFrames_2x006")
 animation = &"attack"
 autoplay = "idle"
+frame = 4
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 texture_filter = 1

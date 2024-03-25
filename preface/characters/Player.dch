@@ -8,16 +8,16 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "portret",
+"default_portrait": "Jump (2)",
 "description": "",
 "display_name": "Player",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"portret": {
+"Jump (2)": {
 "export_overrides": {
-"image": "\"NPCs.png\""
+"image": "\"res://player/img/Jump (2).png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
