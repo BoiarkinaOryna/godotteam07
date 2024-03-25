@@ -1,15 +1,15 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1711365084
+::res://::1711366981
 export_presets.cfg::TextFile::-1::1711365058::0::1::::<><>::
 icon.svg::CompressedTexture2D::7639866719544152187::1711365058::1711365091::1::::<><>::
 main.tscn::PackedScene::7443463035017833108::1711365058::0::1::::<><>::uid://clxlbbt5uagij::::res://Lvl2/Assets/Field.png<>uid://bvl17mbbwqdb2::::res://img/tileset-removebg-preview.png<>uid://cncvedpa4kf2o::::res://player/player6/player6.tscn
 spike_left.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-::res://1Lvl/::1711365058
+::res://1Lvl/::1711366538
 door1.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door1.tscn::PackedScene::3484031836832212921::1711365058::0::1::::<><>::res://1Lvl/door1.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl1.tscn::PackedScene::4813728416305393145::1711365058::0::1::::<><>::res://1Lvl/Manage.gd<>uid://dikb0t3ohp1r5::::res://1Lvl/Acsests/sky.png<>uid://dt77owu4ymtco::::res://1Lvl/Acsests/sky2.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://bdtv3qgr4w0hs::::res://1Lvl/Acsests/Untitled 02-02-2024 04-34-28 (4).png<>uid://d3uje80kqvubj::::res://1Lvl/Acsests/Untitled 02-04-2024 12-23-34 (1) (2).png<>uid://dfye5ynexlbxe::::res://1Lvl/Acsests/Untitled 02-02-2024 08-41-43 (7).png<>uid://pcfcrvkf8ggu::::res://1Lvl/Acsests/Dark_dark_sky.png<>uid://dj2jp1du6d775::::res://1Lvl/Acsests/Untitled 02-05-2024 05-27-39 (4).png<>uid://bwn7j1x8v63yk::::res://1Lvl/Acsests/photo_2024-02-04_21-26-00.jpg<>uid://o860d3sy5hwv::::res://1Lvl/Acsests/photo_2024-02-03_22-23-13.jpg<>uid://infjg7o2l4cd::::res://1Lvl/Acsests/photo_2024-02-04_21-57-11.jpg<>uid://dwdwhalwqc16t::::res://1Lvl/Acsests/WorldIT.png<>uid://yhi04v42ecdl::::res://1Lvl/Acsests/dark_grass1.png<>uid://ce4if0wesug0y::::res://1Lvl/Acsests/dark_grass2.png<>uid://ckajufmcwr3th::::res://1Lvl/Acsests/dark_grass3.png<>uid://dblrybyh6vkkc::::res://1Lvl/Acsests/dark_grass4.png<>uid://6gaw15e0s2nl::::res://Lvl2/Assets/green_grass1.png<>uid://brg4gvkiaxcep::::res://Lvl2/Assets/green_grass2.png<>uid://c00rpvy3tdktg::::res://Lvl2/Assets/green_grass3.png<>uid://ixywk0ymam73::::res://Lvl2/Assets/green_grass4.png<>uid://bl3mh6t2oflim::::res://1Lvl/wolf/wolf.tscn<>uid://dc0fls8cp1khs::::res://img/Ratatuiy (2).png<>uid://cae0ik4qka5lq::::res://Spikes/Spike.tscn<>uid://cmqxlr0w7e7y2::::res://player/player1/player1.tscn<>uid://cnkdqi6pwrgmq::::res://1Lvl/Acsests/MicroChely.png<>uid://bpvxq3uoio450::::res://1Lvl/door1.tscn<>uid://bk2p3vgulg20k::::res://1Lvl/Acsests/Untitled 02-25-2024 06-26-36.png<>uid://chs6jrtaq32kd::::res://img/NPCs.png<>res://1Lvl/PrincipalDialog1lvl.gd
+door1.tscn::PackedScene::3484031836832212921::1711366356::0::1::::<><>::res://1Lvl/door1.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl1.tscn::PackedScene::4813728416305393145::1711366538::0::1::::<><>::res://1Lvl/Manage.gd<>uid://dikb0t3ohp1r5::::res://1Lvl/Acsests/sky.png<>uid://dt77owu4ymtco::::res://1Lvl/Acsests/sky2.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://bdtv3qgr4w0hs::::res://1Lvl/Acsests/Untitled 02-02-2024 04-34-28 (4).png<>uid://d3uje80kqvubj::::res://1Lvl/Acsests/Untitled 02-04-2024 12-23-34 (1) (2).png<>uid://dfye5ynexlbxe::::res://1Lvl/Acsests/Untitled 02-02-2024 08-41-43 (7).png<>uid://pcfcrvkf8ggu::::res://1Lvl/Acsests/Dark_dark_sky.png<>uid://dj2jp1du6d775::::res://1Lvl/Acsests/Untitled 02-05-2024 05-27-39 (4).png<>uid://bwn7j1x8v63yk::::res://1Lvl/Acsests/photo_2024-02-04_21-26-00.jpg<>uid://o860d3sy5hwv::::res://1Lvl/Acsests/photo_2024-02-03_22-23-13.jpg<>uid://infjg7o2l4cd::::res://1Lvl/Acsests/photo_2024-02-04_21-57-11.jpg<>uid://dwdwhalwqc16t::::res://1Lvl/Acsests/WorldIT.png<>uid://yhi04v42ecdl::::res://1Lvl/Acsests/dark_grass1.png<>uid://ce4if0wesug0y::::res://1Lvl/Acsests/dark_grass2.png<>uid://ckajufmcwr3th::::res://1Lvl/Acsests/dark_grass3.png<>uid://dblrybyh6vkkc::::res://1Lvl/Acsests/dark_grass4.png<>uid://6gaw15e0s2nl::::res://Lvl2/Assets/green_grass1.png<>uid://brg4gvkiaxcep::::res://Lvl2/Assets/green_grass2.png<>uid://c00rpvy3tdktg::::res://Lvl2/Assets/green_grass3.png<>uid://ixywk0ymam73::::res://Lvl2/Assets/green_grass4.png<>uid://bl3mh6t2oflim::::res://1Lvl/wolf/wolf.tscn<>uid://dc0fls8cp1khs::::res://img/Ratatuiy (2).png<>uid://cae0ik4qka5lq::::res://Spikes/Spike.tscn<>uid://cmqxlr0w7e7y2::::res://player/player1/player1.tscn<>uid://cnkdqi6pwrgmq::::res://1Lvl/Acsests/MicroChely.png<>uid://bpvxq3uoio450::::res://1Lvl/door1.tscn<>uid://bk2p3vgulg20k::::res://1Lvl/Acsests/Untitled 02-25-2024 06-26-36.png<>uid://chs6jrtaq32kd::::res://img/NPCs.png<>res://1Lvl/PrincipalDialog1lvl.gd
 Manage.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
-PrincipalDialog1lvl.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
+PrincipalDialog1lvl.gd::GDScript::-1::1711366329::0::1::::<>Area2D<>::
 ::res://1Lvl/Acsests/::1711365058
 Dark_dark_sky.png::CompressedTexture2D::1057269492430432720::1711365058::1711365058::1::::<><>::
 dark_grass1.png::CompressedTexture2D::1699514829352864681::1711365058::1711365058::1::::<><>::
@@ -46,10 +46,10 @@ Untitled 02-06-2024 01-54-15 (2).png::CompressedTexture2D::6923836014667830381::
 Untitled 02-25-2024 06-26-36.png::CompressedTexture2D::3145009189736728488::1711365058::1711365058::1::::<><>::
 village.jpg::CompressedTexture2D::7725369238504208567::1711365058::1711365058::1::::<><>::
 WorldIT.png::CompressedTexture2D::8710958036790310441::1711365058::1711365058::1::::<><>::
-::res://1Lvl/dialogic/::1711365058
+::res://1Lvl/dialogic/::1711365891
 King_dialog.dtl::Resource::-1::1711365058::0::1::::<><>::
-Principal_dialog.dtl::Resource::-1::1711365058::0::1::::<><>::
-::res://1Lvl/wolf/::1711365058
+Principal_dialog.dtl::Resource::-1::1711365891::0::1::::<><>::
+::res://1Lvl/wolf/::1711366356
 wolf1.png::CompressedTexture2D::4173110781396174491::1711365058::1711365058::1::::<><>::
 wolf2.png::CompressedTexture2D::3217405876738386410::1711365058::1711365058::1::::<><>::
 wolf3.png::CompressedTexture2D::5921872427535990402::1711365058::1711365058::1::::<><>::
@@ -58,7 +58,7 @@ wolf5.png::CompressedTexture2D::7140459545070151554::1711365058::1711365058::1::
 wolf6.png::CompressedTexture2D::3995570742144311119::1711365058::1711365058::1::::<><>::
 wolf.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
 wolf.png::CompressedTexture2D::4674879369168975630::1711365058::1711365058::1::::<><>::
-wolf.tscn::PackedScene::3217043304116475888::1711365058::0::1::::<><>::res://1Lvl/wolf/wolf.gd<>uid://cqjqk4in8tb4g::::res://1Lvl/wolf/wolf4.png<>uid://c8y5lcino0jpy::::res://1Lvl/wolf/wolf5.png<>uid://bw6qp4d6ti7jn::::res://1Lvl/wolf/wolf6.png<>uid://bl3sg7wmboobq::::res://1Lvl/wolf/wolf2.png<>uid://b0pqr30rk1qed::::res://1Lvl/wolf/wolf1.png<>uid://cqmumx8k5igcg::::res://1Lvl/wolf/wolf3.png<>uid://b7ustyyisklwg::::res://1Lvl/wolf/wolf.png
+wolf.tscn::PackedScene::3217043304116475888::1711366356::0::1::::<><>::res://1Lvl/wolf/wolf.gd<>uid://cqjqk4in8tb4g::::res://1Lvl/wolf/wolf4.png<>uid://c8y5lcino0jpy::::res://1Lvl/wolf/wolf5.png<>uid://bw6qp4d6ti7jn::::res://1Lvl/wolf/wolf6.png<>uid://bl3sg7wmboobq::::res://1Lvl/wolf/wolf2.png<>uid://b0pqr30rk1qed::::res://1Lvl/wolf/wolf1.png<>uid://cqmumx8k5igcg::::res://1Lvl/wolf/wolf3.png<>uid://b7ustyyisklwg::::res://1Lvl/wolf/wolf.png
 ::res://addons/::1711365058
 ::res://addons/dialogic/::1711365058
 plugin.cfg::TextFile::-1::1711365058::0::1::::<><>::
@@ -151,8 +151,8 @@ field_vector3.tscn::PackedScene::5498072204895349086::1711365058::0::1::::<><>::
 field_vector4.gd::GDScript::-1::1711365058::0::1::::<>DialogicVisualEditorFieldVector<>::
 field_vector4.tscn::PackedScene::8865564483908772626::1711365058::0::1::::<><>::uid://cklkpfrcvopgw::::res://addons/dialogic/Editor/Events/Fields/field_vector3.tscn<>res://addons/dialogic/Editor/Events/Fields/field_vector4.gd<>uid://kdpp3mibml33::::res://addons/dialogic/Editor/Events/Fields/field_number.tscn
 field_vector_base.gd::GDScript::-1::1711365058::0::1::::DialogicVisualEditorFieldVector<>DialogicVisualEditorField<>::
-::res://addons/dialogic/Editor/Events/styles/::1711365058
-InputFieldsStyle.tres::Theme::9138712547249545382::1711365058::0::1::::<><>::
+::res://addons/dialogic/Editor/Events/styles/::1711365891
+InputFieldsStyle.tres::Theme::9138712547249545382::1711365891::0::1::::<><>::
 ResourceMenuHover.tres::StyleBoxFlat::-1::1711365058::0::1::::<><>::
 ResourceMenuNormal.tres::StyleBoxFlat::-1::1711365058::0::1::::<><>::
 ResourceMenuPanelBackground.tres::StyleBoxFlat::209165682571293718::1711365058::0::1::::<><>::
@@ -167,13 +167,13 @@ home_page.gd::GDScript::-1::1711365058::0::1::::<>DialogicEditor<>::
 home_page.tscn::PackedScene::5947401273500014660::1711365058::0::1::::<><>::res://addons/dialogic/Editor/HomePage/home_page.gd<>uid://cvmlp5nxb2rer::::res://addons/dialogic/Editor/HomePage/icon_bg.png<>uid://bt87p6qlso0ya::::res://addons/dialogic/Editor/Images/dialogic-logo.svg
 icon_bg.png::CompressedTexture2D::6272275887492997861::1711365058::1711365058::1::::<><>::
 tips.txt::TextFile::-1::1711365058::0::1::::<><>::
-::res://addons/dialogic/Editor/Images/::1711365058
+::res://addons/dialogic/Editor/Images/::1711365091
 dialogic-logo.svg::CompressedTexture2D::3790104562841938052::1711365058::1711365091::1::::<><>::
 plugin-icon.svg::CompressedTexture2D::8846273605144170474::1711365058::1711365091::1::::<><>::
 preview_character.png::CompressedTexture2D::2091084072335210920::1711365058::1711365058::1::::<><>::
 preview_character_speaker.png::CompressedTexture2D::8278972532691820378::1711365058::1711365058::1::::<><>::
 Unknown.png::CompressedTexture2D::2468576728646207283::1711365058::1711365058::1::::<><>::
-::res://addons/dialogic/Editor/Images/Dropdown/::1711365058
+::res://addons/dialogic/Editor/Images/Dropdown/::1711365091
 default.svg::CompressedTexture2D::3699310598590037939::1711365058::1711365091::1::::<><>::
 divide.svg::CompressedTexture2D::6901258230860890461::1711365058::1711365091::1::::<><>::
 join.svg::CompressedTexture2D::4652731984810704514::1711365058::1711365091::1::::<><>::
@@ -183,10 +183,10 @@ multiply.svg::CompressedTexture2D::7394628180941628304::1711365058::1711365091::
 plus.svg::CompressedTexture2D::5930089714513836210::1711365058::1711365091::1::::<><>::
 set.svg::CompressedTexture2D::7374282244844152748::1711365058::1711365091::1::::<><>::
 update.svg::CompressedTexture2D::1388319587067716478::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Editor/Images/Interactable/::1711365058
+::res://addons/dialogic/Editor/Images/Interactable/::1711365091
 decrement_icon.svg::CompressedTexture2D::3598714787571246953::1711365058::1711365091::1::::<><>::
 increment_icon.svg::CompressedTexture2D::7705718629669986091::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Editor/Images/Pieces/::1711365058
+::res://addons/dialogic/Editor/Images/Pieces/::1711365091
 add-folder.svg::CompressedTexture2D::70289101131231738::1711365058::1711365091::1::::<><>::
 closed-icon.svg::CompressedTexture2D::8832306723559159287::1711365058::1711365091::1::::<><>::
 expand-icon.svg::CompressedTexture2D::5598266563617168116::1711365058::1711365091::1::::<><>::
@@ -194,11 +194,11 @@ open-icon.svg::CompressedTexture2D::848339285911761348::1711365058::1711365091::
 variable.svg::CompressedTexture2D::7736806399882628569::1711365058::1711365091::1::::<><>::
 variable_icon.png::CompressedTexture2D::582349284127075295::1711365058::1711365058::1::::<><>::
 warning.svg::CompressedTexture2D::9223293116452544095::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Editor/Images/Resources/::1711365058
+::res://addons/dialogic/Editor/Images/Resources/::1711365091
 character.svg::CompressedTexture2D::2464911902091785916::1711365058::1711365091::1::::<><>::
 icon_character.png::CompressedTexture2D::3275168337811362221::1711365058::1711365058::1::::<><>::
 portrait.svg::CompressedTexture2D::7528673539557211468::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Editor/Images/Toolbar/::1711365058
+::res://addons/dialogic/Editor/Images/Toolbar/::1711365091
 add-character.svg::CompressedTexture2D::893739393082554513::1711365058::1711365091::1::::<><>::
 add-timeline.svg::CompressedTexture2D::4096396075137893428::1711365058::1711365091::1::::<><>::
 ::res://addons/dialogic/Editor/Settings/::1711365058
@@ -334,7 +334,7 @@ swipe_right_to_left.gd::GDScript::-1::1711365058::0::1::::<>DialogicBackgroundTr
 event_call.gd::GDScript::-1::1711365058::0::1::::DialogicCallEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::8606518780689924191::1711365058::1711365058::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Character/::1711365058
+::res://addons/dialogic/Modules/Character/::1711365091
 class_dialogic_animation.gd::GDScript::-1::1711365058::0::1::::DialogicAnimation<>Node<>::
 default_portrait.gd::GDScript::-1::1711365058::0::1::::<>DialogicPortrait<>::
 default_portrait.tscn::PackedScene::4408357561561711185::1711365058::0::1::::<><>::res://addons/dialogic/Modules/Character/default_portrait.gd
@@ -346,7 +346,7 @@ icon_character.png::CompressedTexture2D::4229580660901790674::1711365058::171136
 icon_position.png::CompressedTexture2D::6240753079284806829::1711365058::1711365058::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 node_portrait_container.gd::GDScript::-1::1711365058::0::1::::DialogicNode_PortraitContainer<>Control<>::
-preview_character.tres::Resource/DialogicCharacter::8864788605870491990::1711365058::0::1::::<><>::res://addons/dialogic/Resources/character.gd
+preview_character.tres::Resource/Resource::8864788605870491990::1711365058::0::1::::<><>::res://addons/dialogic/Resources/character.gd
 settings_portraits.gd::GDScript::-1::1711365058::0::1::::<>DialogicSettingsPage<>::
 settings_portraits.tscn::PackedScene::5887474122682821078::1711365058::0::1::::<><>::res://addons/dialogic/Modules/Character/settings_portraits.gd<>uid://dbpkta2tjsqim::::res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn<>uid://dpwhshre1n4t6::::res://addons/dialogic/Editor/Events/Fields/field_options_dynamic.tscn<>uid://7mvxuaulctcq::::res://addons/dialogic/Editor/Events/Fields/field_file.tscn
 subsystem_portraits.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
@@ -378,7 +378,7 @@ zoom_in.gd::GDScript::-1::1711365058::0::1::::<>DialogicAnimation<>::
 zoom_in_center.gd::GDScript::-1::1711365058::0::1::::<>DialogicAnimation<>::
 zoom_out.gd::GDScript::-1::1711365058::0::1::::<>DialogicAnimation<>::
 zoom_out_center.gd::GDScript::-1::1711365058::0::1::::<>DialogicAnimation<>::
-::res://addons/dialogic/Modules/Choice/::1711365058
+::res://addons/dialogic/Modules/Choice/::1711365091
 event_choice.gd::GDScript::-1::1711365058::0::1::::DialogicChoiceEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::1552118133808780732::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
@@ -389,7 +389,7 @@ settings_choices.tscn::PackedScene::1404846898600483774::1711365058::0::1::::<><
 subsystem_choices.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
 ui_choice_end.gd::GDScript::-1::1711365058::0::1::::<>HBoxContainer<>::
 ui_choice_end.tscn::PackedScene::5738243432914111361::1711365058::0::1::::<><>::res://addons/dialogic/Modules/Choice/ui_choice_end.gd
-::res://addons/dialogic/Modules/Clear/::1711365058
+::res://addons/dialogic/Modules/Clear/::1711365091
 clear_background.svg::CompressedTexture2D::3585755572244796303::1711365058::1711365091::1::::<><>::
 clear_characters.svg::CompressedTexture2D::9128672524072404421::1711365058::1711365091::1::::<><>::
 clear_music.svg::CompressedTexture2D::7071655307651287836::1711365058::1711365091::1::::<><>::
@@ -403,7 +403,7 @@ index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 event_comment.gd::GDScript::-1::1711365058::0::1::::DialogicCommentEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::494830544991740231::1711365058::1711365058::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Condition/::1711365058
+::res://addons/dialogic/Modules/Condition/::1711365091
 event_condition.gd::GDScript::-1::1711365058::0::1::::DialogicConditionEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::2557495755310811754::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
@@ -426,19 +426,19 @@ part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 text_bubble_base.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutBase<>::
 text_bubble_base.tscn::PackedScene::1313567352675269338::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.gd
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/::1711365091
 background_layer_icon.svg::CompressedTexture2D::5684618338398076797::1711365058::1711365091::1::::<><>::
 full_background_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 full_background_layer.tscn::PackedScene::6620239367191024367::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.gd<>res://addons/dialogic/Modules/Background/node_background_holder.gd
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::6752591039733634668::1711365058::1711365058::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/::1711365091
 glossary_popup_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 glossary_popup_layer.tscn::PackedScene::8426085437997601224::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.gd
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 popup_glossary_layer_icon.svg::CompressedTexture2D::6773218685446495568::1711365058::1711365091::1::::<><>::
 preview.png::CompressedTexture2D::8851309275982362647::1711365058::1711365058::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/::1711365091
 example_history_item.gd::GDScript::-1::1711365058::0::1::::<>Container<>::
 example_history_item.tscn::PackedScene::6207016936388778734::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.gd
 history_icon.svg::CompressedTexture2D::6281808712891090691::1711365058::1711365091::1::::<><>::
@@ -446,20 +446,20 @@ history_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 history_layer.tscn::PackedScene::24154399605827450::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.gd<>uid://cuoywrmvda1yg::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.tscn
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::4641689977736716692::1711365058::1711365058::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/::1711365091
 full_advance_input_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 full_advance_input_layer.tscn::PackedScene::5751287062166832928::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.gd<>res://addons/dialogic/Modules/Text/node_input.gd
 input_layer_icon.svg::CompressedTexture2D::3920242578168397878::1711365058::1711365091::1::::<><>::
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::4608186578602512888::1711365058::1711365058::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/::1711365091
 default_stylebox.tres::StyleBoxFlat::5646424049282425802::1711365058::0::1::::<><>::
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::1326475808619160445::1711365058::1711365058::1::::<><>::
 speaker-textbox-icon.svg::CompressedTexture2D::6572615020867580224::1711365058::1711365091::1::::<><>::
 speaker_portrait_textbox_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 textbox_with_speaker_portrait.tscn::PackedScene::4136285383422450981::1711365058::0::1::::<><>::res://addons/dialogic/Modules/Character/node_portrait_container.gd<>res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/speaker_portrait_textbox_layer.gd<>res://addons/dialogic/Modules/Text/node_name_label.gd<>res://addons/dialogic/Modules/Text/node_dialog_text.gd
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/::1711365091
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::1666601866937659873::1711365058::1711365058::1::::<><>::
 speech_bubble.gdshader::Shader::-1::1711365058::0::1::::<><>::
@@ -468,13 +468,13 @@ text_bubble.tscn::PackedScene::7980779173428697354::1711365058::0::1::::<><>::re
 text_bubble_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 text_bubble_layer.tscn::PackedScene::9072075339465482549::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.gd<>uid://dlx7jcvm52tyw::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble.tscn
 text_bubble_layer_icon.svg::CompressedTexture2D::7612818198478101362::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/::1711365091
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::3354729633291840074::1711365058::1711365058::1::::<><>::
 text_input_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 text_input_layer.tscn::PackedScene::6259548876513588080::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.gd<>res://addons/dialogic/Modules/TextInput/node_text_input.gd
 text_input_layer_icon.svg::CompressedTexture2D::9001753205476851513::1711365058::1711365091::1::::<><>::
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/::1711365091
 choices_layer_icon.svg::CompressedTexture2D::1619877049926111804::1711365058::1711365091::1::::<><>::
 choice_panel_focus.tres::StyleBoxFlat::3842993240234113681::1711365058::0::1::::<><>::
 choice_panel_hover.tres::StyleBoxFlat::1653175341677166036::1711365058::0::1::::<><>::
@@ -483,13 +483,13 @@ part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::546001159453912051::1711365058::1711365058::1::::<><>::
 vn_choice_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 vn_choice_layer.tscn::PackedScene::225680225514622240::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.gd<>res://addons/dialogic/Modules/Choice/node_choice_button.gd<>res://addons/dialogic/Modules/Choice/node_button_sound.gd<>uid://b6c1p14bc20p1::::res://addons/dialogic/Example Assets/sound-effects/typing1.wav<>uid://c2viukvbub6v6::::res://addons/dialogic/Example Assets/sound-effects/typing4.wav
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/::1711365091
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 portrait_layer_icon.svg::CompressedTexture2D::396903176641995005::1711365058::1711365091::1::::<><>::
 preview.png::CompressedTexture2D::1716235565247592445::1711365058::1711365058::1::::<><>::
 vn_portrait_layer.gd::GDScript::-1::1711365058::0::1::::<>DialogicLayoutLayer<>::
 vn_portrait_layer.tscn::PackedScene::6512552610928516099::1711365058::0::1::::<><>::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.gd<>res://addons/dialogic/Modules/Character/node_portrait_container.gd
-::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/::1711365058
+::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/::1711365091
 animations.gd::GDScript::-1::1711365058::0::1::::<>AnimationPlayer<>::
 autoadvance_indicator.gd::GDScript::-1::1711365058::0::1::::<>Range<>::
 next.svg::CompressedTexture2D::4177175797267068132::1711365058::1711365091::1::::<><>::
@@ -503,20 +503,20 @@ vn_textbox_name_label_panel.tres::StyleBoxFlat::908733606549242590::1711365058::
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_SpeakerTextbox/::1711365058
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::8025234003730989842::1711365058::1711365058::1::::<><>::
-speaker_textbox_style.tres::Resource/DialogicStyle::7601804504371859326::1711365058::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+speaker_textbox_style.tres::Resource/Resource::7601804504371859326::1711365058::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_TextBubbles/::1711365058
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::1244020212817713961::1711365058::1711365058::1::::<><>::
-textbubble_style.tres::Resource/DialogicStyle::4178401552284372098::1711365058::0::1::::<><>::uid://syki6k0e6aac::::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn<>res://addons/dialogic/Resources/dialogic_style.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn
+textbubble_style.tres::Resource/Resource::4178401552284372098::1711365058::0::1::::<><>::uid://syki6k0e6aac::::res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn<>res://addons/dialogic/Resources/dialogic_style.gd<>uid://d2it0xiap3gnt::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn
 ::res://addons/dialogic/Modules/DefaultLayoutParts/Style_VN_Default/::1711365058
-default_vn_style.tres::Resource/DialogicStyle::2357056026045195210::1711365058::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
+default_vn_style.tres::Resource/Resource::2357056026045195210::1711365058::0::1::::<><>::res://addons/dialogic/Resources/dialogic_style.gd<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn
 part_config.cfg::TextFile::-1::1711365058::0::1::::<><>::
 preview.png::CompressedTexture2D::1793830588723612143::1711365058::1711365058::1::::<><>::
 ::res://addons/dialogic/Modules/End/::1711365058
 event_end.gd::GDScript::-1::1711365058::0::1::::DialogicEndTimelineEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::6076849027047342294::1711365058::1711365058::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Glossary/::1711365058
+::res://addons/dialogic/Modules/Glossary/::1711365091
 add-glossary.svg::CompressedTexture2D::5081683421271977615::1711365058::1711365091::1::::<><>::
 event_glossary.gd::GDScript::-1::1711365058::0::1::::DialogicGlossaryEvent<>DialogicEvent<>::
 glossary_editor.gd::GDScript::-1::1711365058::0::1::::<>DialogicEditor<>::
@@ -525,7 +525,7 @@ glossary_resource.gd::GDScript::-1::1711365058::0::1::::DialogicGlossary<>Resour
 icon.svg::CompressedTexture2D::4540926883099757451::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 subsystem_glossary.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/History/::1711365058
+::res://addons/dialogic/Modules/History/::1711365091
 definition.svg::CompressedTexture2D::7977914867733989258::1711365058::1711365091::1::::<><>::
 event_history.gd::GDScript::-1::1711365058::0::1::::DialogicHistoryEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::1853570986969252340::1711365058::1711365091::1::::<><>::
@@ -533,7 +533,7 @@ index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 settings_history.gd::GDScript::-1::1711365058::0::1::::<>DialogicSettingsPage<>::
 settings_history.tscn::PackedScene::4542659110630949498::1711365058::0::1::::<><>::res://addons/dialogic/Modules/History/settings_history.gd<>uid://dbpkta2tjsqim::::res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn
 subsystem_history.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Jump/::1711365058
+::res://addons/dialogic/Modules/Jump/::1711365091
 event_jump.gd::GDScript::-1::1711365058::0::1::::DialogicJumpEvent<>DialogicEvent<>::
 event_label.gd::GDScript::-1::1711365058::0::1::::DialogicLabelEvent<>DialogicEvent<>::
 event_return.gd::GDScript::-1::1711365058::0::1::::DialogicReturnEvent<>DialogicEvent<>::
@@ -542,14 +542,14 @@ icon_label.png::CompressedTexture2D::204052454782202907::1711365058::1711365058:
 icon_return.svg::CompressedTexture2D::747971600453106621::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 subsystem_jump.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Save/::1711365058
+::res://addons/dialogic/Modules/Save/::1711365091
 event_save.gd::GDScript::-1::1711365058::0::1::::DialogicSaveEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::9161839171657716917::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 settings_save.gd::GDScript::-1::1711365058::0::1::::<>DialogicSettingsPage<>::
 settings_save.tscn::PackedScene::5043017118059958494::1711365058::0::1::::<><>::res://addons/dialogic/Modules/Save/settings_save.gd<>uid://dbpkta2tjsqim::::res://addons/dialogic/Editor/Common/hint_tooltip_icon.tscn
 subsystem_save.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Settings/::1711365058
+::res://addons/dialogic/Modules/Settings/::1711365091
 event_setting.gd::GDScript::-1::1711365058::0::1::::DialogicSettingEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::5623309547840460913::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
@@ -566,7 +566,7 @@ icon.png::CompressedTexture2D::5716795925671324642::1711365058::1711365058::1:::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 node_style.gd::GDScript::-1::1711365058::0::1::::DialogicNode_StyleLayer<>Control<>::
 subsystem_styles.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/StyleEditor/::1711365058
+::res://addons/dialogic/Modules/StyleEditor/::1711365091
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 styles_icon.svg::CompressedTexture2D::1849808737952588208::1711365058::1711365091::1::::<><>::
 style_editor.gd::GDScript::-1::1711365058::0::1::::<>DialogicEditor<>::
@@ -579,7 +579,7 @@ style_browser.gd::GDScript::-1::1711365058::0::1::::<>Control<>::
 style_browser.tscn::PackedScene::6096093685190146780::1711365058::0::1::::<><>::res://addons/dialogic/Modules/StyleEditor/Components/style_browser.gd
 style_browser_window.gd::GDScript::-1::1711365058::0::1::::<>Window<>::
 style_layer_tree.gd::GDScript::-1::1711365058::0::1::::<>Tree<>::
-::res://addons/dialogic/Modules/Text/::1711365058
+::res://addons/dialogic/Modules/Text/::1711365091
 auto_advance.gd::GDScript::-1::1711365058::0::1::::DialogicAutoAdvance<>RefCounted<>::
 auto_skip.gd::GDScript::-1::1711365058::0::1::::DialogicAutoSkip<>RefCounted<>::
 event_text.gd::GDScript::-1::1711365058::0::1::::DialogicTextEvent<>DialogicEvent<>::
@@ -606,7 +606,7 @@ icon.png::CompressedTexture2D::8941053882979023594::1711365058::1711365058::1:::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 node_text_input.gd::GDScript::-1::1711365058::0::1::::DialogicNode_TextInput<>Control<>::
 subsystem_text_input.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Variable/::1711365058
+::res://addons/dialogic/Modules/Variable/::1711365091
 add-variable.svg::CompressedTexture2D::1138705662028104178::1711365058::1711365091::1::::<><>::
 event_variable.gd::GDScript::-1::1711365058::0::1::::DialogicVariableEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::1655383244634406440::1711365058::1711365058::1::::<><>::
@@ -622,11 +622,11 @@ event_voice.gd::GDScript::-1::1711365058::0::1::::DialogicVoiceEvent<>DialogicEv
 icon.png::CompressedTexture2D::1495890933425968798::1711365058::1711365058::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
 subsystem_voice.gd::GDScript::-1::1711365058::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Wait/::1711365058
+::res://addons/dialogic/Modules/Wait/::1711365091
 event_wait.gd::GDScript::-1::1711365058::0::1::::DialogicWaitEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::5022412015422553386::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/WaitInput/::1711365058
+::res://addons/dialogic/Modules/WaitInput/::1711365091
 event_wait_input.gd::GDScript::-1::1711365058::0::1::::DialogicWaitInputEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::2766149336681406939::1711365058::1711365091::1::::<><>::
 index.gd::GDScript::-1::1711365058::0::1::::<>DialogicIndexer<>::
@@ -642,10 +642,10 @@ event.gd::GDScript::-1::1711365058::0::1::::DialogicEvent<>Resource<>::
 timeline.gd::GDScript::-1::1711365058::0::1::::DialogicTimeline<>Resource<>::
 TimelineResourceLoader.gd::GDScript::-1::1711365058::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<>::
 TimelineResourceSaver.gd::GDScript::-1::1711365058::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
-::res://Buttons/::1711365058
-Moving.tscn::PackedScene::237496001693178082::1711365058::0::1::::<><>::uid://b2a2xeoy2a8dx::::res://Buttons/Assets/Move_left.png<>uid://b0l3yket43jqf::::res://Buttons/Assets/Move_right.png<>uid://cv061meglc8cw::::res://Buttons/Assets/Jump.png<>uid://dwn164pl6iuea::::res://Buttons/Assets/Untitled 03-17-2024 08-45-25.png
+::res://Buttons/::1711366356
+Moving.tscn::PackedScene::237496001693178082::1711366356::0::1::::<><>::uid://b2a2xeoy2a8dx::::res://Buttons/Assets/Move_left.png<>uid://b0l3yket43jqf::::res://Buttons/Assets/Move_right.png<>uid://cv061meglc8cw::::res://Buttons/Assets/Jump.png<>uid://dwn164pl6iuea::::res://Buttons/Assets/Untitled 03-17-2024 08-45-25.png
 Pause.gd::GDScript::-1::1711365058::0::1::::<>TouchScreenButton<>::
-Pause.tscn::PackedScene::7280815205207889574::1711365058::0::1::::<><>::uid://dwn164pl6iuea::::res://Buttons/Assets/Untitled 03-17-2024 08-45-25.png<>res://Buttons/Pause.gd
+Pause.tscn::PackedScene::7280815205207889574::1711366356::0::1::::<><>::uid://dwn164pl6iuea::::res://Buttons/Assets/Untitled 03-17-2024 08-45-25.png<>res://Buttons/Pause.gd
 ::res://Buttons/Assets/::1711365058
 Jump.png::CompressedTexture2D::6300345821800512734::1711365058::1711365058::1::::<><>::
 Move_left.png::CompressedTexture2D::4283200126831714481::1711365058::1711365058::1::::<><>::
@@ -653,7 +653,7 @@ Move_right.png::CompressedTexture2D::4165593397105604057::1711365058::1711365058
 Untitled 03-09-2024 07-00-50.png::CompressedTexture2D::8194917184622407129::1711365058::1711365058::1::::<><>::
 Untitled 03-09-2024 07-18-39.png::CompressedTexture2D::5021181322225346399::1711365058::1711365058::1::::<><>::
 Untitled 03-17-2024 08-45-25.png::CompressedTexture2D::8731889070232546728::1711365058::1711365058::1::::<><>::
-::res://img/::1711365058
+::res://img/::1711365091
 Bat.png::CompressedTexture2D::8485880504311904019::1711365058::1711365058::1::::<><>::
 Burning_elf_forest.png::CompressedTexture2D::7206718665307289506::1711365058::1711365058::1::::<><>::
 Cave.png::CompressedTexture2D::8459042492144463073::1711365058::1711365058::1::::<><>::
@@ -688,10 +688,10 @@ wolf5.png::CompressedTexture2D::9002478982620196492::1711365058::1711365058::1::
 wolf6.png::CompressedTexture2D::5398895288557888362::1711365058::1711365058::1::::<><>::
 wolf7.png::CompressedTexture2D::2781514773486758955::1711365058::1711365058::1::::<><>::
 wolf.png::CompressedTexture2D::5733266167367943921::1711365058::1711365058::1::::<><>::
-::res://Lvl2/::1711365058
+::res://Lvl2/::1711366356
 door2.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door2.tscn::PackedScene::6267374873087196412::1711365058::0::1::::<><>::res://Lvl2/door2.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl2.tscn::PackedScene::2777503586588687806::1711365058::0::1::::<><>::uid://clxlbbt5uagij::::res://Lvl2/Assets/Field.png<>res://Lvl2/Manager.gd<>uid://f8u2233uftu7::::res://Lvl2/Assets/cloud6.png<>uid://cmvi0ppgqywq5::::res://Lvl2/Assets/cloud5.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://lkr5i5r3uigu::::res://Lvl2/Assets/cloud4.png<>uid://6gaw15e0s2nl::::res://Lvl2/Assets/green_grass1.png<>uid://cs2dsf1fauhod::::res://Lvl2/Assets/cloud3.png<>uid://brg4gvkiaxcep::::res://Lvl2/Assets/green_grass2.png<>uid://c00rpvy3tdktg::::res://Lvl2/Assets/green_grass3.png<>uid://ixywk0ymam73::::res://Lvl2/Assets/green_grass4.png<>uid://bskwdf6l73m3s::::res://Lvl2/Assets/Forest_grass1.png<>uid://dd5h4o5mi0ir1::::res://Lvl2/Assets/Forest_grass2.png<>uid://cej8eanjcws40::::res://Lvl2/Assets/Forest_grass3.png<>uid://c3dvmt0fonvj1::::res://Lvl2/Assets/cloud1.png<>uid://bkppjk6po83p7::::res://Lvl2/Assets/cloud2.png<>uid://bgn4yk2job4n3::::res://Lvl2/fox/fox.tscn<>uid://reddlsia24is::::res://Lvl2/flower/flower.tscn<>uid://dmc82hfrd3b0q::::res://player/player2/player2.tscn<>uid://4f6pl87347u5::::res://img/NPCsDeffAnim (2).png<>uid://53lbiewiddkr::::res://Lvl2/tulip/tulip.tscn<>uid://cvj70piphbmsq::::res://Lvl2/door2.tscn
+door2.tscn::PackedScene::6267374873087196412::1711366356::0::1::::<><>::res://Lvl2/door2.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl2.tscn::PackedScene::2777503586588687806::1711366355::0::1::::<><>::uid://clxlbbt5uagij::::res://Lvl2/Assets/Field.png<>res://Lvl2/Manager.gd<>uid://f8u2233uftu7::::res://Lvl2/Assets/cloud6.png<>uid://cmvi0ppgqywq5::::res://Lvl2/Assets/cloud5.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://lkr5i5r3uigu::::res://Lvl2/Assets/cloud4.png<>uid://6gaw15e0s2nl::::res://Lvl2/Assets/green_grass1.png<>uid://cs2dsf1fauhod::::res://Lvl2/Assets/cloud3.png<>uid://brg4gvkiaxcep::::res://Lvl2/Assets/green_grass2.png<>uid://c00rpvy3tdktg::::res://Lvl2/Assets/green_grass3.png<>uid://ixywk0ymam73::::res://Lvl2/Assets/green_grass4.png<>uid://bskwdf6l73m3s::::res://Lvl2/Assets/Forest_grass1.png<>uid://dd5h4o5mi0ir1::::res://Lvl2/Assets/Forest_grass2.png<>uid://cej8eanjcws40::::res://Lvl2/Assets/Forest_grass3.png<>uid://c3dvmt0fonvj1::::res://Lvl2/Assets/cloud1.png<>uid://bkppjk6po83p7::::res://Lvl2/Assets/cloud2.png<>uid://bgn4yk2job4n3::::res://Lvl2/fox/fox.tscn<>uid://reddlsia24is::::res://Lvl2/flower/flower.tscn<>uid://dmc82hfrd3b0q::::res://player/player2/player2.tscn<>uid://4f6pl87347u5::::res://img/NPCsDeffAnim (2).png<>uid://53lbiewiddkr::::res://Lvl2/tulip/tulip.tscn<>uid://cvj70piphbmsq::::res://Lvl2/door2.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 ::res://Lvl2/Assets/::1711365058
 cloud1.png::CompressedTexture2D::6745619645698427208::1711365058::1711365058::1::::<><>::
@@ -713,17 +713,17 @@ green_grass2.png::CompressedTexture2D::3593789918420454103::1711365058::17113650
 green_grass3.png::CompressedTexture2D::6580232019337480828::1711365058::1711365058::1::::<><>::
 green_grass4.png::CompressedTexture2D::610488497700049804::1711365058::1711365058::1::::<><>::
 Soplya.png::CompressedTexture2D::2514705739568195800::1711365058::1711365058::1::::<><>::
-::res://Lvl2/flower/::1711365058
+::res://Lvl2/flower/::1711366355
 flover.png::CompressedTexture2D::6611263760851771768::1711365058::1711365058::1::::<><>::
 flower.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
-flower.tscn::PackedScene::1201655967150713198::1711365058::0::1::::<><>::res://Lvl2/flower/flower.gd<>uid://cqsg25o3kxdx7::::res://Lvl2/flower/bullets/bullet.tscn<>uid://c1gssv0m2ndpw::::res://Lvl2/flower/flover.png
-::res://Lvl2/flower/bullets/::1711365058
+flower.tscn::PackedScene::1201655967150713198::1711366355::0::1::::<><>::res://Lvl2/flower/flower.gd<>uid://cqsg25o3kxdx7::::res://Lvl2/flower/bullets/bullet.tscn<>uid://c1gssv0m2ndpw::::res://Lvl2/flower/flover.png
+::res://Lvl2/flower/bullets/::1711366355
 bullet.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
 bullet.png::CompressedTexture2D::7568352826543569938::1711365058::1711365058::1::::<><>::
-bullet.tscn::PackedScene::5933435782174056850::1711365058::0::1::::<><>::res://Lvl2/flower/bullets/bullet.gd<>uid://df3fwvdcljap3::::res://Lvl2/flower/bullets/bullet.png
-::res://Lvl2/fox/::1711365058
+bullet.tscn::PackedScene::5933435782174056850::1711366355::0::1::::<><>::res://Lvl2/flower/bullets/bullet.gd<>uid://df3fwvdcljap3::::res://Lvl2/flower/bullets/bullet.png
+::res://Lvl2/fox/::1711366355
 fox.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
-fox.tscn::PackedScene::2836194875538938898::1711365058::0::1::::<><>::res://Lvl2/fox/fox.gd<>uid://bs5wcqafcca4v::::res://Lvl2/fox/spike/spike_left.tscn<>uid://b3c8mcy6n8qnf::::res://Lvl2/fox/spike/spike_right.tscn<>uid://cvmi1t5n711r0::::res://Lvl2/fox/Assets/Fox (3).png
+fox.tscn::PackedScene::2836194875538938898::1711366355::0::1::::<><>::res://Lvl2/fox/fox.gd<>uid://bs5wcqafcca4v::::res://Lvl2/fox/spike/spike_left.tscn<>uid://b3c8mcy6n8qnf::::res://Lvl2/fox/spike/spike_right.tscn<>uid://cvmi1t5n711r0::::res://Lvl2/fox/Assets/Fox (3).png
 ::res://Lvl2/fox/Assets/::1711365058
 Fox (3).png::CompressedTexture2D::6272112828339519539::1711365058::1711365058::1::::<><>::
 Fox.png::CompressedTexture2D::5790843861241325603::1711365058::1711365058::1::::<><>::
@@ -742,10 +742,10 @@ tulip6.png::CompressedTexture2D::8359612794338410758::1711365058::1711365058::1:
 tulip7.png::CompressedTexture2D::7193047215761486399::1711365058::1711365058::1::::<><>::
 tulip.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
 tulip.tscn::PackedScene::2164137986345391817::1711365058::0::1::::<><>::res://Lvl2/tulip/tulip.gd<>uid://daqmo34c87a20::::res://Lvl2/tulip/tulip7.png<>uid://0xgwvjxxc5xd::::res://Lvl2/tulip/tulip4.png<>uid://cwv4q12eyd007::::res://Lvl2/tulip/tulip5.png<>uid://drdpupgf03pyk::::res://Lvl2/tulip/tulip6.png<>uid://cvhcsqhsqhpdx::::res://Lvl2/tulip/tulip1.png<>uid://cirth65iconq8::::res://Lvl2/tulip/tulip2.png<>uid://k5enjsgpxp6x::::res://Lvl2/tulip/tulip3.png
-::res://Lvl3/::1711365058
+::res://Lvl3/::1711366356
 door3.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door3.tscn::PackedScene::9209032159632799963::1711365058::0::1::::<><>::res://Lvl3/door3.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl3.tscn::PackedScene::6671445055616851327::1711365058::0::1::::<><>::uid://c82wxi365cggq::::res://Lvl5/Assets/Cave.png<>res://Lvl3/Manager.gd<>uid://cs2ug00tsb3q5::::res://Lvl3/Assets/Cave_entrance.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://cj0gor1ye7irs::::res://Lvl3/Assets/stone3.png<>uid://b2w126espe1m4::::res://Lvl3/Assets/stone4.png<>uid://bjg3f4bx5pmwx::::res://Lvl3/Assets/stone5.png<>uid://ce6m0ct3r0a8c::::res://player/player3/player3.tscn<>uid://b5gv5iphiv4ib::::res://Lvl3/Assets/stone6.png<>uid://dwygsg30bshxu::::res://Lvl3/Assets/stone7.png<>uid://4f6pl87347u5::::res://img/NPCsDeffAnim (2).png<>uid://be2mu2jfbynxp::::res://Lvl3/bat/bat.tscn<>uid://d4g6oc3hml01l::::res://Lvl3/door3.tscn
+door3.tscn::PackedScene::9209032159632799963::1711366356::0::1::::<><>::res://Lvl3/door3.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl3.tscn::PackedScene::6671445055616851327::1711366355::0::1::::<><>::uid://c82wxi365cggq::::res://Lvl5/Assets/Cave.png<>res://Lvl3/Manager.gd<>uid://cs2ug00tsb3q5::::res://Lvl3/Assets/Cave_entrance.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://cj0gor1ye7irs::::res://Lvl3/Assets/stone3.png<>uid://b2w126espe1m4::::res://Lvl3/Assets/stone4.png<>uid://bjg3f4bx5pmwx::::res://Lvl3/Assets/stone5.png<>uid://ce6m0ct3r0a8c::::res://player/player3/player3.tscn<>uid://b5gv5iphiv4ib::::res://Lvl3/Assets/stone6.png<>uid://dwygsg30bshxu::::res://Lvl3/Assets/stone7.png<>uid://4f6pl87347u5::::res://img/NPCsDeffAnim (2).png<>uid://be2mu2jfbynxp::::res://Lvl3/bat/bat.tscn<>uid://d4g6oc3hml01l::::res://Lvl3/door3.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 ::res://Lvl3/Assets/::1711365058
 Cave_entrance.png::CompressedTexture2D::6093205159440420982::1711365058::1711365058::1::::<><>::
@@ -754,19 +754,19 @@ stone4.png::CompressedTexture2D::4328564265997793261::1711365058::1711365058::1:
 stone5.png::CompressedTexture2D::3032217073534404267::1711365058::1711365058::1::::<><>::
 stone6.png::CompressedTexture2D::4505801333712139085::1711365058::1711365058::1::::<><>::
 stone7.png::CompressedTexture2D::8753358482992899966::1711365058::1711365058::1::::<><>::
-::res://Lvl3/bat/::1711365058
+::res://Lvl3/bat/::1711366355
 bat.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
-bat.tscn::PackedScene::2723680009659306241::1711365058::0::1::::<><>::uid://bmycweq7lbugy::::res://Lvl3/bat/Assets/Bat (2).png<>res://Lvl3/bat/bat.gd<>uid://daw3cc262u8by::::res://Lvl3/bat/bat_bullets/bat_bullet.tscn
+bat.tscn::PackedScene::2723680009659306241::1711366355::0::1::::<><>::uid://bmycweq7lbugy::::res://Lvl3/bat/Assets/Bat (2).png<>res://Lvl3/bat/bat.gd<>uid://daw3cc262u8by::::res://Lvl3/bat/bat_bullets/bat_bullet.tscn
 ::res://Lvl3/bat/Assets/::1711365058
 Bat (2).png::CompressedTexture2D::3278392831177332076::1711365058::1711365058::1::::<><>::
-::res://Lvl3/bat/bat_bullets/::1711365058
+::res://Lvl3/bat/bat_bullets/::1711366355
 bat_bullet.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-bat_bullet.tscn::PackedScene::7206382157255712046::1711365058::0::1::::<><>::uid://c64tlkkyef2ud::::res://Lvl3/bat/bat_bullets/bat_bullets.png<>res://Lvl3/bat/bat_bullets/bat_bullet.gd
+bat_bullet.tscn::PackedScene::7206382157255712046::1711366355::0::1::::<><>::uid://c64tlkkyef2ud::::res://Lvl3/bat/bat_bullets/bat_bullets.png<>res://Lvl3/bat/bat_bullets/bat_bullet.gd
 bat_bullets.png::CompressedTexture2D::7009736283406025727::1711365058::1711365058::1::::<><>::
-::res://Lvl4/::1711365058
+::res://Lvl4/::1711366356
 door4.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door4.tscn::PackedScene::4775458093186293377::1711365058::0::1::::<><>::res://Lvl4/door4.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl4.tscn::PackedScene::4946136367632378647::1711365058::0::1::::<><>::res://Lvl4/Manager.gd<>uid://b2ibmrjxon6p7::::res://Lvl4/Acsests/Burning_elf_forest1.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://c8i6geneadxx6::::res://Lvl4/fire/fire.tscn<>uid://bulgw45p37cru::::res://Lvl4/Acsests/Burning_tree1.png<>uid://d15e7lr7rypqw::::res://Lvl4/Acsests/Burning_tree1.2.png<>uid://ddti0n0c4g681::::res://Lvl4/Acsests/Burning_tree2.2.png<>uid://cjb42o325kp5r::::res://Lvl4/Acsests/Burning_tree2.png<>uid://cndqhnrgsjkhv::::res://player/player4/player4.tscn<>uid://cabjdkida457b::::res://Lvl4/door4.tscn
+door4.tscn::PackedScene::4775458093186293377::1711366356::0::1::::<><>::res://Lvl4/door4.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl4.tscn::PackedScene::4946136367632378647::1711366355::0::1::::<><>::res://Lvl4/Manager.gd<>uid://b2ibmrjxon6p7::::res://Lvl4/Acsests/Burning_elf_forest1.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://c8i6geneadxx6::::res://Lvl4/fire/fire.tscn<>uid://bulgw45p37cru::::res://Lvl4/Acsests/Burning_tree1.png<>uid://d15e7lr7rypqw::::res://Lvl4/Acsests/Burning_tree1.2.png<>uid://ddti0n0c4g681::::res://Lvl4/Acsests/Burning_tree2.2.png<>uid://cjb42o325kp5r::::res://Lvl4/Acsests/Burning_tree2.png<>uid://cndqhnrgsjkhv::::res://player/player4/player4.tscn<>uid://cabjdkida457b::::res://Lvl4/door4.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 ::res://Lvl4/Acsests/::1711365058
 Burned_tree1.png::CompressedTexture2D::4252100018450755897::1711365058::1711365058::1::::<><>::
@@ -790,10 +790,10 @@ fire4.png::CompressedTexture2D::9015503448433251360::1711365058::1711365058::1::
 ::res://Lvl4/fire/::1711365058
 fire.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
 fire.tscn::PackedScene::7107481401370683745::1711365058::0::1::::<><>::res://Lvl4/fire/fire.gd<>uid://clnfqsp6npflw::::res://Lvl4/Acsests/fire1.png<>uid://smjuq6relebf::::res://Lvl4/Acsests/fire2.png<>uid://bh7ylns5naeuj::::res://Lvl4/Acsests/fire3.png<>uid://d1pga3po1w5n5::::res://Lvl4/Acsests/fire4.png
-::res://Lvl5/::1711365058
+::res://Lvl5/::1711366356
 door5.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door5.tscn::PackedScene::2469559725792130545::1711365058::0::1::::<><>::res://Lvl5/door5.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl5.tscn::PackedScene::7932714622287264660::1711365058::0::1::::<><>::uid://bifyqaa85afv4::::res://Lvl5/Assets/Wall.png<>res://Lvl5/Manager.gd<>uid://deplh4jsbh0p3::::res://Lvl5/Assets/Cave_ent.png<>uid://2wgda84njenh::::res://Lvl5/Assets/forest3.png<>uid://ursv1pvl2cxl::::res://Lvl5/Assets/hedgehog2.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://c82wxi365cggq::::res://Lvl5/Assets/Cave.png<>uid://cgmvsexanocd6::::res://Lvl5/Assets/hedgehog3.png<>uid://weyqy7jjnaiv::::res://Lvl5/Assets/princess.png<>uid://dxqrufmotovxt::::res://Lvl5/Assets/hedgehog1.png<>uid://coualeny38wrt::::res://Lvl5/Assets/apple.png<>uid://c6ff7umpsvo7h::::res://Lvl5/Assets/birds1.png<>uid://bc7b5livq8g7q::::res://Lvl5/Assets/birds2.png<>uid://bqpwvwhirk7u7::::res://player/player5/player5.tscn<>uid://djm1pbmpsqduy::::res://Lvl5/bear/bear.tscn<>uid://bbgjj11x4ut7v::::res://Lvl5/door5.tscn
+door5.tscn::PackedScene::2469559725792130545::1711366356::0::1::::<><>::res://Lvl5/door5.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl5.tscn::PackedScene::7932714622287264660::1711366355::0::1::::<><>::uid://bifyqaa85afv4::::res://Lvl5/Assets/Wall.png<>res://Lvl5/Manager.gd<>uid://deplh4jsbh0p3::::res://Lvl5/Assets/Cave_ent.png<>uid://2wgda84njenh::::res://Lvl5/Assets/forest3.png<>uid://ursv1pvl2cxl::::res://Lvl5/Assets/hedgehog2.png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://c82wxi365cggq::::res://Lvl5/Assets/Cave.png<>uid://cgmvsexanocd6::::res://Lvl5/Assets/hedgehog3.png<>uid://weyqy7jjnaiv::::res://Lvl5/Assets/princess.png<>uid://dxqrufmotovxt::::res://Lvl5/Assets/hedgehog1.png<>uid://coualeny38wrt::::res://Lvl5/Assets/apple.png<>uid://c6ff7umpsvo7h::::res://Lvl5/Assets/birds1.png<>uid://bc7b5livq8g7q::::res://Lvl5/Assets/birds2.png<>uid://bqpwvwhirk7u7::::res://player/player5/player5.tscn<>uid://djm1pbmpsqduy::::res://Lvl5/bear/bear.tscn<>uid://bbgjj11x4ut7v::::res://Lvl5/door5.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 MicroChely.png::CompressedTexture2D::3205915685912751622::1711365058::1711365058::1::::<><>::
 ::res://Lvl5/Assets/::1711365058
@@ -814,15 +814,15 @@ Wall.png::CompressedTexture2D::2959739103635998075::1711365058::1711365058::1:::
 ::res://Lvl5/bear/::1711365058
 bear.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
 bear.tscn::PackedScene::7817339677358035020::1711365058::0::1::::<><>::uid://cxpafokrg7inu::::res://Lvl5/bear/img/AtackAnimBear.png<>res://Lvl5/bear/bear.gd<>uid://6w2edmghg7u3::::res://Lvl5/bear/img/BearWalking.png
-::res://Lvl5/bear/img/::1711365058
+::res://Lvl5/bear/img/::1711365091
 AtackAnimBear(2).png::CompressedTexture2D::5475019930589529833::1711365058::1711365058::1::::<><>::
 AtackAnimBear.png::CompressedTexture2D::6418160117898001902::1711365058::1711365058::1::::<><>::
 BearWalking (2).png::CompressedTexture2D::8184856303814355066::1711365058::1711365091::1::::<><>::
 BearWalking.png::CompressedTexture2D::2222917141738576932::1711365058::1711365058::1::::<><>::
-::res://Lvl6/::1711365058
+::res://Lvl6/::1711366356
 door6.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-door6.tscn::PackedScene::801002864822487414::1711365058::0::1::::<><>::res://Lvl6/door6.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
-Lvl6.tscn::PackedScene::3547342618923619372::1711365058::0::1::::<><>::uid://bolhib5ags062::::res://Lvl6/Assets/bottom.png<>res://Lvl6/Manager.gd<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://dujm580ay5mgi::::res://Lvl6/Assets/mid.png<>uid://cncvedpa4kf2o::::res://player/player6/player6.tscn<>uid://cqi6b5qhmx840::::res://Lvl6/Assets/top.png<>uid://dnmt5cbqeqpd::::res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png<>uid://brailqkufbado::::res://Lvl6/ghost/ghost.tscn<>uid://loanutynkyqw::::res://Lvl6/door6.tscn
+door6.tscn::PackedScene::801002864822487414::1711366356::0::1::::<><>::res://Lvl6/door6.gd<>uid://t07q4y3mxh0v::::res://img/Untitled 03-15-2024 06-05-05 (1).png<>uid://b15yywwga31cu::::res://img/Untitled 03-15-2024 06-15-17.png
+Lvl6.tscn::PackedScene::3547342618923619372::1711366355::0::1::::<><>::uid://bolhib5ags062::::res://Lvl6/Assets/bottom.png<>res://Lvl6/Manager.gd<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://dujm580ay5mgi::::res://Lvl6/Assets/mid.png<>uid://cncvedpa4kf2o::::res://player/player6/player6.tscn<>uid://cqi6b5qhmx840::::res://Lvl6/Assets/top.png<>uid://dnmt5cbqeqpd::::res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png<>uid://brailqkufbado::::res://Lvl6/ghost/ghost.tscn<>uid://loanutynkyqw::::res://Lvl6/door6.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 ::res://Lvl6/Assets/::1711365058
 bottom.png::CompressedTexture2D::3392212054097054477::1711365058::1711365058::1::::<><>::
@@ -843,34 +843,34 @@ Animations (3).png::CompressedTexture2D::4437549537597559985::1711365058::171136
 Animations.png::CompressedTexture2D::7617503182111606379::1711365058::1711365058::1::::<><>::
 ghost.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
 ghost.tscn::PackedScene::3580137261951813196::1711365058::0::1::::<><>::res://Lvl6/ghost/ghost.gd<>uid://dgr8fuewglvmh::::res://Lvl6/ghost/Animations.png<>uid://b4ht17gnjhpef::::res://Lvl6/ghost/Animations (3).png
-::res://Lvl7/::1711365058
-Lvl7.tscn::PackedScene::3705295931414837805::1711365058::0::1::::<><>::res://Lvl7/Manager.gd<>uid://dkclhcyd6i8aw::::res://Lvl7/Assets/BgLvl7 (2).png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://nofhd2fs0jo1::::res://player/player7/player7.tscn<>uid://bqreeej42wonk::::res://Lvl7/Assets/Wizzards.png<>uid://biorrc606j8kw::::res://Lvl7/white_principal/white_principal.tscn
+::res://Lvl7/::1711366355
+Lvl7.tscn::PackedScene::3705295931414837805::1711366355::0::1::::<><>::res://Lvl7/Manager.gd<>uid://dkclhcyd6i8aw::::res://Lvl7/Assets/BgLvl7 (2).png<>uid://mlplxrfvomor::::res://1Lvl/Acsests/photo_2024-02-01_20-44-42.jpg<>uid://nofhd2fs0jo1::::res://player/player7/player7.tscn<>uid://bqreeej42wonk::::res://Lvl7/Assets/Wizzards.png<>uid://biorrc606j8kw::::res://Lvl7/white_principal/white_principal.tscn
 Manager.gd::GDScript::-1::1711365058::0::1::::<>Node<>::
 ::res://Lvl7/Assets/::1711365058
 BgLvl7 (2).png::CompressedTexture2D::7865959772745603498::1711365058::1711365058::1::::<><>::
 Untitled 02-12-2024 08-45-41.png::CompressedTexture2D::6368457126664267938::1711365058::1711365058::1::::<><>::
 Wizzards.png::CompressedTexture2D::3544786840218550844::1711365058::1711365058::1::::<><>::
-::res://Lvl7/white_principal/::1711365058
+::res://Lvl7/white_principal/::1711366357
 Lazer.png::CompressedTexture2D::3992193054705137730::1711365058::1711365058::1::::<><>::
 Lazer_attack.png::CompressedTexture2D::3913924592718960931::1711365058::1711365058::1::::<><>::
 Radius_attack.png::CompressedTexture2D::5293250737665726542::1711365058::1711365058::1::::<><>::
 white_principal.gd::GDScript::-1::1711365058::0::1::::<>CharacterBody2D<>::
-white_principal.tscn::PackedScene::2977895422840951558::1711365058::0::1::::<><>::res://Lvl7/white_principal/white_principal.gd<>uid://bqreeej42wonk::::res://Lvl7/Assets/Wizzards.png<>uid://dj00wi4tdmmu7::::res://Lvl7/white_principal/wp_bullet/wp_bullet.tscn<>uid://be6ldvq0uxod7::::res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.tscn
+white_principal.tscn::PackedScene::2977895422840951558::1711366357::0::1::::<><>::res://Lvl7/white_principal/white_principal.gd<>uid://bqreeej42wonk::::res://Lvl7/Assets/Wizzards.png<>uid://dj00wi4tdmmu7::::res://Lvl7/white_principal/wp_bullet/wp_bullet.tscn<>uid://be6ldvq0uxod7::::res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.tscn
 wizzard atack.png::CompressedTexture2D::3189006320208924242::1711365058::1711365058::1::::<><>::
-::res://Lvl7/white_principal/wp_bullet/::1711365058
+::res://Lvl7/white_principal/wp_bullet/::1711366357
 Bullet.png::CompressedTexture2D::1115794793016076079::1711365058::1711365058::1::::<><>::
 wp_bullet.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-wp_bullet.tscn::PackedScene::7844128765812055848::1711365058::0::1::::<><>::res://Lvl7/white_principal/wp_bullet/wp_bullet.gd<>uid://p5q8hwya2k20::::res://Lvl7/white_principal/wp_bullet/Bullet.png
-::res://Lvl7/white_principal/wp_damage_wave/::1711365058
+wp_bullet.tscn::PackedScene::7844128765812055848::1711366357::0::1::::<><>::res://Lvl7/white_principal/wp_bullet/wp_bullet.gd<>uid://p5q8hwya2k20::::res://Lvl7/white_principal/wp_bullet/Bullet.png
+::res://Lvl7/white_principal/wp_damage_wave/::1711366357
 wp_damage_wave.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
-wp_damage_wave.tscn::PackedScene::2731846141793985750::1711365058::0::1::::<><>::res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.gd<>uid://bs3vx8qubuli0::::res://Lvl7/white_principal/wp_damage_wave/Zone.png
+wp_damage_wave.tscn::PackedScene::2731846141793985750::1711366357::0::1::::<><>::res://Lvl7/white_principal/wp_damage_wave/wp_damage_wave.gd<>uid://bs3vx8qubuli0::::res://Lvl7/white_principal/wp_damage_wave/Zone.png
 Zone.png::CompressedTexture2D::3708940335297535365::1711365058::1711365058::1::::<><>::
-::res://Menu/::1711365058
+::res://Menu/::1711366355
 Button.gd::GDScript::-1::1711365058::0::1::::<>Button<>::
 Exit.gd::GDScript::-1::1711365058::0::1::::<>Button<>::
-Menu.tscn::PackedScene::62599316044762805::1711365058::0::1::::<><>::uid://cun1dqet22riw::::res://img/photo_2024-01-27_22-19-17.jpg<>res://Menu/Button.gd<>res://Menu/Exit.gd
-::res://Menu/pause/::1711365058
-pause.tscn::PackedScene::620383963448063123::1711365058::0::1::::<><>::
+Menu.tscn::PackedScene::62599316044762805::1711366355::0::1::::<><>::uid://cun1dqet22riw::::res://img/photo_2024-01-27_22-19-17.jpg<>res://Menu/Button.gd<>res://Menu/Exit.gd
+::res://Menu/pause/::1711366356
+pause.tscn::PackedScene::620383963448063123::1711366356::0::1::::<><>::
 ::res://player/::1711365058
 bullet_gray.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
 bullet_gray.tscn::PackedScene::2948791793219977502::1711365058::0::1::::<><>::res://player/bullet_gray.gd<>uid://dph02k2lybmo6::::res://player/img/Bullet_gray.png
@@ -892,7 +892,7 @@ minus6hearts.png::CompressedTexture2D::3794024792775793461::1711365058::17113650
 minus7hearts.png::CompressedTexture2D::4803015357504289734::1711365058::1711365058::1::::<><>::
 minus8hearts.png::CompressedTexture2D::6678482062505327254::1711365058::1711365058::1::::<><>::
 minus9hearts.png::CompressedTexture2D::4642482198145527572::1711365058::1711365058::1::::<><>::
-::res://player/img/::1711365058
+::res://player/img/::1711365091
 1.png::CompressedTexture2D::1766660411766344969::1711365058::1711365091::1::::<><>::
 2.png::CompressedTexture2D::7675317019403962349::1711365058::1711365091::1::::<><>::
 3.png::CompressedTexture2D::6526119015382123222::1711365058::1711365091::1::::<><>::
@@ -905,21 +905,21 @@ PlayerMoveAnim (3).png::CompressedTexture2D::4874762518166622010::1711365058::17
 PlayerMoveAnim.png::CompressedTexture2D::8354218527939549494::1711365058::1711365058::1::::<><>::
 Selection.png::CompressedTexture2D::8659370528815270374::1711365058::1711365058::1::::<><>::
 Untitled 03-09-2024 06-38-56.png::CompressedTexture2D::6761325772793336718::1711365058::1711365058::1::::<><>::
-::res://player/player1/::1711365058
-player1.tscn::PackedScene::5649554602233729643::1711365058::0::1::::<><>::res://player/player.gd<>uid://biaof1sddl2jy::::res://player/bullet_gray.tscn<>uid://b4ht17gnjhpef::::res://Lvl6/ghost/Animations (3).png<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player2/::1711365058
-player2.tscn::PackedScene::8007709183605523670::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player3/::1711365058
-player3.tscn::PackedScene::5118365836768882172::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player4/::1711365058
-player4.tscn::PackedScene::5692474149746659219::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player5/::1711365058
-player5.tscn::PackedScene::3541782290439346792::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player6/::1711365058
-player6.tscn::PackedScene::5690707470993728152::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://vagpq77f3aw8::::res://Lvl6/Assets/light.png<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://player/player7/::1711365058
-player7.tscn::PackedScene::941672540904418786::1711365058::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
-::res://preface/::1711365058
+::res://player/player1/::1711366355
+player1.tscn::PackedScene::5649554602233729643::1711366355::0::1::::<><>::res://player/player.gd<>uid://biaof1sddl2jy::::res://player/bullet_gray.tscn<>uid://b4ht17gnjhpef::::res://Lvl6/ghost/Animations (3).png<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player2/::1711366356
+player2.tscn::PackedScene::8007709183605523670::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player3/::1711366356
+player3.tscn::PackedScene::5118365836768882172::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player4/::1711366356
+player4.tscn::PackedScene::5692474149746659219::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player5/::1711366356
+player5.tscn::PackedScene::3541782290439346792::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player6/::1711366356
+player6.tscn::PackedScene::5690707470993728152::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://vagpq77f3aw8::::res://Lvl6/Assets/light.png<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://player/player7/::1711366356
+player7.tscn::PackedScene::941672540904418786::1711366356::0::1::::<><>::res://player/player.gd<>uid://b6f6q20bkpc61::::res://player/img/hhjgcuc.png<>uid://k8hcscpq7d1f::::res://player/img/Jump (2).png<>uid://bwhamk06a6n3g::::res://player/hp/hp.tscn<>uid://dnbr3i7px23w::::res://Buttons/Moving.tscn<>uid://dby47y4spif0q::::res://Buttons/Pause.tscn
+::res://preface/::1711366356
 1.png::CompressedTexture2D::7537595084403773237::1711365058::1711365058::1::::<><>::
 2.png::CompressedTexture2D::6104660287571347990::1711365058::1711365058::1::::<><>::
 3.png::CompressedTexture2D::1671725935438891720::1711365058::1711365058::1::::<><>::
@@ -927,11 +927,11 @@ next1.gd::GDScript::-1::1711365058::0::1::::<>Button<>::
 next2.gd::GDScript::-1::1711365058::0::1::::<>Button<>::
 next3.gd::GDScript::-1::1711365058::0::1::::<>Button<>::
 preface1.gd::GDScript::-1::1711365058::0::1::::<>Node2D<>::
-preface1.tscn::PackedScene::3689883829504878629::1711365058::0::1::::<><>::res://preface/preface1.gd<>uid://cioeb5spju7x1::::res://preface/characters/Untitled 01-28-2024 10-21-07 (6).png<>res://preface/next1.gd<>uid://bs2u4yqu3512h::::res://preface/characters/NPCs (1).png
+preface1.tscn::PackedScene::3689883829504878629::1711366356::0::1::::<><>::res://preface/preface1.gd<>uid://cioeb5spju7x1::::res://preface/characters/Untitled 01-28-2024 10-21-07 (6).png<>res://preface/next1.gd<>uid://bs2u4yqu3512h::::res://preface/characters/NPCs (1).png
 preface2.gd::GDScript::-1::1711365058::0::1::::<>Node2D<>::
-preface2.tscn::PackedScene::8389274359998836781::1711365058::0::1::::<><>::res://preface/preface2.gd<>uid://dvsdv3s6s2815::::res://preface/characters/photo_2024-02-08_20-16-37.jpg<>res://preface/previous1.gd<>res://preface/next2.gd<>uid://bs2u4yqu3512h::::res://preface/characters/NPCs (1).png<>uid://cbtadn66nyf25::::res://preface/characters/Ratatuiy.png
+preface2.tscn::PackedScene::8389274359998836781::1711366356::0::1::::<><>::res://preface/preface2.gd<>uid://dvsdv3s6s2815::::res://preface/characters/photo_2024-02-08_20-16-37.jpg<>res://preface/previous1.gd<>res://preface/next2.gd<>uid://bs2u4yqu3512h::::res://preface/characters/NPCs (1).png<>uid://cbtadn66nyf25::::res://preface/characters/Ratatuiy.png
 preface3.gd::GDScript::-1::1711365058::0::1::::<>Node2D<>::
-preface3.tscn::PackedScene::2533076466724317025::1711365058::0::1::::<><>::uid://bipdfx8cck58c::::res://preface/characters/Untitled 02-04-2024 12-23-34 (1) (2).png<>res://preface/preface3.gd<>res://preface/next3.gd<>res://preface/previous2.gd<>uid://dxq740ar40w6m::::res://preface/characters/PlayerMoveAnim (3).png
+preface3.tscn::PackedScene::2533076466724317025::1711366356::0::1::::<><>::uid://bipdfx8cck58c::::res://preface/characters/Untitled 02-04-2024 12-23-34 (1) (2).png<>res://preface/preface3.gd<>res://preface/next3.gd<>res://preface/previous2.gd<>uid://dxq740ar40w6m::::res://preface/characters/PlayerMoveAnim (3).png
 prefaceTimeline2.dtl::Resource::-1::1711365058::0::1::::<><>::
 prefaceTimeline3.dtl::Resource::-1::1711365058::0::1::::<><>::
 prefaceTimeline.dtl::Resource::-1::1711365058::0::1::::<><>::
@@ -963,13 +963,13 @@ NPCs (5).png::CompressedTexture2D::107090898241187116::1711365058::1711365058::1
 NPCs (6).png::CompressedTexture2D::8599690742096368087::1711365058::1711365058::1::::<><>::
 NPCs (7).png::CompressedTexture2D::3007437323920817963::1711365058::1711365058::1::::<><>::
 NPCs.png::CompressedTexture2D::4743889851869943077::1711365058::1711365058::1::::<><>::
-::res://preface/Styles/::1711365058
-Dialog_test.tres::Resource/DialogicStyle::467097590745189494::1711365058::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
-main_style.tres::Resource/DialogicStyle::6716464599696995714::1711365058::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+::res://preface/Styles/::1711365108
+Dialog_test.tres::Resource/Resource::467097590745189494::1711365058::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://by6waso0mjpjp::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
+main_style.tres::Resource/DialogicStyle::6716464599696995714::1711365108::0::1::::<><>::uid://c1k5m0w3r40xf::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn<>res://addons/dialogic/Resources/dialogic_style_layer.gd<>uid://cy1y14inwkplb::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn<>uid://bquja8jyk8kbr::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn<>uid://cn674foxwedqu::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn<>uid://dsbwnp5hegnu3::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn<>uid://dhk6j6eb6e3q::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn<>uid://cvgf4c6gg0tsy::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn<>uid://lx24i8fl6uo::::res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn<>res://addons/dialogic/Resources/dialogic_style.gd
 ::res://Shop/::1711365058
 Shop.gd::GDScript::-1::1711365058::0::1::::<>CanvasLayer<>::
 Shop.tscn::PackedScene::5174313578382879963::1711365058::0::1::::<><>::uid://cujf2m8pijd3w::::res://Shop/Assets/Shop.png<>res://Shop/Shop.gd<>uid://cy8khycovaa7g::::res://player/img/3.png<>uid://dhl8l5rymv63r::::res://player/img/2.png
-::res://Shop/Assets/::1711365058
+::res://Shop/Assets/::1711365091
 Shop.png::CompressedTexture2D::6195550123283979970::1711365058::1711365091::1::::<><>::
 ::res://Spikes/::1711365058
 Spike.gd::GDScript::-1::1711365058::0::1::::<>Area2D<>::
