@@ -3,12 +3,13 @@ extends CharacterBody2D
 var heart_points = 9
 var speed = 300.0
 var jump_velocity = -500.0
-var animation
+var animation : AnimatedSprite2D
 var animated_sprite
 var jump_animation = false
-
+var attack = false
+var direction
+#@export var bullet : PackedScene
 @export var bullet : PackedScene
-
 @onready var hp = get_node("hp/Hp")
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -50,36 +51,41 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = jump_velocity
-		jump_animation = true
-	#if Input.is_action_just_pressed("ui_attack") and is_on_floor():
-		##$AnimatedSprite2D.play("attack")
-		#print("attack")
-		#var bul = bullet.instantiate()
-		##bul.tsx = -1
-		#add_child(bul)
-		#bul.transform = $Node/Marker2D.transform
-		
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * speed
-		if direction == 1:
-			animated_sprite.flip_h = false
-		elif direction == -1:
-			animated_sprite.flip_h = true
+		if !attack:
+			velocity.y = jump_velocity
+			jump_animation = true
+	if Input.is_action_just_pressed("ui_attack") and is_on_floor():
+		velocity.x = 0
+		$AnimatedSprite2D.play("attack")
+		attack = true
+		await animation.animation_finished
+		print(bullet)
+		var bul = bullet.instantiate()
+		print(bul)
+		bul.tsx = 1
+		print(get_parent())
+		add_child(bul)
+		bul.transform = $Node/Marker2D.global_transform
+	direction = Input.get_axis("ui_left", "ui_right")
+	if !attack:
+		if direction:
+			velocity.x = direction * speed
+			if direction == 1:
+				animated_sprite.flip_h = false
+			elif direction == -1:
+				animated_sprite.flip_h = true
+			if is_on_floor():
+				animation.play("run")
+				jump_animation = false
+			else:
+				if jump_animation:
+					animation.play("jump")
 			
-		if is_on_floor():
-			animation.play("run")
-			jump_animation = false
 		else:
-			if jump_animation:
-				animation.play("jump")
-		
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-		if is_on_floor():
-			animation.play("idle")
-		else:
-			if jump_animation:
-				animation.play("jump")
+			velocity.x = move_toward(velocity.x, 0, speed)
+			if is_on_floor():
+				animation.play("idle")
+			else:
+				if jump_animation:
+					animation.play("jump")
 	move_and_slide()

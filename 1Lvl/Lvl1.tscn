@@ -1264,7 +1264,7 @@ texture_filter = 1
 position = Vector2(5827, 405)
 
 [node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
-position = Vector2(11330, 444)
+position = Vector2(327, 461)
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manage" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manage" method="_on_quit_pressed"]

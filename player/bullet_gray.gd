@@ -1,17 +1,21 @@
 extends Area2D
-
+@onready var player = $"../../Player1"
 #@onready var sprite = 
 # Called when the node enters the scene tree for the first time.
-var speed = 1.1
+var speed = 500
 var tsx = 1
 #player = load("res://player/player6.tscn").instantiate()
 #player.global_points = 8
-	
+var direction = 0
+var start_pos
 func _physics_process(delta):
-	print("bullet")
-	transform.x.x = tsx
-	$Sprite2D.flip_h = true
+	#print(direction)
+	if player.animation.flip_h:
+		direction = -1
+	else:
+		direction = 1
+	transform.x.x = direction
 	position += transform.x * speed * delta
-	print(position)
-	#if global_position.x >= 5078 or global_position.x <= 2782:
-		#queue_free()
+	if position.x >= 600 or position.x <= -600:
+		queue_free()
+		player.attack=false

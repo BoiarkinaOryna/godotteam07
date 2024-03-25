@@ -192,7 +192,6 @@ drag_horizontal_enabled = true
 
 [node name="Marker2D" type="Marker2D" parent="Node"]
 position = Vector2(24, 32.9999)
-scale = Vector2(2.25805e+12, -7.41933e+11)
 
 [node name="hp" parent="." instance=ExtResource("5_n10bl")]
 

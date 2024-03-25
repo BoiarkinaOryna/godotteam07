@@ -7,6 +7,7 @@ var tsx = 1
 	
 func _physics_process(delta):
 	transform.x.x = tsx
+	print(position)
 	$AnimatedSprite2D.flip_h = true
 	$AnimatedSprite2D.play("shoot")
 	position += transform.x * speed * delta

@@ -1337,7 +1337,7 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(232, 454)
+position = Vector2(2867, 476)
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1
@@ -1361,7 +1361,7 @@ frame_progress = 0.784173
 position = Vector2(5537, 513)
 
 [node name="Door" parent="." instance=ExtResource("21_a8vmo")]
-position = Vector2(529, 402)
+position = Vector2(514, 296)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2

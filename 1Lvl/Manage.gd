@@ -1,5 +1,6 @@
 extends Node
-
+@onready var menu = $"../Player1/Moving"
+@onready var pause = $"../Player1/Pause"
 var game_pause = false
 @onready var pause_menu = $"../CanvasLayer/Control"
 func _process(_delta):
@@ -13,12 +14,8 @@ func _process(_delta):
 	else:
 		get_tree().paused = false
 		pause_menu.hide()
-
-
 func _on_resume_pressed():
 	game_pause = false
-
-
 func _on_quit_pressed():
 	get_tree().paused = false
 	game_pause = false

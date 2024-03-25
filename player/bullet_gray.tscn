@@ -4,17 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dph02k2lybmo6" path="res://player/img/Bullet_gray.png" id="1_g8520"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddqav"]
-radius = 7.0
+radius = 19.0263
 
 [node name="BulletGray" type="Area2D"]
 script = ExtResource("1_cxjo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10, 9)
 shape = SubResource("CircleShape2D_ddqav")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(10, 9)
-scale = Vector2(2.375, 2.1875)
+position = Vector2(3.8147e-06, 3.8147e-06)
+scale = Vector2(6.0625, 4.96875)
 texture = ExtResource("1_g8520")

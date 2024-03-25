@@ -47,6 +47,6 @@ func _physics_process(_delta):
 		elif direction.x >= 0:
 			$AnimatedSprite2D.flip_h = true
 			$AnimatedSprite2D.play("attack")
-			$Timer1.start()	
+			$Timer1.start()
 	else:
 		$AnimatedSprite2D.play("idle")
