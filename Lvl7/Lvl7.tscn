@@ -304,6 +304,7 @@ offset_right = 8.0
 offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
 layout_mode = 0
@@ -311,6 +312,7 @@ offset_left = 280.0
 offset_top = 120.0
 offset_right = 1665.0
 offset_bottom = 897.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -320,6 +322,7 @@ offset_right = 1144.0
 offset_bottom = 399.0
 theme_override_font_sizes/font_size = 80
 text = "Продовжити"
+metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -329,6 +332,7 @@ offset_right = 1144.0
 offset_bottom = 655.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -338,6 +342,7 @@ offset_right = 921.0
 offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
+metadata/_edit_use_anchors_ = true
 
 [node name="white_principal" parent="." instance=ExtResource("6_ktaat")]
 position = Vector2(1415, 495)
