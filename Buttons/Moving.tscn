@@ -30,7 +30,28 @@ action = "ui_accept"
 
 [node name="hit" type="TouchScreenButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.784314)
-position = Vector2(1448, 728)
+position = Vector2(1272, 712)
 scale = Vector2(2.625, 2.625)
 texture_normal = ExtResource("4_cu2fy")
 action = "ui_attack"
+
+[node name="hit2" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+position = Vector2(1320, 528)
+scale = Vector2(2.625, 2.625)
+texture_normal = ExtResource("4_cu2fy")
+action = "ui_attack1"
+
+[node name="hit3" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+position = Vector2(1464, 376)
+scale = Vector2(2.625, 2.625)
+texture_normal = ExtResource("4_cu2fy")
+action = "ui_attack2"
+
+[node name="hit4" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+position = Vector2(1664, 280)
+scale = Vector2(2.625, 2.625)
+texture_normal = ExtResource("4_cu2fy")
+action = "ui_attack3"

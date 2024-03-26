@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://bftpcwqoygeb3"]
+[gd_scene load_steps=55 format=3 uid="uid://bftpcwqoygeb3"]
 
 [ext_resource type="Texture2D" uid="uid://clxlbbt5uagij" path="res://Lvl2/Assets/Field.png" id="1_08kii"]
 [ext_resource type="Script" path="res://Lvl2/Manager.gd" id="1_qi6m3"]
@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://4f6pl87347u5" path="res://img/NPCsDeffAnim (2).png" id="19_15eic"]
 [ext_resource type="PackedScene" uid="uid://53lbiewiddkr" path="res://Lvl2/tulip/tulip.tscn" id="20_voapi"]
 [ext_resource type="PackedScene" uid="uid://cvj70piphbmsq" path="res://Lvl2/door2.tscn" id="21_a8vmo"]
+[ext_resource type="Script" path="res://Lvl2/.gd" id="23_kkk3s"]
+[ext_resource type="Script" path="res://Lvl2/Area2D2.gd" id="24_r01s1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tp52"]
 texture = ExtResource("2_ios64")
@@ -639,6 +641,12 @@ animations = [{
 "name": &"idle",
 "speed": 8.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5e7nl"]
+size = Vector2(396, 290)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcotn"]
+size = Vector2(430, 328)
 
 [node name="Lvl2" type="Node2D"]
 texture_filter = 1
@@ -1337,7 +1345,7 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(2867, 476)
+position = Vector2(7423, 454)
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1
@@ -1361,7 +1369,8 @@ frame_progress = 0.784173
 position = Vector2(5537, 513)
 
 [node name="Door" parent="." instance=ExtResource("21_a8vmo")]
-position = Vector2(514, 296)
+visible = false
+position = Vector2(8342, 267)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -1412,5 +1421,21 @@ offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
 
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(195, 494)
+script = ExtResource("23_kkk3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_5e7nl")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(7839, 415)
+script = ExtResource("24_r01s1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("RectangleShape2D_rcotn")
+
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
