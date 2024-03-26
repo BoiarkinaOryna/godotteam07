@@ -27,6 +27,7 @@ directories/dch_directory={
 "Hoblin": "res://preface/characters/Hoblin.dch",
 "King": "res://preface/characters/King.dch",
 "Narrator": "res://preface/characters/Narrator.dch",
+"Pakunchik": "res://Lvl3/dialogic/characters/Pakunchik.dch",
 "People": "res://preface/characters/People.dch",
 "People2": "res://preface/characters/People2.dch",
 "Player": "res://preface/characters/Player.dch",

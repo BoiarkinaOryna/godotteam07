@@ -8,20 +8,27 @@ var animated_sprite
 var jump_animation = false
 var attack = false
 var direction
+var count_stones = 0
 #@export var bullet : PackedScene
 @export var bullet : PackedScene
 @export var bulletBlue : PackedScene
 @export var bulletRed : PackedScene
 @export var bulletPurple : PackedScene
 @onready var hp = get_node("hp/Hp")
-
+@onready var menu = $"Moving"
+@onready var pause = $"Pause"
+@onready var door = $"../Door"
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 	animation = get_node("AnimatedSprite2D")
 	animated_sprite = get_node("AnimatedSprite2D")
 	#Dialogic.start("prefaceTimeline")
-
+func _on_dialogic_signal(argument:String):
+	if argument == "endGoblin_Principal2Lvl3":
+		menu.visible = true
+		pause.visible = true
 func _on_timer_timeout():
 	jump_animation = true
 	
@@ -43,12 +50,19 @@ func show_hp():
 	elif heart_points == 2:
 		hp.play("2")	
 	elif heart_points == 1:
-		hp.play("1")	
+		hp.play("1")
 	elif heart_points == 0:
 		hp.play("0")
 		get_tree().change_scene_to_file("res://preface//preface1.tscn")
 
 func _physics_process(delta):
+	#print(count_stones)
+	if count_stones == 10:
+		Dialogic.start('Goblin_Principal2Lvl3')
+		menu.visible = false
+		pause.visible = false
+		door.visible = true
+		count_stones = 0
 	show_hp()
 	if not is_on_floor():
 		velocity.y += gravity * delta

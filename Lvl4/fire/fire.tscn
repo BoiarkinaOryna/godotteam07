@@ -29,7 +29,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43qk8"]
 size = Vector2(82, 89)
 
-[node name="Fire" type="Area2D"]
+[node name="Fire" type="Area2D" groups=["Fires"]]
 script = ExtResource("1_0mnmo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

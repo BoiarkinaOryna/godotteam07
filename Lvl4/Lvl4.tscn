@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ccp7e4xwf4kqx"]
+[gd_scene load_steps=17 format=3 uid="uid://ccp7e4xwf4kqx"]
 
 [ext_resource type="Script" path="res://Lvl4/Manager.gd" id="1_a8x6t"]
 [ext_resource type="Texture2D" uid="uid://b2ibmrjxon6p7" path="res://Lvl4/Acsests/Burning_elf_forest1.png" id="1_enaj2"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ddti0n0c4g681" path="res://Lvl4/Acsests/Burning_tree2.2.png" id="8_intrc"]
 [ext_resource type="Texture2D" uid="uid://cjb42o325kp5r" path="res://Lvl4/Acsests/Burning_tree2.png" id="9_xbb7b"]
 [ext_resource type="PackedScene" uid="uid://cndqhnrgsjkhv" path="res://player/player4/player4.tscn" id="11_p0ycm"]
+[ext_resource type="Script" path="res://Lvl4/Area2D.gd" id="11_sbhhf"]
 [ext_resource type="PackedScene" uid="uid://cabjdkida457b" path="res://Lvl4/door4.tscn" id="12_bnl1n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_myrxg"]
@@ -249,6 +250,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lurw"]
+size = Vector2(557, 458)
+
 [node name="Lvl4" type="Node2D"]
 texture_filter = 1
 
@@ -279,7 +283,13 @@ layer_0/tile_data = PackedInt32Array(589824, 262144, 0, 589825, 262144, 0, 58982
 texture_filter = 1
 
 [node name="Fire" parent="fire" instance=ExtResource("4_u3f7b")]
-position = Vector2(114, 526)
+position = Vector2(1083, 460)
+
+[node name="Fire2" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(1632, 458)
+
+[node name="Fire3" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(2281, 525)
 
 [node name="trees" type="Node2D" parent="."]
 texture_filter = 1
@@ -364,10 +374,10 @@ autoplay = "idel"
 flip_h = true
 
 [node name="Player4" parent="." instance=ExtResource("11_p0ycm")]
-position = Vector2(297, 451)
+position = Vector2(290, 471)
 
 [node name="Door" parent="." instance=ExtResource("12_bnl1n")]
-position = Vector2(898, 357)
+position = Vector2(572, 351)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -418,6 +428,16 @@ offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
 
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("11_sbhhf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(372, 445)
+shape = SubResource("RectangleShape2D_0lurw")
+
 [connection signal="body_exited" from="fire/Fire" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire2" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire3" to="Manager" method="_on_fire_body_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

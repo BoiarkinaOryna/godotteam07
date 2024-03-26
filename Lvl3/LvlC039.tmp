@@ -512,12 +512,6 @@ frame_progress = 0.771185
 [node name="Bat" parent="." instance=ExtResource("11_xy6ul")]
 position = Vector2(2107, -93)
 
-[node name="Bat2" parent="." instance=ExtResource("11_xy6ul")]
-position = Vector2(4011, -295)
-
-[node name="Bat3" parent="." instance=ExtResource("11_xy6ul")]
-position = Vector2(2120, -744)
-
 [node name="Door" parent="." instance=ExtResource("12_0d10b")]
 visible = false
 position = Vector2(73, 241)

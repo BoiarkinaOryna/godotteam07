@@ -1269,6 +1269,10 @@ position = Vector2(7762, 397)
 texture_filter = 1
 position = Vector2(5827, 405)
 
+[node name="wolf3" parent="." instance=ExtResource("25_u5ua7")]
+texture_filter = 1
+position = Vector2(4438, 476)
+
 [node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
 position = Vector2(385, 480)
 

@@ -1368,6 +1368,9 @@ frame_progress = 0.784173
 [node name="Tulip" parent="." instance=ExtResource("20_voapi")]
 position = Vector2(5537, 513)
 
+[node name="Tulip2" parent="." instance=ExtResource("20_voapi")]
+position = Vector2(6877, 519)
+
 [node name="Door" parent="." instance=ExtResource("21_a8vmo")]
 visible = false
 position = Vector2(8375, 363)

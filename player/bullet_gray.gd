@@ -23,8 +23,14 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	var enemies = get_tree().get_nodes_in_group('Enemy')
+	var stones = get_tree().get_nodes_in_group('Stones')
 	if body in enemies:
 		body.hp -= 30
+		player.attack=false
+		queue_free()
+	elif body in stones:
+		player.count_stones +=1
+		body.queue_free()
 		player.attack=false
 		queue_free()
 	elif body.name == player.name:

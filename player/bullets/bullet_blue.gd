@@ -32,3 +32,11 @@ func _on_body_entered(body):
 	else:
 		player.attack=false
 		queue_free()
+
+
+func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	var fires = get_tree().get_nodes_in_group('Fires')
+	if area in fires:
+		area.queue_free()
+		player.attack=false
+		queue_free()

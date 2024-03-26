@@ -463,8 +463,11 @@ layer_0/tile_data = PackedInt32Array(524295, 0, 0, 524296, 65536, 0, 524297, 655
 [node name="Bear" parent="." instance=ExtResource("14_l5sfp")]
 position = Vector2(3320, 456)
 
+[node name="Bear3" parent="." instance=ExtResource("14_l5sfp")]
+position = Vector2(2427, 480)
+
 [node name="Bear2" parent="." instance=ExtResource("14_l5sfp")]
-position = Vector2(1747, 337)
+position = Vector2(1162, 484)
 
 [node name="Player5" parent="." instance=ExtResource("13_si515")]
 position = Vector2(3882, 445)
