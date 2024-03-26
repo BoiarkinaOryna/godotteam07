@@ -11,7 +11,8 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.name == 'Player7':
-		body.heart_points -= 1
 		queue_free()
+		body.heart_points -= 1
+		#print(body.heart_points)
 	if body.name == 'TileMap':
 		queue_free()

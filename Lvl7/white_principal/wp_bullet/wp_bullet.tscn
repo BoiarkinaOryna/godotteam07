@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://p5q8hwya2k20" path="res://Lvl7/white_principal/wp_bullet/Bullet.png" id="2_u5df5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r126k"]
-radius = 20.025
+radius = 16.1245
 
 [node name="WpBullet" type="Area2D"]
 script = ExtResource("1_30koo")
@@ -13,7 +13,7 @@ script = ExtResource("1_30koo")
 shape = SubResource("CircleShape2D_r126k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.409091, 0.428571)
 texture = ExtResource("2_u5df5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
