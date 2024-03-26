@@ -20,6 +20,7 @@ offset_bottom = 506.0
 theme_override_font_sizes/font_size = 80
 text = "Почати гру"
 script = ExtResource("3_fle74")
+metadata/_edit_use_anchors_ = true
 
 [node name="Exit" type="Button" parent="."]
 offset_left = 448.0
@@ -29,6 +30,7 @@ offset_bottom = 824.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти з гри"
 script = ExtResource("4_2jfdh")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Reset" to="Reset" method="_on_pressed"]
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]

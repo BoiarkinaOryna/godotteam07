@@ -15,8 +15,8 @@ func _process(_delta):
 func _on_resume_pressed():
 	game_pause = false
 
-
 func _on_quit_pressed():
 	get_tree().paused = false
 	game_pause = false
 	get_tree().change_scene_to_file("res://Menu/Menu.tscn")
+	

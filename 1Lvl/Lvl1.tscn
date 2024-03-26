@@ -1270,7 +1270,7 @@ texture_filter = 1
 position = Vector2(5827, 405)
 
 [node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
-position = Vector2(9931, 461)
+position = Vector2(8562, 491)
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(10333, 382)

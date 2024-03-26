@@ -81,6 +81,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	if body_entered:
+		
 		if direction.x < 0:
 			if not is_on_wall():
 				$AnimatedSprite2D.flip_h = true
@@ -106,15 +107,15 @@ func _physics_process(delta):
 						add_child(wp_bul)
 						wp_bul.transform = $Node/Marker2D.global_transform
 						shoot_counter = 0
-						
 					if damage_wave_counter >= 600:
+						print('damage_wave1')
 						shoot_counter = 0
 						$AnimatedSprite2D.play('damage_wave')
-						await $AnimatedSprite2D.animation_finished
 						var wp_dam_wave = wp_damage_wave.instantiate()
 						add_child(wp_dam_wave)
 						wp_dam_wave.transform = $Node/Marker2D.global_transform
 						damage_wave_counter = 0
+						await wp_dam_wave.animation.animation_finished
 			else:
 				$AnimatedSprite2D.play('idle')
 		if direction.x >= 0:
@@ -144,13 +145,15 @@ func _physics_process(delta):
 						shoot_counter = 0
 						
 					if damage_wave_counter >= 600:
+						print('damage_wave2')
 						shoot_counter = 0
 						$AnimatedSprite2D.play('damage_wave')
-						await $AnimatedSprite2D.animation_finished
+						#await $AnimatedSprite2D.animation_finished
 						var wp_dam_wave = wp_damage_wave.instantiate()
 						add_child(wp_dam_wave)
 						wp_dam_wave.transform = $Node/Marker2D.global_transform
 						damage_wave_counter = 0
+						await wp_dam_wave.animation.animation_finished
 			else:
 				$AnimatedSprite2D.play('idle')
 	else:

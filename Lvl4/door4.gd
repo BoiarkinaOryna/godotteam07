@@ -4,7 +4,7 @@ extends Area2D
 var flag_portal_entered = false
 #
 func _on_body_entered(body):
-	if body.name == "Player2":
+	if body.name == "Player4":
 		flag_portal_entered = true
 		#
 		#

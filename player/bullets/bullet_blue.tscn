@@ -17,3 +17,5 @@ shape = SubResource("CircleShape2D_wt0uc")
 texture_filter = 1
 scale = Vector2(3.5, 3.5)
 texture = ExtResource("1_pvnt7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -5,7 +5,7 @@ var speed = 200
 var gravity = 0
 var timer_flag = false
 var direction_number
-
+var hp = 30
 @export var bat_bullet : PackedScene
 
 func _ready():
@@ -51,4 +51,6 @@ func _physics_process(delta):
 	if direction_number == 4:
 		velocity.y = -1 * speed
 		direction_number = random.randi_range(0, 4)
+	if hp <= 0:
+		queue_free()
 	move_and_slide()

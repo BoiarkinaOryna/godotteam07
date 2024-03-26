@@ -2,7 +2,7 @@ extends Area2D
 
 var narrow_counter = 0
 var narrow_flag = false
-
+@onready var animation = $AnimatedSprite2D
 func _physics_process(_delta):
 	if not self.scale.x >= 5:
 		if not narrow_flag:

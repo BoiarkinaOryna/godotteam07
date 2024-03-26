@@ -4,6 +4,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var chase = false
 var speed = 125
 var stop = 0
+var hp = 100
 var JUMP_VELOCITY = -350.0
 var hp_counter = 0
 
@@ -91,6 +92,7 @@ func _physics_process(delta):
 				$AnimatedSprite2D.play('walk')
 				velocity.x = direction.x * speed
 			else:
+				await $AnimatedSprite2D.animation_finished
 				$AnimatedSprite2D.play('attack')
 				
 				hp_counter += 1
@@ -140,4 +142,6 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 		$AnimatedSprite2D.play('idle')
+	if hp <= 0:
+		queue_free()
 	move_and_slide()

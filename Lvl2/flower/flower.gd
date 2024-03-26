@@ -3,7 +3,7 @@ extends CharacterBody2D
 var body_entered = false
 var shoot_flag = false
 var shoot_timeout_flag = false
-
+var hp = 100
 @export var bullet : PackedScene
 
 func _ready():
@@ -50,3 +50,5 @@ func _physics_process(_delta):
 			$Timer1.start()
 	else:
 		$AnimatedSprite2D.play("idle")
+	if hp <= 0:
+		queue_free()

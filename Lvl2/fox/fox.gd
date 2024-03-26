@@ -6,7 +6,7 @@ var hit_distance_entered = false
 var fox_speed = 160
 var player_ret_speed = false
 var hp_counter = 0
-
+var hp = 100
 const JUMP_VELOCITY = -500.0
 
 @export var spike_left : PackedScene
@@ -201,4 +201,6 @@ func _physics_process(delta):
 			elif self.position.x >= 1496:
 				velocity.x = -1 * fox_speed
 				$AnimatedSprite2D.flip_h = false
+	if hp <= 0:
+		queue_free()
 	move_and_slide()

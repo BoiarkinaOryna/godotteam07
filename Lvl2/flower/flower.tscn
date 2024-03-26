@@ -87,7 +87,7 @@ height = 78.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_kml3j"]
 radius = 433.0
 
-[node name="flower" type="CharacterBody2D"]
+[node name="flower" type="CharacterBody2D" groups=["Enemy"]]
 script = ExtResource("1_xudeb")
 bullet = ExtResource("2_8ui6s")
 

@@ -7,6 +7,7 @@ var attack = false
 var speed = 100
 @onready var anim = $AnimatedSprite2D
 var alive = true
+var hp = 100
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -31,6 +32,8 @@ func _physics_process(delta):
 			if !attack:
 				$AnimatedSprite2D.flip_h = false
 				anim.play('walk')
+	if hp <= 0:
+		queue_free()
 	move_and_slide()
 
 
@@ -45,10 +48,13 @@ func _on_detector_body_exited(body):
 
 
 func _on_attack_zone_body_entered(body):
-	print(body.name)
 	if body.name == 'Player5':
 		attack = true
 		anim.play("attack")
+		await get_tree().create_timer(1).timeout
+		while attack:
+			body.heart_points -= 3
+			await get_tree().create_timer(1).timeout
 	else:
 		velocity.y = -400
 

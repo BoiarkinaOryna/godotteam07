@@ -60,7 +60,7 @@ size = Vector2(109, 58)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yk1h2"]
 size = Vector2(128, 61)
 
-[node name="wolf" type="CharacterBody2D"]
+[node name="wolf" type="CharacterBody2D" groups=["Enemy"]]
 script = ExtResource("1_762nn")
 
 [node name="Detector" type="Area2D" parent="."]

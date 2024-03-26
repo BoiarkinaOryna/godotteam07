@@ -17,3 +17,5 @@ texture_filter = 1
 position = Vector2(3.8147e-06, 3.8147e-06)
 scale = Vector2(6.0625, 4.96875)
 texture = ExtResource("1_g8520")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
