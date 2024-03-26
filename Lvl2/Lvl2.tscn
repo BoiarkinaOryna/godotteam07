@@ -1345,7 +1345,7 @@ rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(6432, 475)
+position = Vector2(224, 454)
 
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1

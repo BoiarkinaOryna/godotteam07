@@ -37,7 +37,10 @@ directories/dch_directory={
 directories/dtl_directory={
 "Fairy_Principal2Lvl": "res://Lvl2/dialogic/Fairy_Principal2Lvl.dtl",
 "Fairy_Principal2Lvl2": "res://Lvl2/dialogic/Fairy_Principal2Lvl2.dtl",
+"Goblin_Principal1Lvl3": "res://Lvl3/dialogic/Goblin_Principal1Lvl3.dtl",
+"Goblin_Principal2Lvl3": "res://Lvl3/dialogic/Goblin_Principal2Lvl3.dtl",
 "King_dialog": "res://1Lvl/dialogic/King_dialog.dtl",
+"Lvl4": "res://Lvl4/dialogic/Lvl4.dtl",
 "Principal_dialog": "res://1Lvl/dialogic/Principal_dialog.dtl",
 "prefaceTimeline": "res://preface/prefaceTimeline.dtl",
 "prefaceTimeline2": "res://preface/prefaceTimeline2.dtl",
