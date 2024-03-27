@@ -1389,13 +1389,15 @@ offset_right = 8.0
 offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
 layout_mode = 0
 offset_left = 280.0
 offset_top = 120.0
 offset_right = 1665.0
-offset_bottom = 897.0
+offset_bottom = 998.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -1405,15 +1407,27 @@ offset_right = 1144.0
 offset_bottom = 399.0
 theme_override_font_sizes/font_size = 80
 text = "Продовжити"
+metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 455.0
+offset_top = 632.0
 offset_right = 1144.0
-offset_bottom = 655.0
+offset_bottom = 832.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
+
+[node name="Treasure" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 416.0
+offset_right = 1144.0
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -1423,6 +1437,7 @@ offset_right = 921.0
 offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(195, 494)
@@ -1440,5 +1455,6 @@ shape = SubResource("RectangleShape2D_rcotn")
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Treasure" to="Manager" method="_on_treasure_pressed"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

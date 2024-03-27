@@ -1,0 +1,104 @@
+[gd_scene load_steps=14 format=3 uid="uid://cgqn8rudf8rxe"]
+
+[ext_resource type="Texture2D" uid="uid://qcoaht0gwf4f" path="res://Lvl4/phoenix/img/phoenix_flying.png" id="1_1jw6f"]
+[ext_resource type="Script" path="res://Lvl4/phoenix/phoenix.gd" id="1_jrevn"]
+[ext_resource type="PackedScene" uid="uid://daac4e222aqgv" path="res://Lvl4/phoenix/phoenix_bullet/phoenix_bullet.tscn" id="2_pcx5d"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1olxb"]
+radius = 70.0
+height = 140.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6jumi"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(0, 0, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjbjr"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(504, 0, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mroce"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(1008, 0, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6oavb"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(1512, 0, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qo1hj"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(0, 508, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wqi2"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(504, 508, 504, 508)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b2a8"]
+atlas = ExtResource("1_1jw6f")
+region = Rect2(1008, 508, 504, 508)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ravwr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6jumi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjbjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mroce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6oavb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qo1hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wqi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b2a8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wgma5"]
+radius = 306.367
+
+[node name="phoenix" type="CharacterBody2D" groups=["Enemy"]]
+script = ExtResource("1_jrevn")
+phoenix_bullet = ExtResource("2_pcx5d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1olxb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 1)
+scale = Vector2(0.388889, 0.346457)
+sprite_frames = SubResource("SpriteFrames_ravwr")
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.839956
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Timer2" type="Timer" parent="."]
+
+[node name="detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detector"]
+shape = SubResource("CircleShape2D_wgma5")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="Node"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="body_entered" from="detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="detector" to="." method="_on_detector_body_exited"]

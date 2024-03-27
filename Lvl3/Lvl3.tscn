@@ -279,7 +279,9 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.0944444
 offset_left = 280.0
 offset_top = 120.0
 offset_right = 1665.0
@@ -297,7 +299,23 @@ text = "Продовжити"
 metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.201365
+anchor_bottom = 0.201365
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
+
+[node name="Treasure" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.0443686
+anchor_bottom = -0.0443686
 offset_left = 208.0
 offset_top = 455.0
 offset_right = 1144.0
@@ -531,4 +549,5 @@ shape = SubResource("RectangleShape2D_rhgav")
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Treasure" to="Manager" method="_on_treasure_pressed"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

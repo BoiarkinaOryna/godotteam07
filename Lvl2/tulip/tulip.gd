@@ -33,6 +33,7 @@ func _physics_process(delta):
 				$AnimatedSprite2D.flip_h = true
 				anim.play('idle')
 	if hp <= 0:
+		Shop.on_death_enemy()
 		queue_free()
 	move_and_slide()
 

@@ -143,5 +143,6 @@ func _physics_process(delta):
 		velocity.x = 0
 		$AnimatedSprite2D.play('idle')
 	if hp <= 0:
+		Shop.on_death_enemy()
 		queue_free()
 	move_and_slide()

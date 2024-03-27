@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dlawwem2syyhg"]
+[gd_scene load_steps=31 format=3 uid="uid://dlawwem2syyhg"]
 
 [ext_resource type="Texture2D" uid="uid://bifyqaa85afv4" path="res://Lvl5/Assets/Wall.png" id="1_rpiks"]
 [ext_resource type="Script" path="res://Lvl5/Manager.gd" id="1_yghtt"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://bqpwvwhirk7u7" path="res://player/player5/player5.tscn" id="13_si515"]
 [ext_resource type="PackedScene" uid="uid://djm1pbmpsqduy" path="res://Lvl5/bear/bear.tscn" id="14_l5sfp"]
 [ext_resource type="PackedScene" uid="uid://bbgjj11x4ut7v" path="res://Lvl5/door5.tscn" id="15_04en4"]
+[ext_resource type="Texture2D" uid="uid://dnmt5cbqeqpd" path="res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png" id="17_vb8c6"]
+[ext_resource type="Script" path="res://Lvl5/Area2D.gd" id="18_xaakp"]
 
 [sub_resource type="Animation" id="Animation_pi3yy"]
 resource_name = "idle"
@@ -357,6 +359,46 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7f8s0")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl6in"]
+size = Vector2(269, 45.4456)
+
+[sub_resource type="Animation" id="Animation_445wk"]
+resource_name = "idle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 520), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 520), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q3p0t"]
+_data = {
+"idle": SubResource("Animation_445wk")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwakw"]
+size = Vector2(720, 272)
+
 [node name="Lvl5" type="Node2D"]
 
 [node name="Manager" type="Node" parent="."]
@@ -470,10 +512,11 @@ position = Vector2(2427, 480)
 position = Vector2(1162, 484)
 
 [node name="Player5" parent="." instance=ExtResource("13_si515")]
-position = Vector2(3882, 445)
+position = Vector2(5200, 440)
 
 [node name="Door" parent="." instance=ExtResource("15_04en4")]
-position = Vector2(4723, 410)
+visible = false
+position = Vector2(4728, 312)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -492,7 +535,10 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.0462963
+anchor_bottom = 0.0527778
 offset_left = 280.0
 offset_top = 120.0
 offset_right = 1665.0
@@ -510,13 +556,29 @@ text = "Продовжити"
 metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.202489
+anchor_bottom = 0.202489
 offset_left = 208.0
 offset_top = 455.0
 offset_right = 1144.0
 offset_bottom = 655.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
+
+[node name="Treasure" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.0418552
+anchor_bottom = -0.0418552
+offset_left = 208.0
+offset_top = 455.0
+offset_right = 1144.0
+offset_bottom = 655.0
+theme_override_font_sizes/font_size = 80
+text = "Скарбничка"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
@@ -529,5 +591,35 @@ theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
 metadata/_edit_use_anchors_ = true
 
+[node name="platform5" type="StaticBody2D" parent="."]
+position = Vector2(5872, 64)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="platform5"]
+position = Vector2(0, 466.215)
+scale = Vector2(1, 0.59307)
+texture = ExtResource("17_vb8c6")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5"]
+position = Vector2(0, 466.215)
+shape = SubResource("RectangleShape2D_tl6in")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platform5"]
+libraries = {
+"": SubResource("AnimationLibrary_q3p0t")
+}
+autoplay = "idle"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(5320, 56)
+script = ExtResource("18_xaakp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(144, 0)
+shape = SubResource("RectangleShape2D_cwakw")
+
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Treasure" to="Manager" method="_on_treasure_pressed"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

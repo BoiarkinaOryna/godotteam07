@@ -18,3 +18,6 @@ func _on_resume_pressed():
 func _on_quit_pressed():
 	get_tree().change_scene_to_file("res://Menu/Menu.tscn")
 	game_pause = false
+func _on_treasure_pressed():
+	Shop.lvl = get_parent().name
+	get_tree().change_scene_to_file('res://Shop/Shop.tscn')

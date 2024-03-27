@@ -23,7 +23,7 @@ func _on_body_entered(body):
 			#pause = true
 			menu.visible = false
 			pause.visible = false
-			door.visible = true
+			#door.visible = true
 			#set_process(not is_processing())
 			Dialogic.start("timeline")
 			flag = false

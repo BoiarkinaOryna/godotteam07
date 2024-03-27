@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bqsmhkfapu7vs"]
+[gd_scene load_steps=22 format=3 uid="uid://bqsmhkfapu7vs"]
 
 [ext_resource type="Texture2D" uid="uid://bolhib5ags062" path="res://Lvl6/Assets/bottom.png" id="1_nrsnf"]
 [ext_resource type="Script" path="res://Lvl6/Manager.gd" id="1_yhcmo"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dnmt5cbqeqpd" path="res://Lvl6/Assets/Untitled 02-22-2024 09-42-29 (3).png" id="6_ttv3n"]
 [ext_resource type="PackedScene" uid="uid://brailqkufbado" path="res://Lvl6/ghost/ghost.tscn" id="7_1ednh"]
 [ext_resource type="PackedScene" uid="uid://loanutynkyqw" path="res://Lvl6/door6.tscn" id="8_0pi5a"]
+[ext_resource type="Script" path="res://Lvl6/Area2D.gd" id="10_ahisg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_afe7v"]
 texture = ExtResource("3_qxy7c")
@@ -321,6 +322,9 @@ tracks/1/keys = {
 _data = {
 "idle": SubResource("Animation_445wk")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cg4al"]
+size = Vector2(432, 304)
 
 [node name="Lvl6" type="Node2D"]
 position = Vector2(0, -288)
@@ -749,6 +753,7 @@ position = Vector2(-922, -242)
 color = Color(0.305882, 0.305882, 0.305882, 1)
 
 [node name="Door" parent="." instance=ExtResource("8_0pi5a")]
+visible = false
 position = Vector2(2908, -1111)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -769,9 +774,9 @@ grow_vertical = 2
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
 layout_mode = 0
 offset_left = 280.0
-offset_top = 120.0
+offset_top = 71.0
 offset_right = 1665.0
-offset_bottom = 897.0
+offset_bottom = 968.0
 
 [node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -785,11 +790,20 @@ text = "Продовжити"
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 455.0
+offset_top = 633.0
 offset_right = 1144.0
-offset_bottom = 655.0
+offset_bottom = 833.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти у меню"
+
+[node name="Treasure" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 417.0
+offset_right = 1144.0
+offset_bottom = 617.0
+theme_override_font_sizes/font_size = 80
+text = "Скарбничка"
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -806,5 +820,14 @@ position = Vector2(229, 398)
 platform_floor_layers = 4294967041
 platform_wall_layers = 1
 
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(272, 408)
+script = ExtResource("10_ahisg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_cg4al")
+
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Treasure" to="Manager" method="_on_treasure_pressed"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

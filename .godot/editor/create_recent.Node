@@ -1,14 +1,14 @@
-Button
+Node
 CollisionShape2D
 Area2D
+Button
+Control
 Sprite2D
 AnimatedSprite2D
 AnimationTree
 Marker2D
 Timer
-Node
 CharacterBody2D
 CanvasLayer
 CanvasGroup
 Label
-Panel

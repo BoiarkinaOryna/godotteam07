@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Shop="*res://Shop/Shop.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
@@ -36,13 +37,16 @@ directories/dch_directory={
 "spletnik2": "res://1Lvl/dialogic/characters/spletnik2.dch"
 }
 directories/dtl_directory={
+"Book6Lvl": "res://Lvl6/dialogic/Book6Lvl.dtl",
 "Fairy_Principal2Lvl": "res://Lvl2/dialogic/Fairy_Principal2Lvl.dtl",
 "Fairy_Principal2Lvl2": "res://Lvl2/dialogic/Fairy_Principal2Lvl2.dtl",
 "Goblin_Principal1Lvl3": "res://Lvl3/dialogic/Goblin_Principal1Lvl3.dtl",
 "Goblin_Principal2Lvl3": "res://Lvl3/dialogic/Goblin_Principal2Lvl3.dtl",
 "King_dialog": "res://1Lvl/dialogic/King_dialog.dtl",
 "Lvl4": "res://Lvl4/dialogic/Lvl4.dtl",
+"MagiciansLvl7": "res://Lvl7/dialogic/MagiciansLvl7.dtl",
 "Principal_dialog": "res://1Lvl/dialogic/Principal_dialog.dtl",
+"Queen_dialog1_6lvl": "res://Lvl5/dialogic/Queen_dialog1_6lvl.dtl",
 "prefaceTimeline": "res://preface/prefaceTimeline.dtl",
 "prefaceTimeline2": "res://preface/prefaceTimeline2.dtl",
 "prefaceTimeline3": "res://preface/prefaceTimeline3.dtl",

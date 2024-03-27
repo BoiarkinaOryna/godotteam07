@@ -52,5 +52,6 @@ func _physics_process(delta):
 		velocity.y = -1 * speed
 		direction_number = random.randi_range(0, 4)
 	if hp <= 0:
+		Shop.on_death_enemy()
 		queue_free()
 	move_and_slide()

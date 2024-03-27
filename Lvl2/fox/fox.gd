@@ -202,5 +202,8 @@ func _physics_process(delta):
 				velocity.x = -1 * fox_speed
 				$AnimatedSprite2D.flip_h = false
 	if hp <= 0:
+		Shop.on_death_enemy()
+		player.speed = 300
+		player.jump_velocity = -500
 		queue_free()
 	move_and_slide()

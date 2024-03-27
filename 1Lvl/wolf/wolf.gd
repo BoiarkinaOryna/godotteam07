@@ -31,7 +31,10 @@ func _physics_process(delta):
 				$AnimatedSprite2D.flip_h = true
 				anim.play('walk')
 	if hp <= 0:
+		Shop.on_death_enemy()
+		#get_tree().change_scene_to_file('res://Shop/Shop.tscn')
 		queue_free()
+		print(get_parent().get_path())
 	move_and_slide()
 
 func _on_detector_body_entered(body):

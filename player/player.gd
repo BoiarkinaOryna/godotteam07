@@ -61,7 +61,7 @@ func show_hp():
 		get_tree().change_scene_to_file("res://preface//preface1.tscn")
 
 func _physics_process(delta):
-	print(heart_points)
+	#print(heart_points)
 	#print(count_stones)
 	if count_stones == 10:
 		Dialogic.start('Goblin_Principal2Lvl3')

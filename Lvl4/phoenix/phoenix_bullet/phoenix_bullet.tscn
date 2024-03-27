@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://daac4e222aqgv"]
+
+[ext_resource type="Script" path="res://Lvl4/phoenix/phoenix_bullet/phoenix_bullet.gd" id="1_67gld"]
+[ext_resource type="Texture2D" uid="uid://cy8khycovaa7g" path="res://player/img/3.png" id="2_voaqb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c08pf"]
+radius = 17.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c6lss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_voaqb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="phoenix_bullet" type="Area2D"]
+script = ExtResource("1_67gld")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_c08pf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 3.75)
+sprite_frames = SubResource("SpriteFrames_c6lss")
+animation = &"idle"
+autoplay = "idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

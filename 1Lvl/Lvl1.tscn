@@ -34,6 +34,9 @@
 [ext_resource type="Texture2D" uid="uid://da3156en3ijr6" path="res://1Lvl/dialogic/img/Spletniki (2).png" id="33_iwcmx"]
 [ext_resource type="Script" path="res://1Lvl/PrincipalDialog1lvl.gd" id="33_tykvw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8enob"]
+size = Vector2(460, 380)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hvn0"]
 texture = ExtResource("4_4si0t")
 texture_region_size = Vector2i(64, 64)
@@ -573,15 +576,29 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7t3e"]
 size = Vector2(137, 641)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8enob"]
-size = Vector2(460, 380)
-
 [node name="Lvl1" type="Node2D"]
 texture_filter = 1
 
 [node name="Manage" type="Node" parent="."]
 process_mode = 3
 script = ExtResource("1_tkt72")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(10333, 382)
+script = ExtResource("31_q5gmu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8enob")
+
+[node name="Spletniki" type="Sprite2D" parent="Area2D"]
+position = Vector2(-133, 36)
+scale = Vector2(0.81, 0.86)
+texture = ExtResource("32_nkacp")
+
+[node name="Spletniki(2)" type="Sprite2D" parent="Area2D"]
+position = Vector2(101, 38)
+scale = Vector2(0.87, 0.826667)
+texture = ExtResource("33_iwcmx")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -1166,13 +1183,15 @@ offset_right = 8.0
 offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="CanvasLayer/Control"]
 layout_mode = 0
 offset_left = 280.0
-offset_top = 120.0
+offset_top = 88.0
 offset_right = 1665.0
-offset_bottom = 897.0
+offset_bottom = 960.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -1182,15 +1201,27 @@ offset_right = 1144.0
 offset_bottom = 399.0
 theme_override_font_sizes/font_size = 80
 text = "Продовжити"
+metadata/_edit_use_anchors_ = true
 
 [node name="Quit" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 455.0
+offset_top = 632.0
 offset_right = 1144.0
-offset_bottom = 655.0
+offset_bottom = 832.0
 theme_override_font_sizes/font_size = 80
 text = "Вийти у меню"
+metadata/_edit_use_anchors_ = true
+
+[node name="Treasury" type="Button" parent="CanvasLayer/Control/Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 416.0
+offset_right = 1144.0
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 80
+text = "Скарбничка"
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
@@ -1200,6 +1231,7 @@ offset_right = 921.0
 offset_bottom = 165.0
 theme_override_font_sizes/font_size = 80
 text = "Меню паузи"
+metadata/_edit_use_anchors_ = true
 
 [node name="npc" type="Node2D" parent="."]
 
@@ -1276,24 +1308,8 @@ position = Vector2(4438, 476)
 [node name="Player1" parent="." instance=ExtResource("30_ed1lo")]
 position = Vector2(385, 480)
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(10333, 382)
-script = ExtResource("31_q5gmu")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_8enob")
-
-[node name="Spletniki" type="Sprite2D" parent="Area2D"]
-position = Vector2(-133, 36)
-scale = Vector2(0.81, 0.86)
-texture = ExtResource("32_nkacp")
-
-[node name="Spletniki(2)" type="Sprite2D" parent="Area2D"]
-position = Vector2(101, 38)
-scale = Vector2(0.87, 0.826667)
-texture = ExtResource("33_iwcmx")
-
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manage" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manage" method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Panel/Treasury" to="Manage" method="_on_treasury_pressed"]
 [connection signal="body_entered" from="PrincipalDialog" to="PrincipalDialog" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

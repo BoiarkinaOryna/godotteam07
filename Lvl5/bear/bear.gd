@@ -34,6 +34,7 @@ func _physics_process(delta):
 				anim.play('walk')
 	if hp <= 0:
 		queue_free()
+		Shop.on_death_enemy()
 	move_and_slide()
 
 

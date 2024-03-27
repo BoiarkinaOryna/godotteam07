@@ -51,4 +51,5 @@ func _physics_process(_delta):
 	else:
 		$AnimatedSprite2D.play("idle")
 	if hp <= 0:
+		Shop.on_death_enemy()
 		queue_free()
