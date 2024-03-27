@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfyqgodcg5esx"]
+[gd_scene load_steps=6 format=3 uid="uid://cfyqgodcg5esx"]
 
 [ext_resource type="Texture2D" uid="uid://cujf2m8pijd3w" path="res://Shop/Assets/Shop.png" id="1_d6kxf"]
 [ext_resource type="Script" path="res://Shop/Shop.gd" id="1_i7bit"]
 [ext_resource type="Texture2D" uid="uid://cy8khycovaa7g" path="res://player/img/3.png" id="2_tj04o"]
 [ext_resource type="Texture2D" uid="uid://dhl8l5rymv63r" path="res://player/img/2.png" id="3_2qfsa"]
+[ext_resource type="Texture2D" uid="uid://0f1vysejqvxx" path="res://player/img/1.png" id="3_alrq5"]
 
 [node name="Shop" type="CanvasLayer"]
 script = ExtResource("1_i7bit")
@@ -15,9 +16,15 @@ texture = ExtResource("1_d6kxf")
 
 [node name="goods" type="Node" parent="."]
 
+[node name="purple_bullet" type="Sprite2D" parent="goods"]
+texture_filter = 1
+position = Vector2(497, 204)
+scale = Vector2(5.375, 5)
+texture = ExtResource("3_alrq5")
+
 [node name="fire_bullet" type="Sprite2D" parent="goods"]
 texture_filter = 1
-position = Vector2(434, 128)
+position = Vector2(361, 204)
 scale = Vector2(5.375, 5)
 texture = ExtResource("2_tj04o")
 
@@ -28,10 +35,10 @@ scale = Vector2(4.96875, 5.4375)
 texture = ExtResource("3_2qfsa")
 
 [node name="fire_b" type="Button" parent="goods"]
-offset_left = 406.0
-offset_top = 105.0
-offset_right = 420.0
-offset_bottom = 116.0
+offset_left = 333.0
+offset_top = 181.0
+offset_right = 347.0
+offset_bottom = 192.0
 scale = Vector2(3.68091, 4.28506)
 
 [node name="water_b" type="Button" parent="goods"]
@@ -40,9 +47,21 @@ offset_top = 181.0
 offset_right = 453.0
 offset_bottom = 229.0
 
+[node name="purple_b" type="Button" parent="goods"]
+offset_left = 474.0
+offset_top = 181.0
+offset_right = 520.0
+offset_bottom = 229.0
+
 [node name="forms" type="Node" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="forms"]
 
+[node name="Button" type="Button" parent="."]
+offset_right = 241.0
+offset_bottom = 118.0
+
 [connection signal="pressed" from="goods/fire_b" to="." method="_on_fire_b_pressed"]
 [connection signal="pressed" from="goods/water_b" to="." method="_on_water_b_pressed"]
+[connection signal="pressed" from="goods/purple_b" to="." method="_on_purple_b_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -9,6 +9,11 @@ var jump_animation = false
 var attack = false
 var direction
 var count_stones = 0
+
+var fire_owned = false
+var water_owned = false
+var purple_owned = false
+
 #@export var bullet : PackedScene
 @export var bullet : PackedScene
 @export var bulletBlue : PackedScene
@@ -56,6 +61,7 @@ func show_hp():
 		get_tree().change_scene_to_file("res://preface//preface1.tscn")
 
 func _physics_process(delta):
+	print(heart_points)
 	#print(count_stones)
 	if count_stones == 10:
 		Dialogic.start('Goblin_Principal2Lvl3')
