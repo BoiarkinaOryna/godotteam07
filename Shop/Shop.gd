@@ -1,6 +1,6 @@
 extends CanvasLayer
 var lvl
-var coins = 500
+var coins = 0
 var fire_cost = 10
 var water_cost = 5
 var fire_owned = false
@@ -8,7 +8,7 @@ var water_owned = false
 var gray_owned = false
 var purple_owned = false
 #@export var moving : PackedScene
-func _process(delta):
+func _process(_delta):
 	#get_tree().get
 	lvl = Shop.lvl
 	coins = Shop.coins

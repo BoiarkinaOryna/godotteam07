@@ -17,4 +17,3 @@ func _ready():
 func _process(_delta):
 	if flag_portal_entered == true:
 		get_tree().change_scene_to_file("res://Lvl2/Lvl2.tscn")
-		#get_tree().change_scene_to_file('res://Shop/Shop.tscn')

@@ -9,7 +9,7 @@ var left_flag = false
 var shoot_counter = 0
 var damage_wave_counter = 0
 var first_base
-var hp = 2000
+var hp = 100
 var second_base
 
 @export var wp_bullet : PackedScene

@@ -292,6 +292,18 @@ position = Vector2(1632, 458)
 [node name="Fire3" parent="fire" instance=ExtResource("4_u3f7b")]
 position = Vector2(2281, 525)
 
+[node name="Fire4" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(2704, 464)
+
+[node name="Fire5" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(3120, 464)
+
+[node name="Fire6" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(3672, 528)
+
+[node name="Fire7" parent="fire" instance=ExtResource("4_u3f7b")]
+position = Vector2(5000, 472)
+
 [node name="trees" type="Node2D" parent="."]
 texture_filter = 1
 
@@ -377,9 +389,6 @@ flip_h = true
 [node name="Player4" parent="." instance=ExtResource("11_p0ycm")]
 position = Vector2(290, 471)
 
-[node name="Door" parent="." instance=ExtResource("12_bnl1n")]
-position = Vector2(572, 351)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
 
@@ -404,10 +413,10 @@ offset_bottom = 991.0
 
 [node name="Resume" type="Button" parent="CanvasLayer/Control/Panel"]
 layout_mode = 0
-offset_left = 208.0
-offset_top = 191.0
-offset_right = 1144.0
-offset_bottom = 399.0
+offset_left = 200.0
+offset_top = 196.0
+offset_right = 1136.0
+offset_bottom = 404.0
 theme_override_font_sizes/font_size = 80
 text = "Продовжити"
 
@@ -442,7 +451,7 @@ text = "Меню паузи"
 script = ExtResource("11_sbhhf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(372, 445)
+position = Vector2(224, 408)
 shape = SubResource("RectangleShape2D_0lurw")
 
 [node name="phoenix" parent="." instance=ExtResource("12_ggkrb")]
@@ -457,9 +466,16 @@ position = Vector2(3477, 198)
 [node name="phoenix4" parent="." instance=ExtResource("12_ggkrb")]
 position = Vector2(4379, 91)
 
+[node name="Door" parent="." instance=ExtResource("12_bnl1n")]
+position = Vector2(5240, 408)
+
 [connection signal="body_exited" from="fire/Fire" to="Manager" method="_on_fire_body_exited"]
 [connection signal="body_exited" from="fire/Fire2" to="Manager" method="_on_fire_body_exited"]
 [connection signal="body_exited" from="fire/Fire3" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire4" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire5" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire6" to="Manager" method="_on_fire_body_exited"]
+[connection signal="body_exited" from="fire/Fire7" to="Manager" method="_on_fire_body_exited"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Treasure" to="Manager" method="_on_treasure_pressed"]

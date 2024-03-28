@@ -1314,7 +1314,7 @@ shape = SubResource("CapsuleShape2D_2tix4")
 
 [node name="live_grass9" type="StaticBody2D" parent="enimies"]
 texture_filter = 1
-position = Vector2(4416, 0)
+position = Vector2(3968, 0)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enimies/live_grass9"]
@@ -1344,9 +1344,6 @@ position = Vector2(800, 552)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_2tix4")
 
-[node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
-position = Vector2(224, 454)
-
 [node name="Fox" parent="." instance=ExtResource("17_wpxjh")]
 texture_filter = 1
 position = Vector2(1873, 519)
@@ -1366,13 +1363,12 @@ autoplay = "idle"
 frame_progress = 0.784173
 
 [node name="Tulip" parent="." instance=ExtResource("20_voapi")]
-position = Vector2(5537, 513)
+position = Vector2(5760, 520)
 
 [node name="Tulip2" parent="." instance=ExtResource("20_voapi")]
 position = Vector2(6877, 519)
 
 [node name="Door" parent="." instance=ExtResource("21_a8vmo")]
-visible = false
 position = Vector2(8375, 363)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -1444,6 +1440,7 @@ position = Vector2(195, 494)
 script = ExtResource("23_kkk3s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(37, -62)
 shape = SubResource("RectangleShape2D_5e7nl")
 
 [node name="Area2D2" type="Area2D" parent="."]
@@ -1452,6 +1449,9 @@ script = ExtResource("24_r01s1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource("RectangleShape2D_rcotn")
+
+[node name="Player2" parent="." instance=ExtResource("18_m1pjo")]
+position = Vector2(216, 464)
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]

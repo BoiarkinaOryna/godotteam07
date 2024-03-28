@@ -753,8 +753,7 @@ position = Vector2(-922, -242)
 color = Color(0.305882, 0.305882, 0.305882, 1)
 
 [node name="Door" parent="." instance=ExtResource("8_0pi5a")]
-visible = false
-position = Vector2(2908, -1111)
+position = Vector2(2992, -1120)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 2
@@ -831,6 +830,7 @@ position = Vector2(272, 408)
 script = ExtResource("10_ahisg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2712, -1552)
 shape = SubResource("RectangleShape2D_cg4al")
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
