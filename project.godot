@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="godotteam07"
-run/main_scene="res://Lvl7/Lvl7.tscn"
+run/main_scene="res://Menu/Menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Shop="*res://Shop/Shop.gd"
+Moving="*res://Buttons/Moving.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]

@@ -1,18 +1,16 @@
 extends CanvasLayer
-var gray
-var red
-var blue
-var purple
+#var gray = get_node('/root/Moving').find_node('hit')
+#var menu = get_parent()
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	gray = $hit
-	red = $hit2
-	blue = $hit3
-	purple = $hit4
+	pass
+	#print(fire)
+	#print(gray)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	#print(visible)
+	visible = Moving.visible
 	#print(gray.visible)
 	#asdgasdray = Moviasdngasd.gray

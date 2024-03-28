@@ -20,7 +20,7 @@ var purple_owned = false
 @export var bulletRed : PackedScene
 @export var bulletPurple : PackedScene
 @onready var hp = get_node("hp/Hp")
-@onready var menu = $"Moving"
+@onready var menu = Moving
 @onready var pause = $"Pause"
 @onready var door = $"../Door"
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -58,7 +58,7 @@ func show_hp():
 		hp.play("1")
 	elif heart_points == 0:
 		hp.play("0")
-		get_tree().change_scene_to_file("res://preface//preface1.tscn")
+		get_tree().change_scene_to_file("res://Menu/Menu.tscn")
 
 func _physics_process(delta):
 	#print(heart_points)

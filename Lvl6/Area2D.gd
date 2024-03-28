@@ -1,6 +1,6 @@
 extends Area2D
 #var pause = false
-@onready var menu = $"../Player/Moving"
+@onready var menu = Moving
 @onready var pause = $"../Player/Pause"
 @onready var door = $"../Door"
 var flag = true

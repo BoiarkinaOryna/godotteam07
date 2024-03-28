@@ -1,6 +1,6 @@
 extends Area2D
 #var pause = false
-@onready var menu = $"../Player7/Moving"
+@onready var menu = Moving
 @onready var pause = $"../Player7/Pause"
 var flag = true
 # Called when the node enters the scene tree for the first time.

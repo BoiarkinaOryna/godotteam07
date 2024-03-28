@@ -1,10 +1,11 @@
 extends Node2D
-
+@onready var menu = Moving
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Dialogic.start('prefaceTimeline')
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+	menu.visible = false
 
 func _on_dialogic_signal(argument:String):
 	if argument == "endPrefaceFirst":

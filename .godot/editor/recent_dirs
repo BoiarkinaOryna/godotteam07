@@ -1,7 +1,10 @@
+res://Menu
+D:/godot/games/gdt07
+res://preface
+res://Buttons
 res://Lvl7/dialogic
 res://Lvl6/dialogic
 res://Lvl5/dialogic
-res://Buttons
 res://Shop
 res://Buttons/Assets/img
 res://Lvl3/dialogic/img
@@ -17,6 +20,3 @@ res://Lvl7/white_principal/wp_damage_wave
 res://preface/Styles
 res://Menu/pause
 res://1Lvl
-res://preface
-res://preface/img
-res://Lvl6/Assets

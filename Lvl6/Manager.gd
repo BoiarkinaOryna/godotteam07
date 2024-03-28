@@ -1,4 +1,5 @@
 extends Node
+@onready var menu = Moving
 var game_pause = false
 @onready var pause_menu = $"../CanvasLayer/Control"
 func _process(_delta):
@@ -17,6 +18,7 @@ func _on_resume_pressed():
 
 func _on_quit_pressed():
 	get_tree().change_scene_to_file("res://Menu/Menu.tscn")
+	menu.visible = false
 	game_pause = false
 func _on_treasure_pressed():
 	Shop.lvl = get_parent().name

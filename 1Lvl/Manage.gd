@@ -1,5 +1,5 @@
 extends Node
-@onready var menu = $"../Player1/Moving"
+@onready var menu = Moving
 @onready var pause = $"../Player1/Pause"
 var game_pause = false
 @onready var pause_menu = $"../CanvasLayer/Control"
@@ -19,6 +19,7 @@ func _on_resume_pressed():
 func _on_quit_pressed():
 	get_tree().paused = false
 	game_pause = false
+	menu.visible = false
 	get_tree().change_scene_to_file("res://Menu/Menu.tscn")
 
 

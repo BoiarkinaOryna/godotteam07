@@ -43,6 +43,7 @@ texture_normal = ExtResource("4_smudv")
 action = "ui_attack"
 
 [node name="hit2" type="TouchScreenButton" parent="."]
+visible = false
 self_modulate = Color(1, 1, 1, 0.784314)
 position = Vector2(1352, 616)
 scale = Vector2(3.2381, 3.00595)
