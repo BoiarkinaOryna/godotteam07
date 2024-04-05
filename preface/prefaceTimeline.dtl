@@ -1,6 +1,6 @@
 Narrator (portret): Вітаю вас у грі "The Magician's Road"!
 Narrator: Зараз я розповім вам про нашу гру.
-Narrator: Ви знаходитесь у королівстві "Назва королівства".
+Narrator: Ви знаходитесь у магічному королівстві.
 Narrator: У нашому королівстві є 5 фракцій.
 join King 3 [ z_index="5"]
 join Queen 2 [ z_index="5"]

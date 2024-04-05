@@ -41,6 +41,7 @@ directories/dtl_directory={
 "Book6Lvl": "res://Lvl6/dialogic/Book6Lvl.dtl",
 "Fairy_Principal2Lvl": "res://Lvl2/dialogic/Fairy_Principal2Lvl.dtl",
 "Fairy_Principal2Lvl2": "res://Lvl2/dialogic/Fairy_Principal2Lvl2.dtl",
+"FinalLvl7": "res://Lvl7/dialogic/FinalLvl7.dtl",
 "Goblin_Principal1Lvl3": "res://Lvl3/dialogic/Goblin_Principal1Lvl3.dtl",
 "Goblin_Principal2Lvl3": "res://Lvl3/dialogic/Goblin_Principal2Lvl3.dtl",
 "King_dialog": "res://1Lvl/dialogic/King_dialog.dtl",

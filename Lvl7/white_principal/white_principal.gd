@@ -9,7 +9,7 @@ var left_flag = false
 var shoot_counter = 0
 var damage_wave_counter = 0
 var first_base
-var hp = 100
+var hp = 1000
 var second_base
 
 @export var wp_bullet : PackedScene
@@ -161,6 +161,7 @@ func _physics_process(delta):
 		velocity.x = 0
 		$AnimatedSprite2D.play('idle')
 	if hp <= 0:
+		#Dialogic.start("FinalLvl7")
 		queue_free()
 		get_tree().change_scene_to_file('res://Menu/Menu.tscn')
 	move_and_slide()

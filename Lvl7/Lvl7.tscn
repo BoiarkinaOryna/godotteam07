@@ -326,15 +326,15 @@ metadata/_edit_use_anchors_ = true
 [node name="white_principal" parent="." groups=["Enemy"] instance=ExtResource("6_ktaat")]
 position = Vector2(1415, 495)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="1" type="Area2D" parent="."]
 position = Vector2(136, 480)
 script = ExtResource("7_vemvt")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1"]
 shape = SubResource("RectangleShape2D_h84ap")
 
 [node name="Door" type="Node" parent="."]
 
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Resume" to="Manager" method="_on_resume_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/Panel/Quit" to="Manager" method="_on_quit_pressed"]
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="1" to="1" method="_on_body_entered"]
